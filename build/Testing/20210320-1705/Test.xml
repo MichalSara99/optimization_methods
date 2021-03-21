@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++-9"
+	BuildStamp="20210320-1705-Experimental"
+	Name="xsarm06"
+	Generator="ctest-3.16.3"
+	CompilerName="/bin/g++-9"
+	CompilerVersion="9.3.0"
+	OSName="Linux"
+	Hostname="xsarm06"
+	OSRelease="5.8.0-45-generic"
+	OSVersion="#51~20.04.1-Ubuntu SMP Tue Feb 23 13:46:31 UTC 2021"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="23"
+	ProcessorCacheSize="3072"
+	NumberOfLogicalCPU="2"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="2944"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2492.84"
+	>
+	<Testing>
+		<StartDateTime>Mar 20 18:24 CET</StartDateTime>
+		<StartTestTime>1616261043</StartTestTime>
+		<TestList>
+			<Test>./unit_tests/om_utilities_t</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>om_utilities_t</Name>
+			<Path>./unit_tests</Path>
+			<FullName>./unit_tests/om_utilities_t</FullName>
+			<FullCommandLine>/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/test_main "COMMAND" "test_main"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00604412</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/test_main "COMMAND" "test_main"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJzdj8FKw0AQhu/7Cl5+egw0mEYPNadGUTw0QhE8eJAxO7bF3Z0wuwEf302Reokv4MBehv/7Zv9WJKbymWPCy2bXPXYPN0jyyQGL26ftdtPdLWCFI4Ik9KLKcZBgcwbpwGh/cdL96DkkGMwMZSYeZHQW74zBUc8W9JFYQc7NeeKJmY4sl4g8kFISLWft96LgL/KD4/z9bHnzdAwZ1OwQPxl+2pj278Jn8J9UPm/NbgzhGPaoTjv0FLksJ2+V38rU5bUxF69VU6+aq7UvigKdgFVFIywn7hPbHLhs6vUUMN+keqwK====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Mar 20 18:24 CET</EndDateTime>
+		<EndTestTime>1616261043</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

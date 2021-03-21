@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build",
+  "command": "/bin/g++-9   -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/optimization_methods_x64.dir/main.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/main.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/main.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build",
+  "command": "/bin/g++-9   -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/optimization_methods.dir/main.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/main.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/main.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/powell_test.dir/om_powell_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_powell_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_powell_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/fibonacci_test.dir/om_fibonacci_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_fibonacci_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_fibonacci_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/golden_section_test.dir/om_golden_section_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_golden_section_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_golden_section_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/brent_test.dir/om_brent_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_brent_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_brent_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/utilities_test.dir/om_utilities_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_utilities_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_utilities_t.cpp"
+}
+]

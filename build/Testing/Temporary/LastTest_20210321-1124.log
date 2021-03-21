@@ -1,0 +1,28 @@
+Start testing: Mar 21 12:24 CET
+----------------------------------------------------------
+1/1 Testing: om_utilities_t
+1/1 Test: om_utilities_t
+Command: "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/utilities_test" "COMMAND" "utilities_test"
+Directory: /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests
+"om_utilities_t" start time: Mar 21 12:24 CET
+Output:
+----------------------------------------------------------
+Boost.Test WARNING: token "COMMAND" does not correspond to the Boost.Test argument 
+                    and should be placed after all Boost.Test arguments and the -- separator.
+                    For example: utilities_test --random -- COMMAND
+Boost.Test WARNING: token "utilities_test" does not correspond to the Boost.Test argument 
+                    and should be placed after all Boost.Test arguments and the -- separator.
+                    For example: utilities_test --random -- utilities_test
+Running 2 test cases...
+
+[1;32;49m*** No errors detected
+[0;39;49m
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"om_utilities_t" end time: Mar 21 12:24 CET
+"om_utilities_t" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 21 12:24 CET

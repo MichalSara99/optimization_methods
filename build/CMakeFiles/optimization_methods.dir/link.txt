@@ -1,0 +1,2 @@
+/bin/ar qc liboptimization_methods.a  CMakeFiles/optimization_methods.dir/main.cpp.o
+/bin/ranlib liboptimization_methods.a

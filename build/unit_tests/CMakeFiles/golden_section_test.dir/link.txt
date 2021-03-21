@@ -1,0 +1,1 @@
+/bin/g++-9  -O2 -g -DNDEBUG  -rdynamic CMakeFiles/golden_section_test.dir/om_golden_section_t.cpp.o  -o golden_section_test  ../liboptimization_methods.a /usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so.1.71.0 
