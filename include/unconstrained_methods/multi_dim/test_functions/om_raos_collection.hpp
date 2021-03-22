@@ -198,14 +198,14 @@ std::vector<sptr_t<minimizer_helper<fp_type>>> create_rao_test_collection() {
       "Non-linear function of 3 variables"s, non_linear_function<fp_type>,
       Eigen::Vector3d(0.0, 1.0, 2.0), Eigen::Vector3d(1.0, 1.0, 1.0)));
   helper.emplace_back(std::make_shared<minimizer_helper<fp_type>>(
+      "Beale's function"s, beale_function<fp_type>, Eigen::Vector2d(1.0, 1.0),
+      Eigen::Vector2d(3.0, 0.5)));
+  helper.emplace_back(std::make_shared<minimizer_helper<fp_type>>(
       "Freudenstein and Roth function"s, freudenstein_roth_function<fp_type>,
       Eigen::Vector2d(0.5, -2.0), Eigen::Vector2d(11.41, -0.8968)));
   helper.emplace_back(std::make_shared<minimizer_helper<fp_type>>(
       "Powell's badly scaled function"s, powell_badly_scaled_function<fp_type>,
       Eigen::Vector2d(0.0, 1.0), Eigen::Vector2d(1.098e-5, 9.106)));
-  helper.emplace_back(std::make_shared<minimizer_helper<fp_type>>(
-      "Beale's function"s, beale_function<fp_type>, Eigen::Vector2d(1.0, 1.0),
-      Eigen::Vector2d(3.0, 0.5)));
   helper.emplace_back(std::make_shared<minimizer_helper<fp_type>>(
       "Wood's function"s, wood_function<fp_type>,
       Eigen::Vector4d(-3.0, -1.0, -3.0, -1.0),

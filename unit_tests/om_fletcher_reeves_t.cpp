@@ -23,16 +23,24 @@ BOOST_AUTO_TEST_CASE(fletcher_reeves_with_gs_default) {
 
   auto helper = create_rao_test_collection<double>();
 
+#define _DEBUG_
+
 #ifdef _DEBUG_
   std::cout << "\n\n";
   std::cout << "Running Rao tests.... \n";
 #endif
-  auto golden_section = golden_section_method<double>{range<double>{0.0, 1.0}};
+  auto golden_section =
+      golden_section_method<double>{range<double>{0.0, 1.0}, 1.0e-7};
+  std::size_t multi_max_iters = 10000;
   auto multi_dim_method = fletcher_reeves_method<double>{
-      golden_section, 300, 1.0e-4, 1.0e-4, 1.0e-4};
-  double tol = 1.0e-4;
+      golden_section, multi_max_iters, 1.0e-7, 1.0e-7, 1.0e-7};
+  double tol = 1.0e-3;
   for (auto const &h : helper) {
     auto result = multi_dim_method.minimize(h->objective, h->guess);
+    const auto &expected_min = h->minimizer;
+    const auto &found_min = std::get<0>(result);
+    BOOST_CHECK_LE((expected_min - found_min).norm(), tol);
+    BOOST_CHECK_LT(std::get<2>(result), multi_max_iters);
 
 #ifdef _DEBUG_
     std::cout << "FUNCTION NAME: " << h->name << "\n";
