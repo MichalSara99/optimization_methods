@@ -144,6 +144,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+
+# Convenience name for target.
+fletcher_reeves_test: unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+
+.PHONY : fletcher_reeves_test
+
+# fast build rule for target.
+fletcher_reeves_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/build
+.PHONY : fletcher_reeves_test/fast
+
+# Convenience name for target.
 unit_tests/CMakeFiles/powell_test.dir/rule:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/powell_test.dir/rule
 .PHONY : unit_tests/CMakeFiles/powell_test.dir/rule
@@ -272,6 +287,33 @@ om_fibonacci_t.cpp.s:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/fibonacci_test.dir/build.make unit_tests/CMakeFiles/fibonacci_test.dir/om_fibonacci_t.cpp.s
 .PHONY : om_fibonacci_t.cpp.s
 
+om_fletcher_reeves_t.o: om_fletcher_reeves_t.cpp.o
+
+.PHONY : om_fletcher_reeves_t.o
+
+# target to build an object file
+om_fletcher_reeves_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o
+.PHONY : om_fletcher_reeves_t.cpp.o
+
+om_fletcher_reeves_t.i: om_fletcher_reeves_t.cpp.i
+
+.PHONY : om_fletcher_reeves_t.i
+
+# target to preprocess a source file
+om_fletcher_reeves_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.i
+.PHONY : om_fletcher_reeves_t.cpp.i
+
+om_fletcher_reeves_t.s: om_fletcher_reeves_t.cpp.s
+
+.PHONY : om_fletcher_reeves_t.s
+
+# target to generate assembly for a file
+om_fletcher_reeves_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.s
+.PHONY : om_fletcher_reeves_t.cpp.s
+
 om_golden_section_t.o: om_golden_section_t.cpp.o
 
 .PHONY : om_golden_section_t.o
@@ -362,6 +404,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... package_source"
+	@echo "... fletcher_reeves_test"
 	@echo "... powell_test"
 	@echo "... fibonacci_test"
 	@echo "... golden_section_test"
@@ -375,6 +418,9 @@ help:
 	@echo "... om_fibonacci_t.o"
 	@echo "... om_fibonacci_t.i"
 	@echo "... om_fibonacci_t.s"
+	@echo "... om_fletcher_reeves_t.o"
+	@echo "... om_fletcher_reeves_t.i"
+	@echo "... om_fletcher_reeves_t.s"
 	@echo "... om_golden_section_t.o"
 	@echo "... om_golden_section_t.i"
 	@echo "... om_golden_section_t.s"

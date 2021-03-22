@@ -11,7 +11,7 @@
 #define BOOST_TEST_DYN_LINK
 #include <boost/test/unit_test.hpp>
 
-using namespace om_line_methods;
+using namespace om_unconstrained_methods::om_line_methods;
 using om_utilities::range;
 
 BOOST_AUTO_TEST_SUITE()

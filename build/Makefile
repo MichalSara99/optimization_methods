@@ -534,6 +534,19 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
+# Target rules for targets named fletcher_reeves_test
+
+# Build rule for target.
+fletcher_reeves_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fletcher_reeves_test
+.PHONY : fletcher_reeves_test
+
+# fast build rule for target.
+fletcher_reeves_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/build
+.PHONY : fletcher_reeves_test/fast
+
+#=============================================================================
 # Target rules for targets named powell_test
 
 # Build rule for target.
@@ -669,6 +682,7 @@ help:
 	@echo "... optimization_methods"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
+	@echo "... fletcher_reeves_test"
 	@echo "... powell_test"
 	@echo "... fibonacci_test"
 	@echo "... golden_section_test"

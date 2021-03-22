@@ -7,6 +7,7 @@
 #include "om_golden_section.hpp"
 #include "om_powell.hpp"
 
+namespace om_unconstrained_methods {
 namespace om_line_methods {} // namespace om_line_methods
-
+} // namespace om_unconstrained_methods
 #endif /// OM_LINE_METHODS

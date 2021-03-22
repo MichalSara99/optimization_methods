@@ -9,9 +9,11 @@
 #include <complex>
 #include <functional>
 #include <map>
+#include <memory>
 #include <vector>
 
 namespace om_types {
+template <typename T> using sptr_t = std::shared_ptr<T>;
 
 template <typename T> using vector_arg_t = Eigen::Matrix<T, Eigen::Dynamic, 1>;
 

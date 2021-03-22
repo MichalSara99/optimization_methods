@@ -7,6 +7,8 @@
 #include <limits>
 #include <type_traits>
 
+namespace om_unconstrained_methods {
+
 namespace om_line_methods {
 
 using om_types::f_scalar_t;
@@ -78,5 +80,5 @@ public:
   }
 };
 } // namespace om_line_methods
-
+} // namespace om_unconstrained_methods
 #endif /// OM_GOLDEN_SECTION

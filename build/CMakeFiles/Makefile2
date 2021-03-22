@@ -103,6 +103,7 @@ clean: unit_tests/clean
 # Directory level rules for directory unit_tests
 
 # Recursive "all" directory target.
+unit_tests/all: unit_tests/CMakeFiles/fletcher_reeves_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/powell_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/fibonacci_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/golden_section_test.dir/all
@@ -117,6 +118,7 @@ unit_tests/preinstall:
 .PHONY : unit_tests/preinstall
 
 # Recursive "clean" directory target.
+unit_tests/clean: unit_tests/CMakeFiles/fletcher_reeves_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/powell_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/fibonacci_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/golden_section_test.dir/clean
@@ -834,7 +836,7 @@ CMakeFiles/ContinuousMemCheck.dir/clean:
 CMakeFiles/optimization_methods_x64.dir/all:
 	$(MAKE) -f CMakeFiles/optimization_methods_x64.dir/build.make CMakeFiles/optimization_methods_x64.dir/depend
 	$(MAKE) -f CMakeFiles/optimization_methods_x64.dir/build.make CMakeFiles/optimization_methods_x64.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=9,10 "Built target optimization_methods_x64"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=11,12 "Built target optimization_methods_x64"
 .PHONY : CMakeFiles/optimization_methods_x64.dir/all
 
 # Build rule for subdir invocation for target.
@@ -861,7 +863,7 @@ CMakeFiles/optimization_methods_x64.dir/clean:
 CMakeFiles/optimization_methods.dir/all:
 	$(MAKE) -f CMakeFiles/optimization_methods.dir/build.make CMakeFiles/optimization_methods.dir/depend
 	$(MAKE) -f CMakeFiles/optimization_methods.dir/build.make CMakeFiles/optimization_methods.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=7,8 "Built target optimization_methods"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=9,10 "Built target optimization_methods"
 .PHONY : CMakeFiles/optimization_methods.dir/all
 
 # Build rule for subdir invocation for target.
@@ -936,13 +938,40 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
+# Target rules for target unit_tests/CMakeFiles/fletcher_reeves_test.dir
+
+# All Build rule for target.
+unit_tests/CMakeFiles/fletcher_reeves_test.dir/all: CMakeFiles/optimization_methods.dir/all
+	$(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/depend
+	$(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=5,6 "Built target fletcher_reeves_test"
+.PHONY : unit_tests/CMakeFiles/fletcher_reeves_test.dir/all
+
+# Build rule for subdir invocation for target.
+unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/fletcher_reeves_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles 0
+.PHONY : unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+
+# Convenience name for target.
+fletcher_reeves_test: unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+
+.PHONY : fletcher_reeves_test
+
+# clean rule for target.
+unit_tests/CMakeFiles/fletcher_reeves_test.dir/clean:
+	$(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/clean
+.PHONY : unit_tests/CMakeFiles/fletcher_reeves_test.dir/clean
+
+#=============================================================================
 # Target rules for target unit_tests/CMakeFiles/powell_test.dir
 
 # All Build rule for target.
 unit_tests/CMakeFiles/powell_test.dir/all: CMakeFiles/optimization_methods.dir/all
 	$(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/depend
 	$(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=11,12 "Built target powell_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=13,14 "Built target powell_test"
 .PHONY : unit_tests/CMakeFiles/powell_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -996,7 +1025,7 @@ unit_tests/CMakeFiles/fibonacci_test.dir/clean:
 unit_tests/CMakeFiles/golden_section_test.dir/all: CMakeFiles/optimization_methods.dir/all
 	$(MAKE) -f unit_tests/CMakeFiles/golden_section_test.dir/build.make unit_tests/CMakeFiles/golden_section_test.dir/depend
 	$(MAKE) -f unit_tests/CMakeFiles/golden_section_test.dir/build.make unit_tests/CMakeFiles/golden_section_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=5,6 "Built target golden_section_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=7,8 "Built target golden_section_test"
 .PHONY : unit_tests/CMakeFiles/golden_section_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1050,7 +1079,7 @@ unit_tests/CMakeFiles/brent_test.dir/clean:
 unit_tests/CMakeFiles/utilities_test.dir/all: CMakeFiles/optimization_methods.dir/all
 	$(MAKE) -f unit_tests/CMakeFiles/utilities_test.dir/build.make unit_tests/CMakeFiles/utilities_test.dir/depend
 	$(MAKE) -f unit_tests/CMakeFiles/utilities_test.dir/build.make unit_tests/CMakeFiles/utilities_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=13,14 "Built target utilities_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=15,16 "Built target utilities_test"
 .PHONY : unit_tests/CMakeFiles/utilities_test.dir/all
 
 # Build rule for subdir invocation for target.

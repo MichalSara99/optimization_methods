@@ -9,6 +9,8 @@
 #include "utilities/om_types.hpp"
 #include "utilities/om_utilities.hpp"
 
+namespace om_unconstrained_methods {
+
 namespace om_line_methods {
 
 using om_common::closest_to;
@@ -214,5 +216,5 @@ public:
 };
 
 } // namespace om_line_methods
-
+} // namespace om_unconstrained_methods
 #endif // OM_POWELL
