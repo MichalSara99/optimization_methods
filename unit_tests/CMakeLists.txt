@@ -13,6 +13,10 @@ add_executable(fibonacci_test ${TEST_SOURCES}/om_fibonacci_t)
 add_executable(brent_test ${TEST_SOURCES}/om_brent_t)
 add_executable(powell_test ${TEST_SOURCES}/om_powell_t)
 add_executable(fletcher_reeves_test ${TEST_SOURCES}/om_fletcher_reeves_t)
+add_executable(polak_ribiere_test ${TEST_SOURCES}/om_polak_ribiere_t)
+add_executable(hestenes_stiefel_test ${TEST_SOURCES}/om_hestenes_stiefel_t)
+add_executable(davidon_fletcher_powell_test ${TEST_SOURCES}/om_davidon_fletcher_powell_t)
+add_executable(broyden_fletcher_goldfarb_shanno_test ${TEST_SOURCES}/om_broyden_fletcher_goldfarb_shanno_t)
 
 target_link_libraries(utilities_test ${TEST_LIBS} ${Boost_LIBRARIES})
 target_link_libraries(golden_section_test ${TEST_LIBS} ${Boost_LIBRARIES})
@@ -20,6 +24,10 @@ target_link_libraries(fibonacci_test ${TEST_LIBS} ${Boost_LIBRARIES})
 target_link_libraries(brent_test ${TEST_LIBS} ${Boost_LIBRARIES})
 target_link_libraries(powell_test ${TEST_LIBS} ${Boost_LIBRARIES})
 target_link_libraries(fletcher_reeves_test ${TEST_LIBS} ${Boost_LIBRARIES})
+target_link_libraries(polak_ribiere_test ${TEST_LIBS} ${Boost_LIBRARIES})
+target_link_libraries(hestenes_stiefel_test ${TEST_LIBS} ${Boost_LIBRARIES})
+target_link_libraries(davidon_fletcher_powell_test ${TEST_LIBS} ${Boost_LIBRARIES})
+target_link_libraries(broyden_fletcher_goldfarb_shanno_test ${TEST_LIBS} ${Boost_LIBRARIES})
 
 add_test(om_utilities_t utilities_test COMMAND utilities_test)
 add_test(om_golden_section_t golden_section_test COMMAND golden_section_test)
@@ -27,7 +35,7 @@ add_test(om_fibonacci_t fibonacci_test COMMAND fibonacci_test)
 add_test(om_brent_t brent_test COMMAND brent_test)
 add_test(om_powell_t powell_test COMMAND powell_test)
 add_test(om_fletcher_reeves_t fletcher_reeves_test COMMAND fletcher_reeves_test)
-
-
-
-
+add_test(om_polak_ribiere_t polak_ribiere_test COMMAND polak_ribiere_test)
+add_test(om_hestenes_stiefel_t hestenes_stiefel_test COMMAND hestenes_stiefel_test)
+add_test(om_davidon_fletcher_powell_t davidon_fletcher_powell_test COMMAND davidon_fletcher_powell_test)
+add_test(om_broyden_fletcher_goldfarb_shanno_t broyden_fletcher_goldfarb_shanno_test COMMAND broyden_fletcher_goldfarb_shanno_test)

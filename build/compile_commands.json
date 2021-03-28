@@ -11,13 +11,8 @@
 },
 {
   "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
-  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_fletcher_reeves_t.cpp",
-  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_fletcher_reeves_t.cpp"
-},
-{
-  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
-  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/powell_test.dir/om_powell_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_powell_t.cpp",
-  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_powell_t.cpp"
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/golden_section_test.dir/om_golden_section_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_golden_section_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_golden_section_t.cpp"
 },
 {
   "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
@@ -26,8 +21,8 @@
 },
 {
   "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
-  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/golden_section_test.dir/om_golden_section_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_golden_section_t.cpp",
-  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_golden_section_t.cpp"
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/powell_test.dir/om_powell_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_powell_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_powell_t.cpp"
 },
 {
   "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
@@ -36,7 +31,32 @@
 },
 {
   "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_polak_ribiere_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_polak_ribiere_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_hestenes_stiefel_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_hestenes_stiefel_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
   "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/utilities_test.dir/om_utilities_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_utilities_t.cpp",
   "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_utilities_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_fletcher_reeves_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_fletcher_reeves_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_davidon_fletcher_powell_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_davidon_fletcher_powell_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_broyden_fletcher_goldfarb_shanno_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_broyden_fletcher_goldfarb_shanno_t.cpp"
 }
 ]

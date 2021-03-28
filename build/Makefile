@@ -534,30 +534,17 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named fletcher_reeves_test
+# Target rules for targets named golden_section_test
 
 # Build rule for target.
-fletcher_reeves_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 fletcher_reeves_test
-.PHONY : fletcher_reeves_test
+golden_section_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 golden_section_test
+.PHONY : golden_section_test
 
 # fast build rule for target.
-fletcher_reeves_test/fast:
-	$(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/build
-.PHONY : fletcher_reeves_test/fast
-
-#=============================================================================
-# Target rules for targets named powell_test
-
-# Build rule for target.
-powell_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 powell_test
-.PHONY : powell_test
-
-# fast build rule for target.
-powell_test/fast:
-	$(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/build
-.PHONY : powell_test/fast
+golden_section_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/golden_section_test.dir/build.make unit_tests/CMakeFiles/golden_section_test.dir/build
+.PHONY : golden_section_test/fast
 
 #=============================================================================
 # Target rules for targets named fibonacci_test
@@ -573,17 +560,17 @@ fibonacci_test/fast:
 .PHONY : fibonacci_test/fast
 
 #=============================================================================
-# Target rules for targets named golden_section_test
+# Target rules for targets named powell_test
 
 # Build rule for target.
-golden_section_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 golden_section_test
-.PHONY : golden_section_test
+powell_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 powell_test
+.PHONY : powell_test
 
 # fast build rule for target.
-golden_section_test/fast:
-	$(MAKE) -f unit_tests/CMakeFiles/golden_section_test.dir/build.make unit_tests/CMakeFiles/golden_section_test.dir/build
-.PHONY : golden_section_test/fast
+powell_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/build
+.PHONY : powell_test/fast
 
 #=============================================================================
 # Target rules for targets named brent_test
@@ -599,6 +586,32 @@ brent_test/fast:
 .PHONY : brent_test/fast
 
 #=============================================================================
+# Target rules for targets named polak_ribiere_test
+
+# Build rule for target.
+polak_ribiere_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 polak_ribiere_test
+.PHONY : polak_ribiere_test
+
+# fast build rule for target.
+polak_ribiere_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/polak_ribiere_test.dir/build.make unit_tests/CMakeFiles/polak_ribiere_test.dir/build
+.PHONY : polak_ribiere_test/fast
+
+#=============================================================================
+# Target rules for targets named hestenes_stiefel_test
+
+# Build rule for target.
+hestenes_stiefel_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hestenes_stiefel_test
+.PHONY : hestenes_stiefel_test
+
+# fast build rule for target.
+hestenes_stiefel_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/hestenes_stiefel_test.dir/build.make unit_tests/CMakeFiles/hestenes_stiefel_test.dir/build
+.PHONY : hestenes_stiefel_test/fast
+
+#=============================================================================
 # Target rules for targets named utilities_test
 
 # Build rule for target.
@@ -610,6 +623,45 @@ utilities_test: cmake_check_build_system
 utilities_test/fast:
 	$(MAKE) -f unit_tests/CMakeFiles/utilities_test.dir/build.make unit_tests/CMakeFiles/utilities_test.dir/build
 .PHONY : utilities_test/fast
+
+#=============================================================================
+# Target rules for targets named fletcher_reeves_test
+
+# Build rule for target.
+fletcher_reeves_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fletcher_reeves_test
+.PHONY : fletcher_reeves_test
+
+# fast build rule for target.
+fletcher_reeves_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/build
+.PHONY : fletcher_reeves_test/fast
+
+#=============================================================================
+# Target rules for targets named davidon_fletcher_powell_test
+
+# Build rule for target.
+davidon_fletcher_powell_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 davidon_fletcher_powell_test
+.PHONY : davidon_fletcher_powell_test
+
+# fast build rule for target.
+davidon_fletcher_powell_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/build.make unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/build
+.PHONY : davidon_fletcher_powell_test/fast
+
+#=============================================================================
+# Target rules for targets named broyden_fletcher_goldfarb_shanno_test
+
+# Build rule for target.
+broyden_fletcher_goldfarb_shanno_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 broyden_fletcher_goldfarb_shanno_test
+.PHONY : broyden_fletcher_goldfarb_shanno_test
+
+# fast build rule for target.
+broyden_fletcher_goldfarb_shanno_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build.make unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build
+.PHONY : broyden_fletcher_goldfarb_shanno_test/fast
 
 main.o: main.cpp.o
 
@@ -682,12 +734,16 @@ help:
 	@echo "... optimization_methods"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
-	@echo "... fletcher_reeves_test"
-	@echo "... powell_test"
-	@echo "... fibonacci_test"
 	@echo "... golden_section_test"
+	@echo "... fibonacci_test"
+	@echo "... powell_test"
 	@echo "... brent_test"
+	@echo "... polak_ribiere_test"
+	@echo "... hestenes_stiefel_test"
 	@echo "... utilities_test"
+	@echo "... fletcher_reeves_test"
+	@echo "... davidon_fletcher_powell_test"
+	@echo "... broyden_fletcher_goldfarb_shanno_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

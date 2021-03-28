@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/xsarm06/Development/cpp_projects/optimization_methods_x
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -67,16 +78,16 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && /usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target package
+package/fast: package
 
-.PHONY : test/fast
+.PHONY : package/fast
 
 # Special rule for the target package_source
 package_source:
@@ -89,27 +100,16 @@ package_source/fast: package_source
 
 .PHONY : package_source/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target test
+test/fast: test
 
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && /usr/bin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-
-.PHONY : package/fast
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -144,34 +144,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule:
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
-.PHONY : unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+unit_tests/CMakeFiles/golden_section_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/golden_section_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/golden_section_test.dir/rule
 
 # Convenience name for target.
-fletcher_reeves_test: unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+golden_section_test: unit_tests/CMakeFiles/golden_section_test.dir/rule
 
-.PHONY : fletcher_reeves_test
+.PHONY : golden_section_test
 
 # fast build rule for target.
-fletcher_reeves_test/fast:
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/build
-.PHONY : fletcher_reeves_test/fast
-
-# Convenience name for target.
-unit_tests/CMakeFiles/powell_test.dir/rule:
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/powell_test.dir/rule
-.PHONY : unit_tests/CMakeFiles/powell_test.dir/rule
-
-# Convenience name for target.
-powell_test: unit_tests/CMakeFiles/powell_test.dir/rule
-
-.PHONY : powell_test
-
-# fast build rule for target.
-powell_test/fast:
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/build
-.PHONY : powell_test/fast
+golden_section_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/golden_section_test.dir/build.make unit_tests/CMakeFiles/golden_section_test.dir/build
+.PHONY : golden_section_test/fast
 
 # Convenience name for target.
 unit_tests/CMakeFiles/fibonacci_test.dir/rule:
@@ -189,19 +174,19 @@ fibonacci_test/fast:
 .PHONY : fibonacci_test/fast
 
 # Convenience name for target.
-unit_tests/CMakeFiles/golden_section_test.dir/rule:
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/golden_section_test.dir/rule
-.PHONY : unit_tests/CMakeFiles/golden_section_test.dir/rule
+unit_tests/CMakeFiles/powell_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/powell_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/powell_test.dir/rule
 
 # Convenience name for target.
-golden_section_test: unit_tests/CMakeFiles/golden_section_test.dir/rule
+powell_test: unit_tests/CMakeFiles/powell_test.dir/rule
 
-.PHONY : golden_section_test
+.PHONY : powell_test
 
 # fast build rule for target.
-golden_section_test/fast:
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/golden_section_test.dir/build.make unit_tests/CMakeFiles/golden_section_test.dir/build
-.PHONY : golden_section_test/fast
+powell_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/build
+.PHONY : powell_test/fast
 
 # Convenience name for target.
 unit_tests/CMakeFiles/brent_test.dir/rule:
@@ -219,6 +204,36 @@ brent_test/fast:
 .PHONY : brent_test/fast
 
 # Convenience name for target.
+unit_tests/CMakeFiles/polak_ribiere_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/polak_ribiere_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/polak_ribiere_test.dir/rule
+
+# Convenience name for target.
+polak_ribiere_test: unit_tests/CMakeFiles/polak_ribiere_test.dir/rule
+
+.PHONY : polak_ribiere_test
+
+# fast build rule for target.
+polak_ribiere_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/polak_ribiere_test.dir/build.make unit_tests/CMakeFiles/polak_ribiere_test.dir/build
+.PHONY : polak_ribiere_test/fast
+
+# Convenience name for target.
+unit_tests/CMakeFiles/hestenes_stiefel_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/hestenes_stiefel_test.dir/rule
+
+# Convenience name for target.
+hestenes_stiefel_test: unit_tests/CMakeFiles/hestenes_stiefel_test.dir/rule
+
+.PHONY : hestenes_stiefel_test
+
+# fast build rule for target.
+hestenes_stiefel_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/hestenes_stiefel_test.dir/build.make unit_tests/CMakeFiles/hestenes_stiefel_test.dir/build
+.PHONY : hestenes_stiefel_test/fast
+
+# Convenience name for target.
 unit_tests/CMakeFiles/utilities_test.dir/rule:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/utilities_test.dir/rule
 .PHONY : unit_tests/CMakeFiles/utilities_test.dir/rule
@@ -232,6 +247,51 @@ utilities_test: unit_tests/CMakeFiles/utilities_test.dir/rule
 utilities_test/fast:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/utilities_test.dir/build.make unit_tests/CMakeFiles/utilities_test.dir/build
 .PHONY : utilities_test/fast
+
+# Convenience name for target.
+unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+
+# Convenience name for target.
+fletcher_reeves_test: unit_tests/CMakeFiles/fletcher_reeves_test.dir/rule
+
+.PHONY : fletcher_reeves_test
+
+# fast build rule for target.
+fletcher_reeves_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/fletcher_reeves_test.dir/build.make unit_tests/CMakeFiles/fletcher_reeves_test.dir/build
+.PHONY : fletcher_reeves_test/fast
+
+# Convenience name for target.
+unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/rule
+
+# Convenience name for target.
+davidon_fletcher_powell_test: unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/rule
+
+.PHONY : davidon_fletcher_powell_test
+
+# fast build rule for target.
+davidon_fletcher_powell_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/build.make unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/build
+.PHONY : davidon_fletcher_powell_test/fast
+
+# Convenience name for target.
+unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/rule
+
+# Convenience name for target.
+broyden_fletcher_goldfarb_shanno_test: unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/rule
+
+.PHONY : broyden_fletcher_goldfarb_shanno_test
+
+# fast build rule for target.
+broyden_fletcher_goldfarb_shanno_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build.make unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build
+.PHONY : broyden_fletcher_goldfarb_shanno_test/fast
 
 om_brent_t.o: om_brent_t.cpp.o
 
@@ -259,6 +319,60 @@ om_brent_t.s: om_brent_t.cpp.s
 om_brent_t.cpp.s:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/brent_test.dir/build.make unit_tests/CMakeFiles/brent_test.dir/om_brent_t.cpp.s
 .PHONY : om_brent_t.cpp.s
+
+om_broyden_fletcher_goldfarb_shanno_t.o: om_broyden_fletcher_goldfarb_shanno_t.cpp.o
+
+.PHONY : om_broyden_fletcher_goldfarb_shanno_t.o
+
+# target to build an object file
+om_broyden_fletcher_goldfarb_shanno_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build.make unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o
+.PHONY : om_broyden_fletcher_goldfarb_shanno_t.cpp.o
+
+om_broyden_fletcher_goldfarb_shanno_t.i: om_broyden_fletcher_goldfarb_shanno_t.cpp.i
+
+.PHONY : om_broyden_fletcher_goldfarb_shanno_t.i
+
+# target to preprocess a source file
+om_broyden_fletcher_goldfarb_shanno_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build.make unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.i
+.PHONY : om_broyden_fletcher_goldfarb_shanno_t.cpp.i
+
+om_broyden_fletcher_goldfarb_shanno_t.s: om_broyden_fletcher_goldfarb_shanno_t.cpp.s
+
+.PHONY : om_broyden_fletcher_goldfarb_shanno_t.s
+
+# target to generate assembly for a file
+om_broyden_fletcher_goldfarb_shanno_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build.make unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.s
+.PHONY : om_broyden_fletcher_goldfarb_shanno_t.cpp.s
+
+om_davidon_fletcher_powell_t.o: om_davidon_fletcher_powell_t.cpp.o
+
+.PHONY : om_davidon_fletcher_powell_t.o
+
+# target to build an object file
+om_davidon_fletcher_powell_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/build.make unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o
+.PHONY : om_davidon_fletcher_powell_t.cpp.o
+
+om_davidon_fletcher_powell_t.i: om_davidon_fletcher_powell_t.cpp.i
+
+.PHONY : om_davidon_fletcher_powell_t.i
+
+# target to preprocess a source file
+om_davidon_fletcher_powell_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/build.make unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.i
+.PHONY : om_davidon_fletcher_powell_t.cpp.i
+
+om_davidon_fletcher_powell_t.s: om_davidon_fletcher_powell_t.cpp.s
+
+.PHONY : om_davidon_fletcher_powell_t.s
+
+# target to generate assembly for a file
+om_davidon_fletcher_powell_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/build.make unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.s
+.PHONY : om_davidon_fletcher_powell_t.cpp.s
 
 om_fibonacci_t.o: om_fibonacci_t.cpp.o
 
@@ -341,6 +455,60 @@ om_golden_section_t.cpp.s:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/golden_section_test.dir/build.make unit_tests/CMakeFiles/golden_section_test.dir/om_golden_section_t.cpp.s
 .PHONY : om_golden_section_t.cpp.s
 
+om_hestenes_stiefel_t.o: om_hestenes_stiefel_t.cpp.o
+
+.PHONY : om_hestenes_stiefel_t.o
+
+# target to build an object file
+om_hestenes_stiefel_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/hestenes_stiefel_test.dir/build.make unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o
+.PHONY : om_hestenes_stiefel_t.cpp.o
+
+om_hestenes_stiefel_t.i: om_hestenes_stiefel_t.cpp.i
+
+.PHONY : om_hestenes_stiefel_t.i
+
+# target to preprocess a source file
+om_hestenes_stiefel_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/hestenes_stiefel_test.dir/build.make unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.i
+.PHONY : om_hestenes_stiefel_t.cpp.i
+
+om_hestenes_stiefel_t.s: om_hestenes_stiefel_t.cpp.s
+
+.PHONY : om_hestenes_stiefel_t.s
+
+# target to generate assembly for a file
+om_hestenes_stiefel_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/hestenes_stiefel_test.dir/build.make unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.s
+.PHONY : om_hestenes_stiefel_t.cpp.s
+
+om_polak_ribiere_t.o: om_polak_ribiere_t.cpp.o
+
+.PHONY : om_polak_ribiere_t.o
+
+# target to build an object file
+om_polak_ribiere_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/polak_ribiere_test.dir/build.make unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o
+.PHONY : om_polak_ribiere_t.cpp.o
+
+om_polak_ribiere_t.i: om_polak_ribiere_t.cpp.i
+
+.PHONY : om_polak_ribiere_t.i
+
+# target to preprocess a source file
+om_polak_ribiere_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/polak_ribiere_test.dir/build.make unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.i
+.PHONY : om_polak_ribiere_t.cpp.i
+
+om_polak_ribiere_t.s: om_polak_ribiere_t.cpp.s
+
+.PHONY : om_polak_ribiere_t.s
+
+# target to generate assembly for a file
+om_polak_ribiere_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/polak_ribiere_test.dir/build.make unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.s
+.PHONY : om_polak_ribiere_t.cpp.s
+
 om_powell_t.o: om_powell_t.cpp.o
 
 .PHONY : om_powell_t.o
@@ -401,20 +569,30 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... package_source"
-	@echo "... fletcher_reeves_test"
-	@echo "... powell_test"
-	@echo "... fibonacci_test"
-	@echo "... golden_section_test"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... package"
+	@echo "... golden_section_test"
+	@echo "... fibonacci_test"
+	@echo "... powell_test"
 	@echo "... brent_test"
+	@echo "... polak_ribiere_test"
+	@echo "... hestenes_stiefel_test"
 	@echo "... utilities_test"
+	@echo "... fletcher_reeves_test"
+	@echo "... davidon_fletcher_powell_test"
+	@echo "... broyden_fletcher_goldfarb_shanno_test"
+	@echo "... package_source"
+	@echo "... test"
 	@echo "... om_brent_t.o"
 	@echo "... om_brent_t.i"
 	@echo "... om_brent_t.s"
+	@echo "... om_broyden_fletcher_goldfarb_shanno_t.o"
+	@echo "... om_broyden_fletcher_goldfarb_shanno_t.i"
+	@echo "... om_broyden_fletcher_goldfarb_shanno_t.s"
+	@echo "... om_davidon_fletcher_powell_t.o"
+	@echo "... om_davidon_fletcher_powell_t.i"
+	@echo "... om_davidon_fletcher_powell_t.s"
 	@echo "... om_fibonacci_t.o"
 	@echo "... om_fibonacci_t.i"
 	@echo "... om_fibonacci_t.s"
@@ -424,6 +602,12 @@ help:
 	@echo "... om_golden_section_t.o"
 	@echo "... om_golden_section_t.i"
 	@echo "... om_golden_section_t.s"
+	@echo "... om_hestenes_stiefel_t.o"
+	@echo "... om_hestenes_stiefel_t.i"
+	@echo "... om_hestenes_stiefel_t.s"
+	@echo "... om_polak_ribiere_t.o"
+	@echo "... om_polak_ribiere_t.i"
+	@echo "... om_polak_ribiere_t.s"
 	@echo "... om_powell_t.o"
 	@echo "... om_powell_t.i"
 	@echo "... om_powell_t.s"
