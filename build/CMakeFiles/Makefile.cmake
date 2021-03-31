@@ -109,4 +109,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "unit_tests/CMakeFiles/fletcher_reeves_test.dir/DependInfo.cmake"
   "unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/DependInfo.cmake"
   "unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/DependInfo.cmake"
+  "unit_tests/CMakeFiles/steepest_descent_test.dir/DependInfo.cmake"
   )

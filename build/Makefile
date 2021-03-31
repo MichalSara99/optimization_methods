@@ -663,6 +663,19 @@ broyden_fletcher_goldfarb_shanno_test/fast:
 	$(MAKE) -f unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build.make unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build
 .PHONY : broyden_fletcher_goldfarb_shanno_test/fast
 
+#=============================================================================
+# Target rules for targets named steepest_descent_test
+
+# Build rule for target.
+steepest_descent_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 steepest_descent_test
+.PHONY : steepest_descent_test
+
+# fast build rule for target.
+steepest_descent_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/build
+.PHONY : steepest_descent_test/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -744,6 +757,7 @@ help:
 	@echo "... fletcher_reeves_test"
 	@echo "... davidon_fletcher_powell_test"
 	@echo "... broyden_fletcher_goldfarb_shanno_test"
+	@echo "... steepest_descent_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

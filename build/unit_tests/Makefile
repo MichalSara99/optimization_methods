@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
@@ -99,17 +110,6 @@ package_source:
 package_source/fast: package_source
 
 .PHONY : package_source/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -292,6 +292,21 @@ broyden_fletcher_goldfarb_shanno_test: unit_tests/CMakeFiles/broyden_fletcher_go
 broyden_fletcher_goldfarb_shanno_test/fast:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build.make unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/build
 .PHONY : broyden_fletcher_goldfarb_shanno_test/fast
+
+# Convenience name for target.
+unit_tests/CMakeFiles/steepest_descent_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+
+# Convenience name for target.
+steepest_descent_test: unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+
+.PHONY : steepest_descent_test
+
+# fast build rule for target.
+steepest_descent_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/build
+.PHONY : steepest_descent_test/fast
 
 om_brent_t.o: om_brent_t.cpp.o
 
@@ -536,6 +551,33 @@ om_powell_t.cpp.s:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/om_powell_t.cpp.s
 .PHONY : om_powell_t.cpp.s
 
+om_steepest_descent_t.o: om_steepest_descent_t.cpp.o
+
+.PHONY : om_steepest_descent_t.o
+
+# target to build an object file
+om_steepest_descent_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o
+.PHONY : om_steepest_descent_t.cpp.o
+
+om_steepest_descent_t.i: om_steepest_descent_t.cpp.i
+
+.PHONY : om_steepest_descent_t.i
+
+# target to preprocess a source file
+om_steepest_descent_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.i
+.PHONY : om_steepest_descent_t.cpp.i
+
+om_steepest_descent_t.s: om_steepest_descent_t.cpp.s
+
+.PHONY : om_steepest_descent_t.s
+
+# target to generate assembly for a file
+om_steepest_descent_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.s
+.PHONY : om_steepest_descent_t.cpp.s
+
 om_utilities_t.o: om_utilities_t.cpp.o
 
 .PHONY : om_utilities_t.o
@@ -571,6 +613,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... package"
 	@echo "... golden_section_test"
 	@echo "... fibonacci_test"
@@ -582,8 +625,8 @@ help:
 	@echo "... fletcher_reeves_test"
 	@echo "... davidon_fletcher_powell_test"
 	@echo "... broyden_fletcher_goldfarb_shanno_test"
+	@echo "... steepest_descent_test"
 	@echo "... package_source"
-	@echo "... test"
 	@echo "... om_brent_t.o"
 	@echo "... om_brent_t.i"
 	@echo "... om_brent_t.s"
@@ -611,6 +654,9 @@ help:
 	@echo "... om_powell_t.o"
 	@echo "... om_powell_t.i"
 	@echo "... om_powell_t.s"
+	@echo "... om_steepest_descent_t.o"
+	@echo "... om_steepest_descent_t.i"
+	@echo "... om_steepest_descent_t.s"
 	@echo "... om_utilities_t.o"
 	@echo "... om_utilities_t.i"
 	@echo "... om_utilities_t.s"
