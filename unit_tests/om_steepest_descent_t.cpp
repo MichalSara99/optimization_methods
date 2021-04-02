@@ -100,7 +100,7 @@ BOOST_AUTO_TEST_CASE(steepest_descent_with_b_default) {
   std::size_t multi_max_iters = 10000;
   auto multi_dim_method = steepest_descent_method<double>{
       brent, multi_max_iters, 1.0e-7, 1.0e-7, 1.0e-7};
-  double tol = 1.0e-2;
+  double tol = 1.0e-3;
   for (auto const &h : helper) {
     auto result = multi_dim_method.minimize(h->objective, h->guess);
     const auto &expected_min = h->minimizer;
