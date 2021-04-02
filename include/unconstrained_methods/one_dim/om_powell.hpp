@@ -20,7 +20,13 @@ using om_common::min_arg;
 using om_differentiation::divided_difference;
 using om_types::f_scalar_t;
 using om_utilities::range;
-
+/**
+ * @brief Powell method object
+ *
+ * @tparam fp_type fp_type is floating-point template parameter
+ * @tparam std::enable_if<
+ * std::is_floating_point<fp_type>::value>::type
+ */
 template <typename fp_type = double,
           typename = typename std::enable_if<
               std::is_floating_point<fp_type>::value>::type>
@@ -36,25 +42,48 @@ private:
 
 public:
   typedef fp_type value_type;
-
+  /**
+   * @brief Construct a new powell method object
+   *
+   * @param range range of the minimiser
+   * @param tolerance tolerance of the minimiser
+   * @param max_ites maximum number of iterations
+   */
   powell_method(range<fp_type> const &range, fp_type tolerance = 1e-5,
                 std::size_t max_ites = 1000)
       : range_{range}, max_iters_{max_ites}, tol_{tolerance} {
     step_ = step_prc_ * range.spread();
     max_step_ = max_step_prc_ * range.spread();
   }
-
+  /**
+   * @brief Construct a new powell method object
+   *
+   * @param range range of the minimiser
+   * @param step  size of the step of the minimiser
+   * @param max_step maximum size of the step of the minimiser
+   * @param tolerance tolerance of the minimiser
+   * @param max_ites maximum number of iterations
+   */
   powell_method(range<fp_type> const &range, fp_type step, fp_type max_step,
                 fp_type tolerance = 1e-5, std::size_t max_ites = 1000)
       : range_{range}, step_{step}, max_step_{max_step},
         max_iters_{max_ites}, tol_{tolerance} {}
 
   virtual ~powell_method() {}
-
+  /**
+   * @brief Copy constructor of a new powell method object
+   *
+   * @param copy
+   */
   powell_method(powell_method const &copy)
       : range_{copy.range_}, tol_{copy.tol_}, step_{copy.step_},
         max_step_{copy.max_step_} {}
-
+  /**
+   * @brief Assignment operator of a powell method object
+   *
+   * @param copy
+   * @return powell_method&
+   */
   powell_method &operator=(powell_method const &copy) {
     if (this != &copy) {
       range_ = copy.range_;
@@ -64,7 +93,12 @@ public:
     }
     return *this;
   }
-
+  /**
+   * @brief Functor of a powell method object
+   *
+   * @param fun objective function
+   * @return std::tuple<fp_type, fp_type, std::size_t, std::size_t>
+   */
   std::tuple<fp_type, fp_type, std::size_t, std::size_t>
   operator()(f_scalar_t<fp_type> &&fun) const {
 

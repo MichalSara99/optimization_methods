@@ -13,7 +13,13 @@ namespace om_line_methods {
 
 using om_types::f_scalar_t;
 using om_utilities::range;
-
+/**
+ * @brief Golden section method object
+ *
+ * @tparam fp_type fp_type is floating point template parameter
+ * @tparam std::enable_if<
+ * std::is_floating_point<fp_type>::value>::type
+ */
 template <typename fp_type = double,
           typename = typename std::enable_if<
               std::is_floating_point<fp_type>::value>::type>
@@ -27,17 +33,32 @@ private:
 
 public:
   typedef fp_type value_type;
-
+  /**
+   * @brief Construct a new golden section method object
+   *
+   * @param range range of the minimiser
+   * @param tolerance tolerance of minimiser
+   * @param max_iters maximum number of iterations
+   */
   golden_section_method(range<fp_type> const &range, fp_type tolerance = 1e-5,
                         std::size_t max_iters = 1000)
       : range_{range}, tol_{tolerance}, max_iters_{max_iters} {}
 
   virtual ~golden_section_method() {}
-
+  /**
+   * @brief Copy constructor of a golden section method object
+   *
+   * @param copy copy is the object which we want to make a copy of
+   */
   golden_section_method(golden_section_method const &copy)
       : range_{copy.range_}, tol_{copy.tol_}, max_iters_{copy.max_iters_},
         golden_section_{copy.golden_section_} {}
-
+  /**
+   * @brief Assignment operator of a golden section method object
+   *
+   * @param copy
+   * @return golden_section_method&
+   */
   golden_section_method &operator=(golden_section_method const &copy) {
     if (&copy != this) {
       range_ = copy.range_;
@@ -47,6 +68,12 @@ public:
     return *this;
   }
 
+  /**
+   * @brief Functor of a golden section method object
+   *
+   * @param fun objective function
+   * @return std::tuple<fp_type, fp_type, std::size_t, std::size_t>
+   */
   std::tuple<fp_type, fp_type, std::size_t, std::size_t>
   operator()(f_scalar_t<fp_type> &&fun) const {
 

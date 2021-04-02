@@ -17,7 +17,13 @@ using om_utilities::iqerp;
 using om_utilities::lerp;
 using om_utilities::range;
 using om_utilities::sign;
-
+/**
+ * @brief Brent method object
+ *
+ * @tparam fp_type fp_type id a floating-point template parameter
+ * @tparam std::enable_if<
+ * std::is_floating_point<fp_type>::value>::type
+ */
 template <typename fp_type = double,
           typename = typename std::enable_if<
               std::is_floating_point<fp_type>::value>::type>
@@ -29,16 +35,31 @@ private:
 
 public:
   typedef fp_type value_type;
-
+  /**
+   * @brief Construct a new brent method object
+   *
+   * @param range range of the minimiser
+   * @param tolerance tolerance of the minimiser
+   * @param max_iters maximum number of iterations
+   */
   brent_method(range<fp_type> const &range, fp_type tolerance = 1e-5,
                std::size_t max_iters = 1000)
       : range_{range}, tol_{tolerance}, max_iters_{max_iters} {}
 
   virtual ~brent_method() {}
-
+  /**
+   * @brief Copy constructor of a brent method object
+   *
+   * @param copy copy is the object which we want to make a copy of
+   */
   brent_method(brent_method const &copy)
       : range_{copy.range_}, tol_{copy.tol_}, max_iters_{copy.max_iters_} {}
-
+  /**
+   * @brief Assignment operator of a brent method object
+   *
+   * @param copy
+   * @return brent_method&
+   */
   brent_method &operator=(brent_method const &copy) {
     if (&copy != this) {
       range_ = copy.range_;
@@ -47,7 +68,12 @@ public:
     }
     return *this;
   }
-
+  /**
+   * @brief Functor of a brent method object
+   *
+   * @param fun objective function
+   * @return std::tuple<fp_type, fp_type, std::size_t, std::size_t>
+   */
   std::tuple<fp_type, fp_type, std::size_t, std::size_t>
   operator()(f_scalar_t<fp_type> &&fun) const {
 
