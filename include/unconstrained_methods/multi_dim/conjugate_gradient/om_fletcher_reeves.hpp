@@ -14,17 +14,37 @@ using om_differentiation::central_difference;
 using om_types::f_vector_t;
 using om_types::vector_arg_t;
 using om_types::vector_t;
-
+/**
+ * @brief Fletcher-Reeves method object
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ */
 template <typename fp_type = double>
 class fletcher_reeves_method : public conjugate_gradient_base<fp_type> {
 public:
+  /**
+   * @brief Construct a new fletcher reeves method object
+   *
+   * @param line_search_minimiser line method to be used in finding the
+   * minimiser
+   * @param max_iters maximum number of iterations
+   * @param arg_tol tolerance for stopping criteria
+   * @param grad_tol tolerance for gradient
+   * @param fun_tol tolerance for a value of objective function
+   */
   explicit fletcher_reeves_method(
       f_line_minimiser_t<fp_type> const &line_search_minimiser,
       std::size_t const &max_iters = 100, fp_type arg_tol = 1e-4,
       fp_type grad_tol = 1e-4, fp_type fun_tol = 1e-4)
       : conjugate_gradient_base<fp_type>{line_search_minimiser, max_iters,
                                          arg_tol, grad_tol, fun_tol} {}
-
+  /**
+   * @brief Function method that minimises the objective function
+   *
+   * @param objective objective function
+   * @param init_guess initial guess
+   * @return std::tuple<vector_t<fp_type>, fp_type, std::size_t>
+   */
   std::tuple<vector_t<fp_type>, fp_type, std::size_t>
   minimize(f_vector_t<fp_type> objective,
            vector_arg_t<fp_type> const &init_guess) const;
