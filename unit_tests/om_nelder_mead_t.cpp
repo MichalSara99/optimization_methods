@@ -14,7 +14,7 @@
 #include <boost/test/unit_test.hpp>
 
 using namespace om_unconstrained_methods::om_line_methods;
-using namespace om_unconstrained_methods::om_nelder_mead;
+using namespace om_unconstrained_methods::om_zero_order;
 using namespace om_test_helpers;
 
 BOOST_AUTO_TEST_SUITE(nelder_mead)
@@ -30,7 +30,7 @@ BOOST_AUTO_TEST_CASE(nelder_mead_default) {
   std::cout << "Running Rao tests.... \n";
 #endif
 
-  std::size_t multi_max_iters = 10000;
+  std::size_t multi_max_iters = 50000;
   auto multi_dim_method = nelder_mead_method<double>{multi_max_iters, 10e-8};
   double tol = 1.0e-2;
   for (auto const &h : helper) {

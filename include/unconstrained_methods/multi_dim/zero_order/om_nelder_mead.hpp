@@ -7,7 +7,7 @@
 
 namespace om_unconstrained_methods {
 
-namespace om_nelder_mead {
+namespace om_zero_order {
 
 using om_types::f_vector_t;
 using om_types::vector_arg_t;
@@ -86,10 +86,10 @@ public:
            vector_arg_t<fp_type> const &init_guess) const;
 };
 
-} // namespace om_nelder_mead
+} // namespace om_zero_order
 
 template <typename fp_type>
-void om_nelder_mead::nelder_mead_method<fp_type>::check_rhos() {
+void om_zero_order::nelder_mead_method<fp_type>::check_rhos() {
   assert((this->reflection_rho_ > 0.0));
   assert((this->expansion_rho_ > 1.0));
   assert(((this->contraction_rho_ >= 0.0) && (this->contraction_rho_ <= 0.5)));
@@ -98,7 +98,7 @@ void om_nelder_mead::nelder_mead_method<fp_type>::check_rhos() {
 
 template <typename fp_type>
 std::tuple<vector_t<fp_type>, fp_type, std::size_t>
-om_nelder_mead::nelder_mead_method<fp_type>::minimize(
+om_zero_order::nelder_mead_method<fp_type>::minimize(
     f_vector_t<fp_type> objective,
     vector_arg_t<fp_type> const &init_guess) const {
 

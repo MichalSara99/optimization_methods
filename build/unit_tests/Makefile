@@ -144,6 +144,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+unit_tests/CMakeFiles/powell_conjugate_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/powell_conjugate_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/powell_conjugate_test.dir/rule
+
+# Convenience name for target.
+powell_conjugate_test: unit_tests/CMakeFiles/powell_conjugate_test.dir/rule
+
+.PHONY : powell_conjugate_test
+
+# fast build rule for target.
+powell_conjugate_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/powell_conjugate_test.dir/build.make unit_tests/CMakeFiles/powell_conjugate_test.dir/build
+.PHONY : powell_conjugate_test/fast
+
+# Convenience name for target.
 unit_tests/CMakeFiles/golden_section_test.dir/rule:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/golden_section_test.dir/rule
 .PHONY : unit_tests/CMakeFiles/golden_section_test.dir/rule
@@ -566,6 +581,33 @@ om_polak_ribiere_t.cpp.s:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/polak_ribiere_test.dir/build.make unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.s
 .PHONY : om_polak_ribiere_t.cpp.s
 
+om_powell_conjugate_t.o: om_powell_conjugate_t.cpp.o
+
+.PHONY : om_powell_conjugate_t.o
+
+# target to build an object file
+om_powell_conjugate_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/powell_conjugate_test.dir/build.make unit_tests/CMakeFiles/powell_conjugate_test.dir/om_powell_conjugate_t.cpp.o
+.PHONY : om_powell_conjugate_t.cpp.o
+
+om_powell_conjugate_t.i: om_powell_conjugate_t.cpp.i
+
+.PHONY : om_powell_conjugate_t.i
+
+# target to preprocess a source file
+om_powell_conjugate_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/powell_conjugate_test.dir/build.make unit_tests/CMakeFiles/powell_conjugate_test.dir/om_powell_conjugate_t.cpp.i
+.PHONY : om_powell_conjugate_t.cpp.i
+
+om_powell_conjugate_t.s: om_powell_conjugate_t.cpp.s
+
+.PHONY : om_powell_conjugate_t.s
+
+# target to generate assembly for a file
+om_powell_conjugate_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/powell_conjugate_test.dir/build.make unit_tests/CMakeFiles/powell_conjugate_test.dir/om_powell_conjugate_t.cpp.s
+.PHONY : om_powell_conjugate_t.cpp.s
+
 om_powell_t.o: om_powell_t.cpp.o
 
 .PHONY : om_powell_t.o
@@ -656,6 +698,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... powell_conjugate_test"
 	@echo "... package"
 	@echo "... golden_section_test"
 	@echo "... fibonacci_test"
@@ -697,6 +740,9 @@ help:
 	@echo "... om_polak_ribiere_t.o"
 	@echo "... om_polak_ribiere_t.i"
 	@echo "... om_polak_ribiere_t.s"
+	@echo "... om_powell_conjugate_t.o"
+	@echo "... om_powell_conjugate_t.i"
+	@echo "... om_powell_conjugate_t.s"
 	@echo "... om_powell_t.o"
 	@echo "... om_powell_t.i"
 	@echo "... om_powell_t.s"

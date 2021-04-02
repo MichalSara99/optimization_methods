@@ -1,7 +1,11 @@
 build/CMakeFiles/*
+build/CMakeFiles/**
 build/Testing/*
+build/Testing/**
 build/unit_tests/*
+build/unit_tests/**
 build/unit_tests/CMakeFiles/*
+build/unit_tests/CMakeFiles/**
 build/unit_tests/CMakeFiles/brent_test.dir/*
 build/unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/*
 build/unit_tests/CMakeFiles/davidon_fletcher_powell_tests.dir/*
@@ -16,4 +20,6 @@ build/unit_tests/CMakeFiles/nelder_mead_test.dir/*
 build/unit_tests/CMakeFiles/test_main.dir/*
 build/unit_tests/CMakeFiles/utilities_test.dir/*
 build/.cmake/*
+build/.cmake/**
+build/*
 build/**

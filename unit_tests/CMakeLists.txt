@@ -19,6 +19,7 @@ add_executable(davidon_fletcher_powell_test ${TEST_SOURCES}/om_davidon_fletcher_
 add_executable(broyden_fletcher_goldfarb_shanno_test ${TEST_SOURCES}/om_broyden_fletcher_goldfarb_shanno_t)
 add_executable(steepest_descent_test ${TEST_SOURCES}/om_steepest_descent_t)
 add_executable(nelder_mead_test ${TEST_SOURCES}/om_nelder_mead_t)
+add_executable(powell_conjugate_test ${TEST_SOURCES}/om_powell_conjugate_t)
 
 
 target_link_libraries(utilities_test ${TEST_LIBS} ${Boost_LIBRARIES})
@@ -33,6 +34,7 @@ target_link_libraries(davidon_fletcher_powell_test ${TEST_LIBS} ${Boost_LIBRARIE
 target_link_libraries(broyden_fletcher_goldfarb_shanno_test ${TEST_LIBS} ${Boost_LIBRARIES})
 target_link_libraries(steepest_descent_test ${TEST_LIBS} ${Boost_LIBRARIES})
 target_link_libraries(nelder_mead_test ${TEST_LIBS} ${Boost_LIBRARIES})
+target_link_libraries(powell_conjugate_test ${TEST_LIBS} ${Boost_LIBRARIES})
 
 
 add_test(om_utilities_t utilities_test COMMAND utilities_test)
@@ -47,3 +49,5 @@ add_test(om_davidon_fletcher_powell_t davidon_fletcher_powell_test COMMAND david
 add_test(om_broyden_fletcher_goldfarb_shanno_t broyden_fletcher_goldfarb_shanno_test COMMAND broyden_fletcher_goldfarb_shanno_test)
 add_test(om_steepest_descent_t steepest_descent_test COMMAND steepest_descent_test)
 add_test(om_nelder_mead_t nelder_mead_test COMMAND nelder_mead_test)
+add_test(om_powell_conjugate_t powell_conjugate_test COMMAND powell_conjugate_test)
+

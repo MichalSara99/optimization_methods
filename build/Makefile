@@ -534,6 +534,19 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
+# Target rules for targets named powell_conjugate_test
+
+# Build rule for target.
+powell_conjugate_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 powell_conjugate_test
+.PHONY : powell_conjugate_test
+
+# fast build rule for target.
+powell_conjugate_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/powell_conjugate_test.dir/build.make unit_tests/CMakeFiles/powell_conjugate_test.dir/build
+.PHONY : powell_conjugate_test/fast
+
+#=============================================================================
 # Target rules for targets named golden_section_test
 
 # Build rule for target.
@@ -760,6 +773,7 @@ help:
 	@echo "... optimization_methods"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
+	@echo "... powell_conjugate_test"
 	@echo "... golden_section_test"
 	@echo "... fibonacci_test"
 	@echo "... powell_test"

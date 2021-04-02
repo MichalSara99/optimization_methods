@@ -36,6 +36,7 @@
 /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/CMakeFiles/rebuild_cache.dir
 /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/CMakeFiles/edit_cache.dir
 /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/CMakeFiles/test.dir
+/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/CMakeFiles/powell_conjugate_test.dir
 /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/CMakeFiles/package.dir
 /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/CMakeFiles/golden_section_test.dir
 /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests/CMakeFiles/fibonacci_test.dir

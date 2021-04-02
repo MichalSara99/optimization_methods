@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/powell_conjugate_test.dir/om_powell_conjugate_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_powell_conjugate_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_powell_conjugate_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
   "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/golden_section_test.dir/om_golden_section_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_golden_section_t.cpp",
   "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_golden_section_t.cpp"
 },
