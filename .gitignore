@@ -1,1 +1,5 @@
+build/CMakeFiles/*
+build/Testing/*
+build/unit_tests/*
+build/.cmake/*
 build/*
