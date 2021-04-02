@@ -41,6 +41,11 @@
 },
 {
   "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_steepest_descent_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_steepest_descent_t.cpp"
+},
+{
+  "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
   "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/utilities_test.dir/om_utilities_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_utilities_t.cpp",
   "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_utilities_t.cpp"
 },
@@ -61,7 +66,7 @@
 },
 {
   "directory": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/unit_tests",
-  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_steepest_descent_t.cpp",
-  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_steepest_descent_t.cpp"
+  "command": "/bin/g++-9  -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/xsarm06/Development/cpp_projects/optimization_methods_x64/include -I/usr/include/eigen3  -O2 -g -DNDEBUG   -o CMakeFiles/nelder_mead_test.dir/om_nelder_mead_t.cpp.o -c /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_nelder_mead_t.cpp",
+  "file": "/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_nelder_mead_t.cpp"
 }
 ]

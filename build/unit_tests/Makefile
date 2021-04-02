@@ -234,6 +234,21 @@ hestenes_stiefel_test/fast:
 .PHONY : hestenes_stiefel_test/fast
 
 # Convenience name for target.
+unit_tests/CMakeFiles/steepest_descent_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+
+# Convenience name for target.
+steepest_descent_test: unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+
+.PHONY : steepest_descent_test
+
+# fast build rule for target.
+steepest_descent_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/build
+.PHONY : steepest_descent_test/fast
+
+# Convenience name for target.
 unit_tests/CMakeFiles/utilities_test.dir/rule:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/utilities_test.dir/rule
 .PHONY : unit_tests/CMakeFiles/utilities_test.dir/rule
@@ -294,19 +309,19 @@ broyden_fletcher_goldfarb_shanno_test/fast:
 .PHONY : broyden_fletcher_goldfarb_shanno_test/fast
 
 # Convenience name for target.
-unit_tests/CMakeFiles/steepest_descent_test.dir/rule:
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/steepest_descent_test.dir/rule
-.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+unit_tests/CMakeFiles/nelder_mead_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/nelder_mead_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/nelder_mead_test.dir/rule
 
 # Convenience name for target.
-steepest_descent_test: unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+nelder_mead_test: unit_tests/CMakeFiles/nelder_mead_test.dir/rule
 
-.PHONY : steepest_descent_test
+.PHONY : nelder_mead_test
 
 # fast build rule for target.
-steepest_descent_test/fast:
-	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/build
-.PHONY : steepest_descent_test/fast
+nelder_mead_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/nelder_mead_test.dir/build.make unit_tests/CMakeFiles/nelder_mead_test.dir/build
+.PHONY : nelder_mead_test/fast
 
 om_brent_t.o: om_brent_t.cpp.o
 
@@ -497,6 +512,33 @@ om_hestenes_stiefel_t.cpp.s:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/hestenes_stiefel_test.dir/build.make unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.s
 .PHONY : om_hestenes_stiefel_t.cpp.s
 
+om_nelder_mead_t.o: om_nelder_mead_t.cpp.o
+
+.PHONY : om_nelder_mead_t.o
+
+# target to build an object file
+om_nelder_mead_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/nelder_mead_test.dir/build.make unit_tests/CMakeFiles/nelder_mead_test.dir/om_nelder_mead_t.cpp.o
+.PHONY : om_nelder_mead_t.cpp.o
+
+om_nelder_mead_t.i: om_nelder_mead_t.cpp.i
+
+.PHONY : om_nelder_mead_t.i
+
+# target to preprocess a source file
+om_nelder_mead_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/nelder_mead_test.dir/build.make unit_tests/CMakeFiles/nelder_mead_test.dir/om_nelder_mead_t.cpp.i
+.PHONY : om_nelder_mead_t.cpp.i
+
+om_nelder_mead_t.s: om_nelder_mead_t.cpp.s
+
+.PHONY : om_nelder_mead_t.s
+
+# target to generate assembly for a file
+om_nelder_mead_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/nelder_mead_test.dir/build.make unit_tests/CMakeFiles/nelder_mead_test.dir/om_nelder_mead_t.cpp.s
+.PHONY : om_nelder_mead_t.cpp.s
+
 om_polak_ribiere_t.o: om_polak_ribiere_t.cpp.o
 
 .PHONY : om_polak_ribiere_t.o
@@ -621,12 +663,13 @@ help:
 	@echo "... brent_test"
 	@echo "... polak_ribiere_test"
 	@echo "... hestenes_stiefel_test"
+	@echo "... package_source"
+	@echo "... steepest_descent_test"
 	@echo "... utilities_test"
 	@echo "... fletcher_reeves_test"
 	@echo "... davidon_fletcher_powell_test"
 	@echo "... broyden_fletcher_goldfarb_shanno_test"
-	@echo "... steepest_descent_test"
-	@echo "... package_source"
+	@echo "... nelder_mead_test"
 	@echo "... om_brent_t.o"
 	@echo "... om_brent_t.i"
 	@echo "... om_brent_t.s"
@@ -648,6 +691,9 @@ help:
 	@echo "... om_hestenes_stiefel_t.o"
 	@echo "... om_hestenes_stiefel_t.i"
 	@echo "... om_hestenes_stiefel_t.s"
+	@echo "... om_nelder_mead_t.o"
+	@echo "... om_nelder_mead_t.i"
+	@echo "... om_nelder_mead_t.s"
 	@echo "... om_polak_ribiere_t.o"
 	@echo "... om_polak_ribiere_t.i"
 	@echo "... om_polak_ribiere_t.s"

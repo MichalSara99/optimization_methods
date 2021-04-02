@@ -612,6 +612,19 @@ hestenes_stiefel_test/fast:
 .PHONY : hestenes_stiefel_test/fast
 
 #=============================================================================
+# Target rules for targets named steepest_descent_test
+
+# Build rule for target.
+steepest_descent_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 steepest_descent_test
+.PHONY : steepest_descent_test
+
+# fast build rule for target.
+steepest_descent_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/build
+.PHONY : steepest_descent_test/fast
+
+#=============================================================================
 # Target rules for targets named utilities_test
 
 # Build rule for target.
@@ -664,17 +677,17 @@ broyden_fletcher_goldfarb_shanno_test/fast:
 .PHONY : broyden_fletcher_goldfarb_shanno_test/fast
 
 #=============================================================================
-# Target rules for targets named steepest_descent_test
+# Target rules for targets named nelder_mead_test
 
 # Build rule for target.
-steepest_descent_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 steepest_descent_test
-.PHONY : steepest_descent_test
+nelder_mead_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nelder_mead_test
+.PHONY : nelder_mead_test
 
 # fast build rule for target.
-steepest_descent_test/fast:
-	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/build
-.PHONY : steepest_descent_test/fast
+nelder_mead_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/nelder_mead_test.dir/build.make unit_tests/CMakeFiles/nelder_mead_test.dir/build
+.PHONY : nelder_mead_test/fast
 
 main.o: main.cpp.o
 
@@ -753,11 +766,12 @@ help:
 	@echo "... brent_test"
 	@echo "... polak_ribiere_test"
 	@echo "... hestenes_stiefel_test"
+	@echo "... steepest_descent_test"
 	@echo "... utilities_test"
 	@echo "... fletcher_reeves_test"
 	@echo "... davidon_fletcher_powell_test"
 	@echo "... broyden_fletcher_goldfarb_shanno_test"
-	@echo "... steepest_descent_test"
+	@echo "... nelder_mead_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

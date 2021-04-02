@@ -12,7 +12,8 @@ build/unit_tests/CMakeFiles/hestenes_stiefel_test.dir/*
 build/unit_tests/CMakeFiles/polak_ribiere_test.dir/*
 build/unit_tests/CMakeFiles/powell_test.dir/*
 build/unit_tests/CMakeFiles/steepest_descent_test.dir/*
+build/unit_tests/CMakeFiles/nelder_mead_test.dir/*
 build/unit_tests/CMakeFiles/test_main.dir/*
 build/unit_tests/CMakeFiles/utilities_test.dir/*
 build/.cmake/*
-build/*
+build/**

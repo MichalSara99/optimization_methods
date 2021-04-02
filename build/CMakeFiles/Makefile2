@@ -109,11 +109,12 @@ unit_tests/all: unit_tests/CMakeFiles/powell_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/brent_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/polak_ribiere_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/hestenes_stiefel_test.dir/all
+unit_tests/all: unit_tests/CMakeFiles/steepest_descent_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/utilities_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/fletcher_reeves_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/all
-unit_tests/all: unit_tests/CMakeFiles/steepest_descent_test.dir/all
+unit_tests/all: unit_tests/CMakeFiles/nelder_mead_test.dir/all
 
 .PHONY : unit_tests/all
 
@@ -129,11 +130,12 @@ unit_tests/clean: unit_tests/CMakeFiles/powell_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/brent_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/polak_ribiere_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/hestenes_stiefel_test.dir/clean
+unit_tests/clean: unit_tests/CMakeFiles/steepest_descent_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/utilities_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/fletcher_reeves_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/clean
-unit_tests/clean: unit_tests/CMakeFiles/steepest_descent_test.dir/clean
+unit_tests/clean: unit_tests/CMakeFiles/nelder_mead_test.dir/clean
 
 .PHONY : unit_tests/clean
 
@@ -846,7 +848,7 @@ CMakeFiles/ContinuousMemCheck.dir/clean:
 CMakeFiles/optimization_methods_x64.dir/all:
 	$(MAKE) -f CMakeFiles/optimization_methods_x64.dir/build.make CMakeFiles/optimization_methods_x64.dir/depend
 	$(MAKE) -f CMakeFiles/optimization_methods_x64.dir/build.make CMakeFiles/optimization_methods_x64.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=17,18 "Built target optimization_methods_x64"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=19,20 "Built target optimization_methods_x64"
 .PHONY : CMakeFiles/optimization_methods_x64.dir/all
 
 # Build rule for subdir invocation for target.
@@ -873,7 +875,7 @@ CMakeFiles/optimization_methods_x64.dir/clean:
 CMakeFiles/optimization_methods.dir/all:
 	$(MAKE) -f CMakeFiles/optimization_methods.dir/build.make CMakeFiles/optimization_methods.dir/depend
 	$(MAKE) -f CMakeFiles/optimization_methods.dir/build.make CMakeFiles/optimization_methods.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=15,16 "Built target optimization_methods"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=17,18 "Built target optimization_methods"
 .PHONY : CMakeFiles/optimization_methods.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1008,7 +1010,7 @@ unit_tests/CMakeFiles/fibonacci_test.dir/clean:
 unit_tests/CMakeFiles/powell_test.dir/all: CMakeFiles/optimization_methods.dir/all
 	$(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/depend
 	$(MAKE) -f unit_tests/CMakeFiles/powell_test.dir/build.make unit_tests/CMakeFiles/powell_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=21,22 "Built target powell_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=23,24 "Built target powell_test"
 .PHONY : unit_tests/CMakeFiles/powell_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1062,7 +1064,7 @@ unit_tests/CMakeFiles/brent_test.dir/clean:
 unit_tests/CMakeFiles/polak_ribiere_test.dir/all: CMakeFiles/optimization_methods.dir/all
 	$(MAKE) -f unit_tests/CMakeFiles/polak_ribiere_test.dir/build.make unit_tests/CMakeFiles/polak_ribiere_test.dir/depend
 	$(MAKE) -f unit_tests/CMakeFiles/polak_ribiere_test.dir/build.make unit_tests/CMakeFiles/polak_ribiere_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=19,20 "Built target polak_ribiere_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=21,22 "Built target polak_ribiere_test"
 .PHONY : unit_tests/CMakeFiles/polak_ribiere_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1110,13 +1112,40 @@ unit_tests/CMakeFiles/hestenes_stiefel_test.dir/clean:
 .PHONY : unit_tests/CMakeFiles/hestenes_stiefel_test.dir/clean
 
 #=============================================================================
+# Target rules for target unit_tests/CMakeFiles/steepest_descent_test.dir
+
+# All Build rule for target.
+unit_tests/CMakeFiles/steepest_descent_test.dir/all: CMakeFiles/optimization_methods.dir/all
+	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/depend
+	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=25,26 "Built target steepest_descent_test"
+.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/all
+
+# Build rule for subdir invocation for target.
+unit_tests/CMakeFiles/steepest_descent_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/steepest_descent_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles 0
+.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+
+# Convenience name for target.
+steepest_descent_test: unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+
+.PHONY : steepest_descent_test
+
+# clean rule for target.
+unit_tests/CMakeFiles/steepest_descent_test.dir/clean:
+	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/clean
+.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/clean
+
+#=============================================================================
 # Target rules for target unit_tests/CMakeFiles/utilities_test.dir
 
 # All Build rule for target.
 unit_tests/CMakeFiles/utilities_test.dir/all: CMakeFiles/optimization_methods.dir/all
 	$(MAKE) -f unit_tests/CMakeFiles/utilities_test.dir/build.make unit_tests/CMakeFiles/utilities_test.dir/depend
 	$(MAKE) -f unit_tests/CMakeFiles/utilities_test.dir/build.make unit_tests/CMakeFiles/utilities_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=25,26 "Built target utilities_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=27,28 "Built target utilities_test"
 .PHONY : unit_tests/CMakeFiles/utilities_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1218,31 +1247,31 @@ unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/clean:
 .PHONY : unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/clean
 
 #=============================================================================
-# Target rules for target unit_tests/CMakeFiles/steepest_descent_test.dir
+# Target rules for target unit_tests/CMakeFiles/nelder_mead_test.dir
 
 # All Build rule for target.
-unit_tests/CMakeFiles/steepest_descent_test.dir/all: CMakeFiles/optimization_methods.dir/all
-	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/depend
-	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=23,24 "Built target steepest_descent_test"
-.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/all
+unit_tests/CMakeFiles/nelder_mead_test.dir/all: CMakeFiles/optimization_methods.dir/all
+	$(MAKE) -f unit_tests/CMakeFiles/nelder_mead_test.dir/build.make unit_tests/CMakeFiles/nelder_mead_test.dir/depend
+	$(MAKE) -f unit_tests/CMakeFiles/nelder_mead_test.dir/build.make unit_tests/CMakeFiles/nelder_mead_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=15,16 "Built target nelder_mead_test"
+.PHONY : unit_tests/CMakeFiles/nelder_mead_test.dir/all
 
 # Build rule for subdir invocation for target.
-unit_tests/CMakeFiles/steepest_descent_test.dir/rule: cmake_check_build_system
+unit_tests/CMakeFiles/nelder_mead_test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/steepest_descent_test.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/nelder_mead_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles 0
-.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/nelder_mead_test.dir/rule
 
 # Convenience name for target.
-steepest_descent_test: unit_tests/CMakeFiles/steepest_descent_test.dir/rule
+nelder_mead_test: unit_tests/CMakeFiles/nelder_mead_test.dir/rule
 
-.PHONY : steepest_descent_test
+.PHONY : nelder_mead_test
 
 # clean rule for target.
-unit_tests/CMakeFiles/steepest_descent_test.dir/clean:
-	$(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/clean
-.PHONY : unit_tests/CMakeFiles/steepest_descent_test.dir/clean
+unit_tests/CMakeFiles/nelder_mead_test.dir/clean:
+	$(MAKE) -f unit_tests/CMakeFiles/nelder_mead_test.dir/build.make unit_tests/CMakeFiles/nelder_mead_test.dir/clean
+.PHONY : unit_tests/CMakeFiles/nelder_mead_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
