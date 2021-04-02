@@ -34,7 +34,7 @@ BOOST_AUTO_TEST_CASE(steepest_descent_with_gs_default) {
   std::size_t multi_max_iters = 10000;
   auto multi_dim_method =
       powell_conjugate_method<double>{golden_section, multi_max_iters, 1.0e-7};
-  double tol = 1.0e-3;
+  double tol = 1.0e-2;
   for (auto const &h : helper) {
     auto result = multi_dim_method.minimize(h->objective, h->guess);
     const auto &expected_min = h->minimizer;
@@ -67,7 +67,7 @@ BOOST_AUTO_TEST_CASE(steepest_descent_with_f_default) {
   std::size_t multi_max_iters = 10000;
   auto multi_dim_method =
       powell_conjugate_method<double>{fibonacci, multi_max_iters, 1.0e-7};
-  double tol = 1.0e-3;
+  double tol = 1.0e-2;
   for (auto const &h : helper) {
     auto result = multi_dim_method.minimize(h->objective, h->guess);
     const auto &expected_min = h->minimizer;
