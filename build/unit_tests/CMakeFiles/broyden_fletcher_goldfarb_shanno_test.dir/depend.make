@@ -3,7 +3,7 @@
 
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/unconstrained_methods/multi_dim/quasi_newton/om_broyden_fletcher_goldfarb_shanno.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/unconstrained_methods/multi_dim/quasi_newton/om_quasi_newton_base.hpp
-unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp
+unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/unconstrained_methods/one_dim/om_brent.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/unconstrained_methods/one_dim/om_fibonacci.hpp

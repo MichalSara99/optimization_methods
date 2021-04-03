@@ -5,6 +5,10 @@
 #include "om_powell_conjugate.hpp"
 
 namespace om_unconstrained_methods {
+/**
+ * @brief Contains zero-order methods
+ *
+ */
 namespace om_zero_order {}
 
 } // namespace om_unconstrained_methods

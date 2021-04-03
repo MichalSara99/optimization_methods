@@ -1,0 +1,274 @@
+\begin{theindex}
+
+  \item {brent\_method}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::brent\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{12}
+  \item {broyden\_fletcher\_goldfarb\_shanno\_method}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::broyden\_fletcher\_goldfarb\_shanno\_method$<$ fp\_type $>$}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {conjugate\_gradient\_base}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{16, 17}
+
+  \indexspace
+
+  \item {davidon\_fletcher\_powell\_method}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$}, 
+		\hyperpage{20}
+
+  \indexspace
+
+  \item {fibonacci\_method}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{22}
+  \item {fletcher\_reeves\_method}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$}, 
+		\hyperpage{24}
+
+  \indexspace
+
+  \item {golden\_section\_method}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{26}
+
+  \indexspace
+
+  \item {hestenes\_stiefel\_method}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::hestenes\_stiefel\_method$<$ fp\_type $>$}, 
+		\hyperpage{28}
+
+  \indexspace
+
+  \item {minimize}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$}, 
+		\hyperpage{25}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::hestenes\_stiefel\_method$<$ fp\_type $>$}, 
+		\hyperpage{29}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::polak\_ribiere\_method$<$ fp\_type $>$}, 
+		\hyperpage{36}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::broyden\_fletcher\_goldfarb\_shanno\_method$<$ fp\_type $>$}, 
+		\hyperpage{15}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$}, 
+		\hyperpage{20}
+    \subitem {om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}, 
+		\hyperpage{48}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{31}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}, 
+		\hyperpage{38}
+
+  \indexspace
+
+  \item {nelder\_mead\_method}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{30, 31}
+
+  \indexspace
+
+  \item {om\_test\_functions}, \hyperpage{7}
+    \subitem {pi}, \hyperpage{9}
+    \subitem {powell\_function}, \hyperpage{8}
+    \subitem {quadratic\_function}, \hyperpage{8}
+    \subitem {rosenbrock\_parabolic\_valley}, \hyperpage{9}
+  \item {om\_test\_helpers::minimizer\_helper$<$ T $>$}, \hyperpage{29}
+  \item {om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{15}
+    \subitem {conjugate\_gradient\_base}, \hyperpage{16, 17}
+    \subitem {operator=}, \hyperpage{17}
+    \subitem {set\_arg\_tolerance}, \hyperpage{17}
+    \subitem {set\_fun\_tolerance}, \hyperpage{18}
+    \subitem {set\_grad\_tolerance}, \hyperpage{18}
+    \subitem {set\_max\_iterations}, \hyperpage{18}
+  \item {om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$}, 
+		\hyperpage{23}
+    \subitem {fletcher\_reeves\_method}, \hyperpage{24}
+    \subitem {minimize}, \hyperpage{25}
+  \item {om\_unconstrained\_methods::om\_conjugate\_gradient::hestenes\_stiefel\_method$<$ fp\_type $>$}, 
+		\hyperpage{28}
+    \subitem {hestenes\_stiefel\_method}, \hyperpage{28}
+    \subitem {minimize}, \hyperpage{29}
+  \item {om\_unconstrained\_methods::om\_conjugate\_gradient::polak\_ribiere\_method$<$ fp\_type $>$}, 
+		\hyperpage{34}
+    \subitem {minimize}, \hyperpage{36}
+    \subitem {polak\_ribiere\_method}, \hyperpage{36}
+  \item {om\_unconstrained\_methods::om\_line\_methods::brent\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{11}
+    \subitem {brent\_method}, \hyperpage{12}
+    \subitem {operator()}, \hyperpage{12}
+    \subitem {operator=}, \hyperpage{13}
+  \item {om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{21}
+    \subitem {fibonacci\_method}, \hyperpage{22}
+    \subitem {operator()}, \hyperpage{22}
+    \subitem {operator=}, \hyperpage{23}
+  \item {om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{25}
+    \subitem {golden\_section\_method}, \hyperpage{26}
+    \subitem {operator()}, \hyperpage{27}
+    \subitem {operator=}, \hyperpage{27}
+  \item {om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{40}
+    \subitem {operator()}, \hyperpage{42}
+    \subitem {operator=}, \hyperpage{42}
+    \subitem {powell\_method}, \hyperpage{41, 42}
+  \item {om\_unconstrained\_methods::om\_quasi\_newton::broyden\_fletcher\_goldfarb\_shanno\_method$<$ fp\_type $>$}, 
+		\hyperpage{13}
+    \subitem {broyden\_fletcher\_goldfarb\_shanno\_method}, 
+		\hyperpage{14}
+    \subitem {minimize}, \hyperpage{15}
+  \item {om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$}, 
+		\hyperpage{19}
+    \subitem {davidon\_fletcher\_powell\_method}, \hyperpage{20}
+    \subitem {minimize}, \hyperpage{20}
+  \item {om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{43}
+    \subitem {operator=}, \hyperpage{45}
+    \subitem {quasi\_newton\_base}, \hyperpage{44}
+    \subitem {set\_arg\_tolerance}, \hyperpage{45}
+    \subitem {set\_fun\_tolerance}, \hyperpage{45}
+    \subitem {set\_grad\_tolerance}, \hyperpage{46}
+    \subitem {set\_max\_iterations}, \hyperpage{46}
+  \item {om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}, 
+		\hyperpage{46}
+    \subitem {minimize}, \hyperpage{48}
+    \subitem {operator=}, \hyperpage{48}
+    \subitem {set\_arg\_tolerance}, \hyperpage{49}
+    \subitem {set\_fun\_tolerance}, \hyperpage{49}
+    \subitem {set\_grad\_tolerance}, \hyperpage{49}
+    \subitem {set\_max\_iterations}, \hyperpage{50}
+    \subitem {steepest\_descent\_method}, \hyperpage{47, 48}
+  \item {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{30}
+    \subitem {minimize}, \hyperpage{31}
+    \subitem {nelder\_mead\_method}, \hyperpage{30, 31}
+    \subitem {operator=}, \hyperpage{32}
+    \subitem {set\_contraction\_rho}, \hyperpage{32}
+    \subitem {set\_converge\_tolerance}, \hyperpage{32}
+    \subitem {set\_expansion\_rho}, \hyperpage{33}
+    \subitem {set\_max\_iterations}, \hyperpage{33}
+    \subitem {set\_reflection\_rho}, \hyperpage{33}
+    \subitem {set\_shrinkage\_rho}, \hyperpage{34}
+  \item {om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}, 
+		\hyperpage{37}
+    \subitem {minimize}, \hyperpage{38}
+    \subitem {operator=}, \hyperpage{39}
+    \subitem {powell\_conjugate\_method}, \hyperpage{38}
+    \subitem {set\_converge\_tolerance}, \hyperpage{39}
+    \subitem {set\_max\_iterations}, \hyperpage{39}
+  \item {operator()}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::brent\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{12}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{22}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{27}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{42}
+  \item {operator=}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{17}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::brent\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{13}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{23}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{27}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{42}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{45}
+    \subitem {om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}, 
+		\hyperpage{48}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{32}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}, 
+		\hyperpage{39}
+
+  \indexspace
+
+  \item {pi}
+    \subitem {om\_test\_functions}, \hyperpage{9}
+  \item {polak\_ribiere\_method}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::polak\_ribiere\_method$<$ fp\_type $>$}, 
+		\hyperpage{36}
+  \item {powell\_conjugate\_method}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}, 
+		\hyperpage{38}
+  \item {powell\_function}
+    \subitem {om\_test\_functions}, \hyperpage{8}
+  \item {powell\_method}
+    \subitem {om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}, 
+		\hyperpage{41, 42}
+
+  \indexspace
+
+  \item {quadratic\_function}
+    \subitem {om\_test\_functions}, \hyperpage{8}
+  \item {quasi\_newton\_base}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{44}
+
+  \indexspace
+
+  \item {rosenbrock\_parabolic\_valley}
+    \subitem {om\_test\_functions}, \hyperpage{9}
+
+  \indexspace
+
+  \item {set\_arg\_tolerance}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{17}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{45}
+    \subitem {om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}, 
+		\hyperpage{49}
+  \item {set\_contraction\_rho}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{32}
+  \item {set\_converge\_tolerance}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{32}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}, 
+		\hyperpage{39}
+  \item {set\_expansion\_rho}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{33}
+  \item {set\_fun\_tolerance}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{18}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{45}
+    \subitem {om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}, 
+		\hyperpage{49}
+  \item {set\_grad\_tolerance}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{18}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{46}
+    \subitem {om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}, 
+		\hyperpage{49}
+  \item {set\_max\_iterations}
+    \subitem {om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{18}
+    \subitem {om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}, 
+		\hyperpage{46}
+    \subitem {om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}, 
+		\hyperpage{50}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{33}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}, 
+		\hyperpage{39}
+  \item {set\_reflection\_rho}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{33}
+  \item {set\_shrinkage\_rho}
+    \subitem {om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}, 
+		\hyperpage{34}
+  \item {steepest\_descent\_method}
+    \subitem {om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}, 
+		\hyperpage{47, 48}
+
+\end{theindex}

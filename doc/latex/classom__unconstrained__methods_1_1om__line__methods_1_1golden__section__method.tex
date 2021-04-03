@@ -1,0 +1,128 @@
+\hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::golden\+\_\+section\+\_\+method$<$ fp\+\_\+type, typename $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}\index{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}}
+
+
+Golden section method object.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+golden\+\_\+section.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_af4ef507703aa7c955f7394f72d5481a4}\label{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_af4ef507703aa7c955f7394f72d5481a4}} 
+typedef fp\+\_\+type {\bfseries value\+\_\+type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_ae4b2e0faae86d59c0961911345175549}{golden\+\_\+section\+\_\+method}} (range$<$ fp\+\_\+type $>$ const \&range, fp\+\_\+type tolerance=1e-\/5, std\+::size\+\_\+t max\+\_\+iters=1000)
+\begin{DoxyCompactList}\small\item\em Construct a new golden section method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_a7923b3ea0da682cdeaaca92964238a36}{golden\+\_\+section\+\_\+method}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor of a golden section method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}} \& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_aa5738737a1c8141bcb286bef708bcb03}{operator=}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator of a golden section method object. \end{DoxyCompactList}\item 
+std\+::tuple$<$ fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_ab6575766aea5a57fa217eecb1c351443}{operator()}} (f\+\_\+scalar\+\_\+t$<$ fp\+\_\+type $>$ \&\&fun) const
+\begin{DoxyCompactList}\small\item\em Functor of a golden section method object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double, typename = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::golden\+\_\+section\+\_\+method$<$ fp\+\_\+type, typename $>$}
+
+Golden section method object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is floating point template parameter \\
+\hline
+{\em std\+::enable\+\_\+if$<$} & std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_ae4b2e0faae86d59c0961911345175549}\label{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_ae4b2e0faae86d59c0961911345175549}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}!golden\_section\_method@{golden\_section\_method}}
+\index{golden\_section\_method@{golden\_section\_method}!om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{golden\_section\_method()}{golden\_section\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::golden\+\_\+section\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}} (\begin{DoxyParamCaption}\item[{range$<$ fp\+\_\+type $>$ const \&}]{range,  }\item[{fp\+\_\+type}]{tolerance = {\ttfamily 1e-\/5},  }\item[{std\+::size\+\_\+t}]{max\+\_\+iters = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new golden section method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & range of the minimiser \\
+\hline
+{\em tolerance} & tolerance of minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_a7923b3ea0da682cdeaaca92964238a36}\label{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_a7923b3ea0da682cdeaaca92964238a36}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}!golden\_section\_method@{golden\_section\_method}}
+\index{golden\_section\_method@{golden\_section\_method}!om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{golden\_section\_method()}{golden\_section\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::golden\+\_\+section\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor of a golden section method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & copy is the object which we want to make a copy of \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_ab6575766aea5a57fa217eecb1c351443}\label{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_ab6575766aea5a57fa217eecb1c351443}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::golden\+\_\+section\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::operator() (\begin{DoxyParamCaption}\item[{f\+\_\+scalar\+\_\+t$<$ fp\+\_\+type $>$ \&\&}]{fun }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Functor of a golden section method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fun} & objective function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_aa5738737a1c8141bcb286bef708bcb03}\label{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method_aa5738737a1c8141bcb286bef708bcb03}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::golden\_section\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}}\& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::golden\+\_\+section\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator of a golden section method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__method}{golden\+\_\+section\+\_\+method}}\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/one\+\_\+dim/om\+\_\+golden\+\_\+section.\+hpp\end{DoxyCompactItemize}

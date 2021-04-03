@@ -15,6 +15,11 @@ using om_types::vector_arg_t;
 using om_types::vector_t;
 using om_utilities::cartesian_basis_vectors;
 
+/**
+ * @brief Powell conjugate method object
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ */
 template <typename fp_type = double> class powell_conjugate_method {
 private:
   fp_type converge_tol_;
@@ -22,6 +27,14 @@ private:
   f_line_minimiser_t<fp_type> lsm_;
 
 public:
+  /**
+   * @brief Construct a new powell conjugate method object
+   *
+   * @param line_search_minimiser line method to be used in finding the
+   * minimiser
+   * @param max_iters maximum number of iterations
+   * @param convergence_tol tolerance for convergance
+   */
   powell_conjugate_method(
       f_line_minimiser_t<fp_type> const &line_search_minimiser,
       std::size_t const &max_iters = 50, fp_type convergence_tol = 10e-4)
@@ -29,11 +42,21 @@ public:
         converge_tol_{convergence_tol} {}
 
   virtual ~powell_conjugate_method() {}
-
+  /**
+   * @brief Copy constructor a new powell conjugate method object
+   *
+   * @param copy copy is the object which we want to make a copy of
+   */
   powell_conjugate_method(powell_conjugate_method const &copy)
       : max_iters_{copy.max_iters_}, lsm_{copy.lsm_}, converge_tol_{
                                                           copy.converge_tol_} {}
 
+  /**
+   * @brief Assignment operator of a powell conjugate method object
+   *
+   * @param copy
+   * @return powell_conjugate_method&
+   */
   powell_conjugate_method &operator=(powell_conjugate_method const &copy) {
     if (this != &copy) {
       lsm_ = copy.lsm_;
@@ -42,14 +65,29 @@ public:
     }
     return *this;
   }
-
+  /**
+   * @brief Set the max iterations object
+   *
+   * @param iters maximum number of iterations
+   */
   inline void set_max_iterations(std::size_t const &iters) {
     max_iters_ = iters;
   }
+  /**
+   * @brief Set the converge tolerance object
+   *
+   * @param converge_tol tolerance for convergance
+   */
   inline void set_converge_tolerance(double converge_tol) {
     converge_tol_ = converge_tol;
   }
-
+  /**
+   * @brief Function method that minimises the objective function
+   *
+   * @param objective objective function
+   * @param init_guess initial guess
+   * @return std::tuple<vector_t<fp_type>, fp_type, std::size_t>
+   */
   std::tuple<vector_t<fp_type>, fp_type, std::size_t>
   minimize(f_vector_t<fp_type> objective,
            vector_arg_t<fp_type> const &init_guess) const;

@@ -5,7 +5,15 @@
 #include "om_hestenes_stiefel.hpp"
 #include "om_polak_ribiere.hpp"
 
+/**
+ * @brief Contains some well-known methods for unconstrained optimisation
+ *
+ */
 namespace om_unconstrained_methods {
+/**
+ * @brief Contains conjugate-gradient methods
+ *
+ */
 namespace om_conjugate_gradient {}
 } // namespace om_unconstrained_methods
 

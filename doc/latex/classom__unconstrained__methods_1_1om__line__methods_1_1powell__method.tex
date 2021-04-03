@@ -1,0 +1,154 @@
+\hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::powell\+\_\+method$<$ fp\+\_\+type, typename $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}\index{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}}
+
+
+Powell method object.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+powell.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_afde60e5a53138c56b5970467988a46ce}\label{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_afde60e5a53138c56b5970467988a46ce}} 
+typedef fp\+\_\+type {\bfseries value\+\_\+type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a65d377cec95c1146e8ee61e1e03b81ed}{powell\+\_\+method}} (range$<$ fp\+\_\+type $>$ const \&range, fp\+\_\+type tolerance=1e-\/5, std\+::size\+\_\+t max\+\_\+ites=1000)
+\begin{DoxyCompactList}\small\item\em Construct a new powell method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_ad28cb116e98a3f646208879b745f1884}{powell\+\_\+method}} (range$<$ fp\+\_\+type $>$ const \&range, fp\+\_\+type step, fp\+\_\+type max\+\_\+step, fp\+\_\+type tolerance=1e-\/5, std\+::size\+\_\+t max\+\_\+ites=1000)
+\begin{DoxyCompactList}\small\item\em Construct a new powell method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_af3718887d1388d283050611e33e12201}{powell\+\_\+method}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor of a new powell method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}} \& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a15f8cdfca8e7d195fe5cdc29cc7ba639}{operator=}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator of a powell method object. \end{DoxyCompactList}\item 
+std\+::tuple$<$ fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a59ac5c68678043fb12d8f5f2b55fd368}{operator()}} (f\+\_\+scalar\+\_\+t$<$ fp\+\_\+type $>$ \&\&fun) const
+\begin{DoxyCompactList}\small\item\em Functor of a powell method object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double, typename = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::powell\+\_\+method$<$ fp\+\_\+type, typename $>$}
+
+Powell method object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is floating-\/point template parameter \\
+\hline
+{\em std\+::enable\+\_\+if$<$} & std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a65d377cec95c1146e8ee61e1e03b81ed}\label{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a65d377cec95c1146e8ee61e1e03b81ed}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}!powell\_method@{powell\_method}}
+\index{powell\_method@{powell\_method}!om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{powell\_method()}{powell\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::powell\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}} (\begin{DoxyParamCaption}\item[{range$<$ fp\+\_\+type $>$ const \&}]{range,  }\item[{fp\+\_\+type}]{tolerance = {\ttfamily 1e-\/5},  }\item[{std\+::size\+\_\+t}]{max\+\_\+ites = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new powell method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & range of the minimiser \\
+\hline
+{\em tolerance} & tolerance of the minimiser \\
+\hline
+{\em max\+\_\+ites} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_ad28cb116e98a3f646208879b745f1884}\label{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_ad28cb116e98a3f646208879b745f1884}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}!powell\_method@{powell\_method}}
+\index{powell\_method@{powell\_method}!om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{powell\_method()}{powell\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::powell\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}} (\begin{DoxyParamCaption}\item[{range$<$ fp\+\_\+type $>$ const \&}]{range,  }\item[{fp\+\_\+type}]{step,  }\item[{fp\+\_\+type}]{max\+\_\+step,  }\item[{fp\+\_\+type}]{tolerance = {\ttfamily 1e-\/5},  }\item[{std\+::size\+\_\+t}]{max\+\_\+ites = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new powell method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & range of the minimiser \\
+\hline
+{\em step} & size of the step of the minimiser \\
+\hline
+{\em max\+\_\+step} & maximum size of the step of the minimiser \\
+\hline
+{\em tolerance} & tolerance of the minimiser \\
+\hline
+{\em max\+\_\+ites} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_af3718887d1388d283050611e33e12201}\label{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_af3718887d1388d283050611e33e12201}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}!powell\_method@{powell\_method}}
+\index{powell\_method@{powell\_method}!om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{powell\_method()}{powell\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::powell\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor of a new powell method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a59ac5c68678043fb12d8f5f2b55fd368}\label{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a59ac5c68678043fb12d8f5f2b55fd368}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::powell\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::operator() (\begin{DoxyParamCaption}\item[{f\+\_\+scalar\+\_\+t$<$ fp\+\_\+type $>$ \&\&}]{fun }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Functor of a powell method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fun} & objective function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a15f8cdfca8e7d195fe5cdc29cc7ba639}\label{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method_a15f8cdfca8e7d195fe5cdc29cc7ba639}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::powell\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}}\& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::powell\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator of a powell method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1powell__method}{powell\+\_\+method}}\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/one\+\_\+dim/om\+\_\+powell.\+hpp\end{DoxyCompactItemize}

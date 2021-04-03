@@ -3,7 +3,7 @@
 
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/unconstrained_methods/multi_dim/conjugate_gradient/om_conjugate_gradient_base.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/unconstrained_methods/multi_dim/conjugate_gradient/om_hestenes_stiefel.hpp
-unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp
+unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/unconstrained_methods/one_dim/om_brent.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/unconstrained_methods/one_dim/om_fibonacci.hpp

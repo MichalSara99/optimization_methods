@@ -4,7 +4,7 @@
 #include <iostream>
 #endif
 
-#include "unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp"
+#include "unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp"
 #include "unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp"
 #include "unconstrained_methods/multi_dim/zero_order/om_powell_conjugate.hpp"
 #include "unconstrained_methods/one_dim/om_line_methods.hpp"
@@ -16,6 +16,7 @@
 using namespace om_unconstrained_methods::om_line_methods;
 using namespace om_unconstrained_methods::om_zero_order;
 using namespace om_test_helpers;
+using namespace om_test_functions;
 
 BOOST_AUTO_TEST_SUITE(powell_conjugate)
 

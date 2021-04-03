@@ -1,0 +1,199 @@
+\hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base$<$ fp\+\_\+type, typename $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}\index{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}}
+
+
+Conjugate-\/gradient base class.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+conjugate\+\_\+gradient\+\_\+base.\+hpp$>$}
+
+
+
+Collaboration diagram for om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base$<$ fp\+\_\+type, typename $>$\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a95dcc5db710cad54934de14126332ccd}{conjugate\+\_\+gradient\+\_\+base}} (f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&line\+\_\+search\+\_\+minimiser, std\+::size\+\_\+t const \&max\+\_\+iters=100, fp\+\_\+type arg\+\_\+tol=1e-\/4, fp\+\_\+type grad\+\_\+tol=1e-\/4, fp\+\_\+type fun\+\_\+tol=1e-\/4)
+\begin{DoxyCompactList}\small\item\em Construct a new conjugate gradient base object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a7ef2b94764c5e3de17df59148632a0b0}{conjugate\+\_\+gradient\+\_\+base}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Construct a new conjugate gradient base object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}} \& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a8ea8c6c3b417a0be1b1e98a1ee316d59}{operator=}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator of a conjugate gradient base object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ad509614d7e73c40d09193336c6aaf4d7}{set\+\_\+arg\+\_\+tolerance}} (fp\+\_\+type arg\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the stopping criteria tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a92c5d7cbdc3e5888c559263135c8fe8b}{set\+\_\+fun\+\_\+tolerance}} (fp\+\_\+type fun\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the fun tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ad6854bf9f669fc6bff47c7ac9413b956}{set\+\_\+grad\+\_\+tolerance}} (fp\+\_\+type grad\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the grad tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a387b8f0a56e89dac3c776ed3c9c1ff40}{set\+\_\+max\+\_\+iterations}} (std\+::size\+\_\+t const \&iters)
+\begin{DoxyCompactList}\small\item\em Set the max iterations object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_aa65ed04ff4696d292bfed19c1510b8f9}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_aa65ed04ff4696d292bfed19c1510b8f9}} 
+fp\+\_\+type {\bfseries arg\+\_\+tol\+\_\+}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ad67e91d6e4ecf25dab997a1f793de053}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ad67e91d6e4ecf25dab997a1f793de053}} 
+fp\+\_\+type {\bfseries grad\+\_\+tol\+\_\+}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_af25406fdb9177723453312b688eff46d}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_af25406fdb9177723453312b688eff46d}} 
+fp\+\_\+type {\bfseries fun\+\_\+tol\+\_\+}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ae3fda9c4b90d8e582db7a654dce981fd}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ae3fda9c4b90d8e582db7a654dce981fd}} 
+std\+::size\+\_\+t {\bfseries max\+\_\+iters\+\_\+}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a135cda3db353cb676e7ee97587e2bd6c}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a135cda3db353cb676e7ee97587e2bd6c}} 
+f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ {\bfseries lsm\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double, typename = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base$<$ fp\+\_\+type, typename $>$}
+
+Conjugate-\/gradient base class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+{\em std\+::enable\+\_\+if$<$} & std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a95dcc5db710cad54934de14126332ccd}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a95dcc5db710cad54934de14126332ccd}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}!conjugate\_gradient\_base@{conjugate\_gradient\_base}}
+\index{conjugate\_gradient\_base@{conjugate\_gradient\_base}!om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{conjugate\_gradient\_base()}{conjugate\_gradient\_base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}} (\begin{DoxyParamCaption}\item[{f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{line\+\_\+search\+\_\+minimiser,  }\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters = {\ttfamily 100},  }\item[{fp\+\_\+type}]{arg\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{grad\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{fun\+\_\+tol = {\ttfamily 1e-\/4} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new conjugate gradient base object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+search\+\_\+minimiser} & line method to be used in finding the minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+{\em arg\+\_\+toltolerance} & for a stopping criteria \\
+\hline
+{\em grad\+\_\+tol} & tolerance for gradient \\
+\hline
+{\em fun\+\_\+tol} & tolerance for a value of objective function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a7ef2b94764c5e3de17df59148632a0b0}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a7ef2b94764c5e3de17df59148632a0b0}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}!conjugate\_gradient\_base@{conjugate\_gradient\_base}}
+\index{conjugate\_gradient\_base@{conjugate\_gradient\_base}!om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{conjugate\_gradient\_base()}{conjugate\_gradient\_base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new conjugate gradient base object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & copy is the object which we want to make a copy of \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a8ea8c6c3b417a0be1b1e98a1ee316d59}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a8ea8c6c3b417a0be1b1e98a1ee316d59}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}}\& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator of a conjugate gradient base object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{conjugate\+\_\+gradient\+\_\+base}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ad509614d7e73c40d09193336c6aaf4d7}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ad509614d7e73c40d09193336c6aaf4d7}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}!set\_arg\_tolerance@{set\_arg\_tolerance}}
+\index{set\_arg\_tolerance@{set\_arg\_tolerance}!om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{set\_arg\_tolerance()}{set\_arg\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::set\+\_\+arg\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{arg\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the stopping criteria tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg\+\_\+tol} & tolerance for a stopping criteria \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a92c5d7cbdc3e5888c559263135c8fe8b}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a92c5d7cbdc3e5888c559263135c8fe8b}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}!set\_fun\_tolerance@{set\_fun\_tolerance}}
+\index{set\_fun\_tolerance@{set\_fun\_tolerance}!om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{set\_fun\_tolerance()}{set\_fun\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::set\+\_\+fun\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{fun\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the fun tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fun\+\_\+tol} & tolerance for a value of objective function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ad6854bf9f669fc6bff47c7ac9413b956}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_ad6854bf9f669fc6bff47c7ac9413b956}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}!set\_grad\_tolerance@{set\_grad\_tolerance}}
+\index{set\_grad\_tolerance@{set\_grad\_tolerance}!om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{set\_grad\_tolerance()}{set\_grad\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::set\+\_\+grad\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{grad\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the grad tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grad\+\_\+tol} & tolerance for gradient \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a387b8f0a56e89dac3c776ed3c9c1ff40}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base_a387b8f0a56e89dac3c776ed3c9c1ff40}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}!set\_max\_iterations@{set\_max\_iterations}}
+\index{set\_max\_iterations@{set\_max\_iterations}!om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::conjugate\_gradient\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{set\_max\_iterations()}{set\_max\_iterations()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::conjugate\+\_\+gradient\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::set\+\_\+max\+\_\+iterations (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t const \&}]{iters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the max iterations object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iters} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/multi\+\_\+dim/conjugate\+\_\+gradient/om\+\_\+conjugate\+\_\+gradient\+\_\+base.\+hpp\end{DoxyCompactItemize}

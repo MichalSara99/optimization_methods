@@ -1,0 +1,96 @@
+\hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::davidon\+\_\+fletcher\+\_\+powell\+\_\+method$<$ fp\+\_\+type $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method}\index{om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$}}
+
+
+Davidon-\/\+Fletcher-\/\+Powell method object.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+davidon\+\_\+fletcher\+\_\+powell.\+hpp$>$}
+
+
+
+Inheritance diagram for om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::davidon\+\_\+fletcher\+\_\+powell\+\_\+method$<$ fp\+\_\+type $>$\+:
+% FIG 0
+
+
+Collaboration diagram for om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::davidon\+\_\+fletcher\+\_\+powell\+\_\+method$<$ fp\+\_\+type $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method_a161660e599a324ed6fee66c56b9d3838}{davidon\+\_\+fletcher\+\_\+powell\+\_\+method}} (f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&line\+\_\+search\+\_\+minimiser, std\+::size\+\_\+t const \&max\+\_\+iters=100, fp\+\_\+type arg\+\_\+tol=1e-\/4, fp\+\_\+type grad\+\_\+tol=1e-\/4, fp\+\_\+type fun\+\_\+tol=1e-\/4)
+\begin{DoxyCompactList}\small\item\em Construct a new davidon fletcher powell method object. \end{DoxyCompactList}\item 
+std\+::tuple$<$ vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method_afdaeb441b58fcb0cef5768345579c9a0}{minimize}} (f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ objective, vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&init\+\_\+guess) const
+\begin{DoxyCompactList}\small\item\em Function method that minimises the objective function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::davidon\+\_\+fletcher\+\_\+powell\+\_\+method$<$ fp\+\_\+type $>$}
+
+Davidon-\/\+Fletcher-\/\+Powell method object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method_a161660e599a324ed6fee66c56b9d3838}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method_a161660e599a324ed6fee66c56b9d3838}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$}!davidon\_fletcher\_powell\_method@{davidon\_fletcher\_powell\_method}}
+\index{davidon\_fletcher\_powell\_method@{davidon\_fletcher\_powell\_method}!om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{davidon\_fletcher\_powell\_method()}{davidon\_fletcher\_powell\_method()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::davidon\+\_\+fletcher\+\_\+powell\+\_\+method}}$<$ fp\+\_\+type $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method}{davidon\+\_\+fletcher\+\_\+powell\+\_\+method}} (\begin{DoxyParamCaption}\item[{f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{line\+\_\+search\+\_\+minimiser,  }\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters = {\ttfamily 100},  }\item[{fp\+\_\+type}]{arg\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{grad\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{fun\+\_\+tol = {\ttfamily 1e-\/4} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new davidon fletcher powell method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+search\+\_\+minimiser} & line method to be used in finding the minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+{\em arg\+\_\+tol} & tolerance for stopping criteria \\
+\hline
+{\em grad\+\_\+tol} & tolerance for gradient \\
+\hline
+{\em fun\+\_\+tol} & tolerance for a value of objective function \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method_afdaeb441b58fcb0cef5768345579c9a0}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method_afdaeb441b58fcb0cef5768345579c9a0}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$}!minimize@{minimize}}
+\index{minimize@{minimize}!om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_quasi\_newton::davidon\_fletcher\_powell\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type $>$ \\
+std\+::tuple$<$ om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::davidon\+\_\+fletcher\+\_\+powell\+\_\+method}}$<$ fp\+\_\+type $>$\+::minimize (\begin{DoxyParamCaption}\item[{f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$}]{objective,  }\item[{vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{init\+\_\+guess }\end{DoxyParamCaption}) const}
+
+
+
+Function method that minimises the objective function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objective} & objective function \\
+\hline
+{\em init\+\_\+guess} & initial guess \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$vector\+\_\+t$<$fp\+\_\+type$>$, fp\+\_\+type, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/multi\+\_\+dim/quasi\+\_\+newton/om\+\_\+davidon\+\_\+fletcher\+\_\+powell.\+hpp\end{DoxyCompactItemize}

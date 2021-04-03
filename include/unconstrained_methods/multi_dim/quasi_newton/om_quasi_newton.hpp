@@ -5,6 +5,10 @@
 #include "om_davidon_fletcher_powell.hpp"
 
 namespace om_unconstrained_methods {
+/**
+ * @brief Contains Quasi-Newton methods
+ *
+ */
 namespace om_quasi_newton {}
 
 } // namespace om_unconstrained_methods

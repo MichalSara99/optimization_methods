@@ -3,7 +3,7 @@
 
 unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o
  ../include/unconstrained_methods/multi_dim/steepest_descent/om_steepest_descent.hpp
- ../include/unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp
+ ../include/unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp
  ../include/unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp
  ../include/unconstrained_methods/one_dim/om_brent.hpp
  ../include/unconstrained_methods/one_dim/om_fibonacci.hpp

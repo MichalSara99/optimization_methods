@@ -8,6 +8,10 @@
 #include "om_powell.hpp"
 
 namespace om_unconstrained_methods {
+/**
+ * @brief Contains one-dimensional line methods
+ *
+ */
 namespace om_line_methods {} // namespace om_line_methods
 } // namespace om_unconstrained_methods
 #endif /// OM_LINE_METHODS

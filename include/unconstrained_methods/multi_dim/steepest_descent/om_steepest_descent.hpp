@@ -6,7 +6,10 @@
 #include "utilities/om_types.hpp"
 
 namespace om_unconstrained_methods {
-
+/**
+ * @brief Contains steepest-descent method
+ *
+ */
 namespace om_steepest_descent {
 
 using om_differentiation::central_difference;

@@ -1,0 +1,9 @@
+digraph "om_unconstrained_methods::om_quasi_newton::davidon_fletcher_powell_method&lt; fp_type &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="om_unconstrained_methods\l::om_quasi_newton::davidon\l_fletcher_powell_method\< fp_type \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Davidon-Fletcher-Powell method object."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="om_unconstrained_methods\l::om_quasi_newton::quasi\l_newton_base\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base.html",tooltip=" "];
+}

@@ -1,0 +1,236 @@
+\hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method$<$ fp\+\_\+type $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+
+
+Nelder-\/\+Mead method object.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+nelder\+\_\+mead.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a2663559975d1e4a184c14473a25fb654}{nelder\+\_\+mead\+\_\+method}} (std\+::size\+\_\+t const \&max\+\_\+iters=80, fp\+\_\+type convergence\+\_\+tol=10e-\/4, fp\+\_\+type reflection\+\_\+rho=0.\+5, fp\+\_\+type expansion\+\_\+rho=1.\+5, fp\+\_\+type contraction\+\_\+rho=0.\+25, fp\+\_\+type shrinkage\+\_\+rho=0.\+5)
+\begin{DoxyCompactList}\small\item\em Construct a new nelder mead method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a87c4a9892b4c0b7203a0e80c9ad76f30}{nelder\+\_\+mead\+\_\+method}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Construct a new nelder mead method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}} \& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a39922db0e4ee089b791222088a0a87a1}{operator=}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator of a nelder mead method object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_ac91d03079868a2078bd051dbe57d3ee5}{set\+\_\+max\+\_\+iterations}} (std\+::size\+\_\+t const \&iters)
+\begin{DoxyCompactList}\small\item\em Set the max iterations object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a05aeda447151844583364aeda1fb92b2}{set\+\_\+converge\+\_\+tolerance}} (fp\+\_\+type converge\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the converge tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a489e855f43e34f9f0df104d7145dd020}{set\+\_\+reflection\+\_\+rho}} (fp\+\_\+type value)
+\begin{DoxyCompactList}\small\item\em Set the reflection rho object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_addcee23ddd19d17e813116bdccfd2bfa}{set\+\_\+expansion\+\_\+rho}} (fp\+\_\+type value)
+\begin{DoxyCompactList}\small\item\em Set the expansion rho object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a6cca59f50004ee82063b205a18008aa0}{set\+\_\+contraction\+\_\+rho}} (fp\+\_\+type value)
+\begin{DoxyCompactList}\small\item\em Set the contraction rho object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a996a5a3f9486be74963b8a4effd439da}{set\+\_\+shrinkage\+\_\+rho}} (fp\+\_\+type value)
+\begin{DoxyCompactList}\small\item\em Set the shrinkage rho object. \end{DoxyCompactList}\item 
+std\+::tuple$<$ vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a3801f2872ff1137f7db71c9be1fe8cf7}{minimize}} (f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ objective, vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&init\+\_\+guess) const
+\begin{DoxyCompactList}\small\item\em Function method that minimises the objective function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method$<$ fp\+\_\+type $>$}
+
+Nelder-\/\+Mead method object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a2663559975d1e4a184c14473a25fb654}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a2663559975d1e4a184c14473a25fb654}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!nelder\_mead\_method@{nelder\_mead\_method}}
+\index{nelder\_mead\_method@{nelder\_mead\_method}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{nelder\_mead\_method()}{nelder\_mead\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters = {\ttfamily 80},  }\item[{fp\+\_\+type}]{convergence\+\_\+tol = {\ttfamily 10e-\/4},  }\item[{fp\+\_\+type}]{reflection\+\_\+rho = {\ttfamily 0.5},  }\item[{fp\+\_\+type}]{expansion\+\_\+rho = {\ttfamily 1.5},  }\item[{fp\+\_\+type}]{contraction\+\_\+rho = {\ttfamily 0.25},  }\item[{fp\+\_\+type}]{shrinkage\+\_\+rho = {\ttfamily 0.5} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new nelder mead method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+{\em convergence\+\_\+tol} & tolerance for convergence \\
+\hline
+{\em reflection\+\_\+rho} & reflection rho \\
+\hline
+{\em expansion\+\_\+rho} & expansion rho \\
+\hline
+{\em contraction\+\_\+rho} & contraction rho \\
+\hline
+{\em shrinkage\+\_\+rho} & shrinkage rho \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a87c4a9892b4c0b7203a0e80c9ad76f30}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a87c4a9892b4c0b7203a0e80c9ad76f30}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!nelder\_mead\_method@{nelder\_mead\_method}}
+\index{nelder\_mead\_method@{nelder\_mead\_method}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{nelder\_mead\_method()}{nelder\_mead\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new nelder mead method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & copy is the object which we want to make a copy of \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a3801f2872ff1137f7db71c9be1fe8cf7}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a3801f2872ff1137f7db71c9be1fe8cf7}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!minimize@{minimize}}
+\index{minimize@{minimize}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type $>$ \\
+std\+::tuple$<$ om\+\_\+zero\+\_\+order\+::vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::minimize (\begin{DoxyParamCaption}\item[{f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$}]{objective,  }\item[{vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{init\+\_\+guess }\end{DoxyParamCaption}) const}
+
+
+
+Function method that minimises the objective function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objective} & objective function \\
+\hline
+{\em init\+\_\+guess} & initial guess \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$vector\+\_\+t$<$fp\+\_\+type$>$, fp\+\_\+type, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a39922db0e4ee089b791222088a0a87a1}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a39922db0e4ee089b791222088a0a87a1}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}}\& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator of a nelder mead method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{nelder\+\_\+mead\+\_\+method}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a6cca59f50004ee82063b205a18008aa0}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a6cca59f50004ee82063b205a18008aa0}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!set\_contraction\_rho@{set\_contraction\_rho}}
+\index{set\_contraction\_rho@{set\_contraction\_rho}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_contraction\_rho()}{set\_contraction\_rho()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+contraction\+\_\+rho (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the contraction rho object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value of contraction rho \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a05aeda447151844583364aeda1fb92b2}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a05aeda447151844583364aeda1fb92b2}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!set\_converge\_tolerance@{set\_converge\_tolerance}}
+\index{set\_converge\_tolerance@{set\_converge\_tolerance}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_converge\_tolerance()}{set\_converge\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+converge\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{converge\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the converge tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em converge\+\_\+tol} & tolerance for convergance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_addcee23ddd19d17e813116bdccfd2bfa}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_addcee23ddd19d17e813116bdccfd2bfa}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!set\_expansion\_rho@{set\_expansion\_rho}}
+\index{set\_expansion\_rho@{set\_expansion\_rho}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_expansion\_rho()}{set\_expansion\_rho()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+expansion\+\_\+rho (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the expansion rho object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value of expansion rho \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_ac91d03079868a2078bd051dbe57d3ee5}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_ac91d03079868a2078bd051dbe57d3ee5}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!set\_max\_iterations@{set\_max\_iterations}}
+\index{set\_max\_iterations@{set\_max\_iterations}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_max\_iterations()}{set\_max\_iterations()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+max\+\_\+iterations (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t const \&}]{iters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the max iterations object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iters} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a489e855f43e34f9f0df104d7145dd020}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a489e855f43e34f9f0df104d7145dd020}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!set\_reflection\_rho@{set\_reflection\_rho}}
+\index{set\_reflection\_rho@{set\_reflection\_rho}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_reflection\_rho()}{set\_reflection\_rho()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+reflection\+\_\+rho (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the reflection rho object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value of reflection rho \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a996a5a3f9486be74963b8a4effd439da}\label{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method_a996a5a3f9486be74963b8a4effd439da}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}!set\_shrinkage\_rho@{set\_shrinkage\_rho}}
+\index{set\_shrinkage\_rho@{set\_shrinkage\_rho}!om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::nelder\_mead\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_shrinkage\_rho()}{set\_shrinkage\_rho()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::nelder\+\_\+mead\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+shrinkage\+\_\+rho (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the shrinkage rho object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & value of shrinkage rho \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/multi\+\_\+dim/zero\+\_\+order/om\+\_\+nelder\+\_\+mead.\+hpp\end{DoxyCompactItemize}

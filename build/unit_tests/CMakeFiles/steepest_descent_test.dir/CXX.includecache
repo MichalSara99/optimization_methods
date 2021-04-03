@@ -14,7 +14,7 @@ utilities/om_differentiation.hpp
 utilities/om_types.hpp
 ../include/unconstrained_methods/multi_dim/steepest_descent/utilities/om_types.hpp
 
-../include/unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp
+../include/unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp
 om_test_helpers.hpp
 ../include/unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp
 utilities/om_types.hpp
@@ -125,8 +125,8 @@ iostream
 -
 unconstrained_methods/multi_dim/steepest_descent/om_steepest_descent.hpp
 /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/unconstrained_methods/multi_dim/steepest_descent/om_steepest_descent.hpp
-unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp
-/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp
+unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp
+/home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp
 unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp
 /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp
 unconstrained_methods/one_dim/om_line_methods.hpp

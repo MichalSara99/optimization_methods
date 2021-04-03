@@ -1,0 +1,199 @@
+\hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base$<$ fp\+\_\+type, typename $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}\index{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}}
+
+
+Quasi-\/\+Newton base class.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+quasi\+\_\+newton\+\_\+base.\+hpp$>$}
+
+
+
+Collaboration diagram for om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base$<$ fp\+\_\+type, typename $>$\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a805976d60a403f52bba5754aa6c89f65}{quasi\+\_\+newton\+\_\+base}} (f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&line\+\_\+search\+\_\+minimiser, std\+::size\+\_\+t const \&max\+\_\+iters=100, fp\+\_\+type arg\+\_\+tol=1e-\/4, fp\+\_\+type grad\+\_\+tol=1e-\/4, fp\+\_\+type fun\+\_\+tol=1e-\/4)
+\begin{DoxyCompactList}\small\item\em Construct a new quasi newton base object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_ac871165c7099b2e1b6835916c81b3860}{quasi\+\_\+newton\+\_\+base}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Construct a new quasi newton base object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}} \& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a753895f3f4996fd818586659f1c601f2}{operator=}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator of a quasi newton base object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_ac265b4974aff8ad45a4b7ba806286ebe}{set\+\_\+max\+\_\+iterations}} (std\+::size\+\_\+t const \&iters)
+\begin{DoxyCompactList}\small\item\em Set the max iterations object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_aa42426fd950f7b8854ba8594db4d220f}{set\+\_\+arg\+\_\+tolerance}} (fp\+\_\+type arg\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the stopping criteria tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a0e03a4331fab79fa43f7f77058804499}{set\+\_\+fun\+\_\+tolerance}} (fp\+\_\+type fun\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the fun tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a43e12343a801320cfc2e798b3f408a37}{set\+\_\+grad\+\_\+tolerance}} (fp\+\_\+type grad\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the grad tolerance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a3cee721c2df3da88b8f45e90c0ca5353}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a3cee721c2df3da88b8f45e90c0ca5353}} 
+fp\+\_\+type {\bfseries arg\+\_\+tol\+\_\+}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a0789f681107e62e40552aa21ad409133}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a0789f681107e62e40552aa21ad409133}} 
+fp\+\_\+type {\bfseries grad\+\_\+tol\+\_\+}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a93c69aab39756194484c30e8d64f00d1}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a93c69aab39756194484c30e8d64f00d1}} 
+fp\+\_\+type {\bfseries fun\+\_\+tol\+\_\+}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_acebfab2fa42ba54a87774f154d8b4309}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_acebfab2fa42ba54a87774f154d8b4309}} 
+std\+::size\+\_\+t {\bfseries max\+\_\+iters\+\_\+}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a2a91573e3334411e617a39f0861c3b67}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a2a91573e3334411e617a39f0861c3b67}} 
+f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ {\bfseries lsm\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double, typename = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base$<$ fp\+\_\+type, typename $>$}
+
+Quasi-\/\+Newton base class. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+{\em std\+::enable\+\_\+if$<$} & std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a805976d60a403f52bba5754aa6c89f65}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a805976d60a403f52bba5754aa6c89f65}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}!quasi\_newton\_base@{quasi\_newton\_base}}
+\index{quasi\_newton\_base@{quasi\_newton\_base}!om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{quasi\_newton\_base()}{quasi\_newton\_base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}} (\begin{DoxyParamCaption}\item[{f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{line\+\_\+search\+\_\+minimiser,  }\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters = {\ttfamily 100},  }\item[{fp\+\_\+type}]{arg\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{grad\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{fun\+\_\+tol = {\ttfamily 1e-\/4} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new quasi newton base object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+search\+\_\+minimiser} & line method to be used in finding the minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+{\em arg\+\_\+tol} & tolerance for stopping criteria \\
+\hline
+{\em grad\+\_\+tol} & tolerance for gradient \\
+\hline
+{\em fun\+\_\+tol} & tolerance for a value of objective function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_ac871165c7099b2e1b6835916c81b3860}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_ac871165c7099b2e1b6835916c81b3860}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}!quasi\_newton\_base@{quasi\_newton\_base}}
+\index{quasi\_newton\_base@{quasi\_newton\_base}!om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{quasi\_newton\_base()}{quasi\_newton\_base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new quasi newton base object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & copy is the object which we want to make a copy of \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a753895f3f4996fd818586659f1c601f2}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a753895f3f4996fd818586659f1c601f2}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}}\& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator of a quasi newton base object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{quasi\+\_\+newton\+\_\+base}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_aa42426fd950f7b8854ba8594db4d220f}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_aa42426fd950f7b8854ba8594db4d220f}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}!set\_arg\_tolerance@{set\_arg\_tolerance}}
+\index{set\_arg\_tolerance@{set\_arg\_tolerance}!om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{set\_arg\_tolerance()}{set\_arg\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::set\+\_\+arg\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{arg\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the stopping criteria tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg\+\_\+tol} & tolerance for stopping criteria \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a0e03a4331fab79fa43f7f77058804499}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a0e03a4331fab79fa43f7f77058804499}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}!set\_fun\_tolerance@{set\_fun\_tolerance}}
+\index{set\_fun\_tolerance@{set\_fun\_tolerance}!om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{set\_fun\_tolerance()}{set\_fun\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::set\+\_\+fun\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{fun\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the fun tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fun\+\_\+tol} & tolerance for a value of objective function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a43e12343a801320cfc2e798b3f408a37}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_a43e12343a801320cfc2e798b3f408a37}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}!set\_grad\_tolerance@{set\_grad\_tolerance}}
+\index{set\_grad\_tolerance@{set\_grad\_tolerance}!om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{set\_grad\_tolerance()}{set\_grad\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::set\+\_\+grad\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{grad\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the grad tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grad\+\_\+tol} & tolerance for gardient \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_ac265b4974aff8ad45a4b7ba806286ebe}\label{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base_ac265b4974aff8ad45a4b7ba806286ebe}} 
+\index{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}!set\_max\_iterations@{set\_max\_iterations}}
+\index{set\_max\_iterations@{set\_max\_iterations}!om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_quasi\_newton::quasi\_newton\_base$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{set\_max\_iterations()}{set\_max\_iterations()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+quasi\+\_\+newton\+::quasi\+\_\+newton\+\_\+base}}$<$ fp\+\_\+type, typename $>$\+::set\+\_\+max\+\_\+iterations (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t const \&}]{iters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the max iterations object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iters} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/multi\+\_\+dim/quasi\+\_\+newton/om\+\_\+quasi\+\_\+newton\+\_\+base.\+hpp\end{DoxyCompactItemize}

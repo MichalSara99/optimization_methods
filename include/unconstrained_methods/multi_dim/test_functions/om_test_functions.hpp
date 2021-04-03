@@ -1,5 +1,5 @@
-#if !defined(OM_RAOS_COLLECTION)
-#define OM_RAOS_COLLECTION
+#if !defined(OM_TEST_FUNCTIONS)
+#define OM_TEST_FUNCTIONS
 
 #include "om_test_helpers.hpp"
 #include "utilities/om_types.hpp"
@@ -10,12 +10,29 @@ using namespace om_types;
 using namespace om_test_helpers;
 using namespace std::string_literals;
 
-/// Some classical test functions (designed by Rao) are listed below:
+/**
+ * @brief Some classical test functions (designed by Rao)
+ *
+ */
+namespace om_test_functions {
+
+/**
+ * @brief Pi definition used in the Rao test functons
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ */
 template <typename fp_type> constexpr fp_type pi{3.14159265359};
 
-// Rosenbrock's parabolic valley
-// guess = (-1.2,1.0)
-// minimiser = (1.0,1.0)
+/**
+ * @brief Rosenbrock's parabolic valley test function
+ * @details initial guess = (-1.2,1.0),
+ * minimiser = (1.0,1.0)
+ *
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @param args arguments of the function
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type rosenbrock_parabolic_valley(vector_arg_t<fp_type> const &args) {
   return (static_cast<fp_type>(100.0) * (args(1) - args(0) * args(0)) *
@@ -24,9 +41,14 @@ fp_type rosenbrock_parabolic_valley(vector_arg_t<fp_type> const &args) {
               (static_cast<fp_type>(1.0) - args(0)));
 }
 
-// Quadratic function
-// guess = (0.0,0.0)
-// minimiser = (1.0,3.0)
+/**
+ * @brief Quadratic test function
+ * @details initial guess = (0.0,0.0), minimiser = (1.0,3.0)
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @param args function arguments
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type quadratic_function(vector_arg_t<fp_type> const &args) {
   return ((args(0) + static_cast<fp_type>(2.0) * args(1) -
@@ -39,9 +61,15 @@ fp_type quadratic_function(vector_arg_t<fp_type> const &args) {
                static_cast<fp_type>(5.0)));
 }
 
-// Powell's quadratic function
-// guess = (3.0,-1.0,0.0,1.0)
-// minimiser = (0.0,0.0,0.0,0.0)
+/**
+ * @brief Powell's quadratic test function
+ * @details initial guess = (3.0,-1.0,0.0,1.0),
+ * minimiser = (0.0,0.0,0.0,0.0)
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @param args function arguments
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type powell_function(vector_arg_t<fp_type> const &args) {
   return ((args(0) + static_cast<fp_type>(10.0) * args(1)) *
@@ -53,9 +81,15 @@ fp_type powell_function(vector_arg_t<fp_type> const &args) {
                    static_cast<fp_type>(4.0)));
 }
 
-// Fletcher and Powell's helical valley
-// guess = (-1.0,0.0,0.0)
-// minimiser = (1.0,0.0,0.0)
+/**
+ * @brief Fletcher and Powell's helical valley test function
+ * @details initial guess = (-1.0,0.0,0.0),
+ * minimiser = (1.0,0.0,0.0)
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @param args function arguments
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type fletcher_powell_helical_valley(vector_arg_t<fp_type> const &args) {
   fp_type theta{0.0};
@@ -78,9 +112,15 @@ fp_type fletcher_powell_helical_valley(vector_arg_t<fp_type> const &args) {
           args(2) * args(2));
 }
 
-// Non-linear function of 3 variables
-// guess = (0.0,1.0,2.0)
-// minimiser = (1.0,1.0,1.0)
+/**
+ * @brief Non-linear test function of 3 variables
+ * @details initial guess = (0.0,1.0,2.0),
+ * minimiser = (1.0,1.0,1.0)
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @param args function arguments
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type non_linear_function(vector_arg_t<fp_type> const &args) {
   auto term_1 =
@@ -95,10 +135,18 @@ fp_type non_linear_function(vector_arg_t<fp_type> const &args) {
   return (static_cast<fp_type>(-1.0) * term_1 - term_2 - term_3);
 }
 
-// Freudenstein and Roth function
-// guess = (0.5,-2.0)
-// minimiser = (5.0,4.0)
-// local_minimiser = (11.41..., -0.8968)
+/**
+ * @brief Freudenstein and Roth test function
+ * @details initial guess = (0.5,-2.0),
+ * minimiser = (5.0,4.0),
+ * local_minimiser = (11.41..., -0.8968)
+ *
+ * @todo Check if the minimiser and local_minimiser are correct!!
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @param args function arguments
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type freudenstein_roth_function(vector_arg_t<fp_type> const &args) {
   auto term_1 = std::pow((static_cast<fp_type>(-13.0) + args(0) +
@@ -114,9 +162,16 @@ fp_type freudenstein_roth_function(vector_arg_t<fp_type> const &args) {
   return (term_1 + term_2);
 }
 
-// Powell's badly scaled function
-// guess = (0.0,1.0)
-// minimiser = (1.098...*10^-5,9.106...)
+/**
+ * @brief Powell's badly scaled test function
+ * @details initial guess = (0.0,1.0),
+ * minimiser = (1.098...*10^-5,9.106...)
+ * @todo Check the validity of minimiser!!!
+ *
+ * @tparam fp_type
+ * @param args
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type powell_badly_scaled_function(vector_arg_t<fp_type> const &args) {
   auto term_1 = (static_cast<fp_type>(10'000) * args(0) * args(1) -
@@ -132,9 +187,15 @@ fp_type powell_badly_scaled_function(vector_arg_t<fp_type> const &args) {
   return (term_1 + term_2);
 }
 
-// Beale's function
-// guess = (1.0,1.0)
-// minimiser = (3.0,0.5)
+/**
+ * @brief Beale's test function
+ * @details initial guess = (1.0,1.0),
+ * minimiser = (3.0,0.5)
+ *
+ * @tparam fp_type
+ * @param args
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type beale_function(vector_arg_t<fp_type> const &args) {
   auto term_1 = std::pow((static_cast<fp_type>(1.5) -
@@ -151,9 +212,15 @@ fp_type beale_function(vector_arg_t<fp_type> const &args) {
   return (term_1 + term_2 + term_3);
 }
 
-// Wood's function
-// guess = (-3.0,-1.0,-3.0,-1.0)
-// minimiser = (1.0,1.0,1.0,1.0)
+/**
+ * @brief Wood's test function
+ * @details initial guess = (-3.0,-1.0,-3.0,-1.0),
+ * minimiser = (1.0,1.0,1.0,1.0)
+ *
+ * @tparam fp_type fp_type is a floation-point template parameter
+ * @param args function arguments
+ * @return fp_type
+ */
 template <typename fp_type>
 fp_type wood_function(vector_arg_t<fp_type> const &args) {
   auto term_1 =
@@ -174,6 +241,12 @@ fp_type wood_function(vector_arg_t<fp_type> const &args) {
   return (term_1 + term_2 + term_3 + term_4 + term_5 + term_6);
 }
 
+/**
+ * @brief Create a rao test collection object
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @return std::vector<sptr_t<minimizer_helper<fp_type>>>
+ */
 template <typename fp_type>
 std::vector<sptr_t<minimizer_helper<fp_type>>> create_rao_test_collection() {
 
@@ -214,4 +287,5 @@ std::vector<sptr_t<minimizer_helper<fp_type>>> create_rao_test_collection() {
   return helper;
 }
 
-#endif /// OM_RAOS_COLLECTION
+} // namespace om_test_functions
+#endif /// OM_TEST_FUNCTIONS

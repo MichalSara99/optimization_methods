@@ -1,0 +1,128 @@
+\hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::fibonacci\+\_\+method$<$ fp\+\_\+type, typename $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}\index{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}}
+
+
+Fibonacci method object.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+fibonacci.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_ad09a9ca65aaee850520c9172ed939039}\label{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_ad09a9ca65aaee850520c9172ed939039}} 
+typedef fp\+\_\+type {\bfseries value\+\_\+type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_a99b6cecdd16841a1f38a35a5125dbe00}{fibonacci\+\_\+method}} (range$<$ fp\+\_\+type $>$ const \&range, fp\+\_\+type tolerance=1e-\/5, std\+::size\+\_\+t max\+\_\+iters=1000)
+\begin{DoxyCompactList}\small\item\em Construct a new fibonacci method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_a81cf7614c762d0a74dd04b56b2944cdd}{fibonacci\+\_\+method}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor of a fibonacci method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}} \& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_afe4d1b75ce17602a9c0e796269323a28}{operator=}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator of a fibonacci method object. \end{DoxyCompactList}\item 
+std\+::tuple$<$ fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_afb256e5d8a3e80f75ebe99f012997fd4}{operator()}} (f\+\_\+scalar\+\_\+t$<$ fp\+\_\+type $>$ \&\&fun) const
+\begin{DoxyCompactList}\small\item\em Functor of a fibonacci method object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double, typename = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::fibonacci\+\_\+method$<$ fp\+\_\+type, typename $>$}
+
+Fibonacci method object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is floating-\/point template parameter \\
+\hline
+{\em std\+::enable\+\_\+if$<$} & std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_a99b6cecdd16841a1f38a35a5125dbe00}\label{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_a99b6cecdd16841a1f38a35a5125dbe00}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}!fibonacci\_method@{fibonacci\_method}}
+\index{fibonacci\_method@{fibonacci\_method}!om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{fibonacci\_method()}{fibonacci\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::fibonacci\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}} (\begin{DoxyParamCaption}\item[{range$<$ fp\+\_\+type $>$ const \&}]{range,  }\item[{fp\+\_\+type}]{tolerance = {\ttfamily 1e-\/5},  }\item[{std\+::size\+\_\+t}]{max\+\_\+iters = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new fibonacci method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em range} & range of the minimiser \\
+\hline
+{\em tolerance} & tolerance of the minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_a81cf7614c762d0a74dd04b56b2944cdd}\label{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_a81cf7614c762d0a74dd04b56b2944cdd}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}!fibonacci\_method@{fibonacci\_method}}
+\index{fibonacci\_method@{fibonacci\_method}!om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{fibonacci\_method()}{fibonacci\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::fibonacci\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor of a fibonacci method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & copy is the object which we want to make a copy of \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_afb256e5d8a3e80f75ebe99f012997fd4}\label{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_afb256e5d8a3e80f75ebe99f012997fd4}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::fibonacci\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::operator() (\begin{DoxyParamCaption}\item[{f\+\_\+scalar\+\_\+t$<$ fp\+\_\+type $>$ \&\&}]{fun }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Functor of a fibonacci method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fun} & objective function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_afe4d1b75ce17602a9c0e796269323a28}\label{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method_afe4d1b75ce17602a9c0e796269323a28}} 
+\index{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$@{om\_unconstrained\_methods::om\_line\_methods::fibonacci\_method$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}}\& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+line\+\_\+methods\+::fibonacci\+\_\+method}}$<$ fp\+\_\+type, typename $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}}$<$ fp\+\_\+type, typename $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator of a fibonacci method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method}{fibonacci\+\_\+method}}\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/one\+\_\+dim/om\+\_\+fibonacci.\+hpp\end{DoxyCompactItemize}

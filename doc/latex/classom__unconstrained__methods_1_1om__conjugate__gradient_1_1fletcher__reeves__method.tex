@@ -1,0 +1,96 @@
+\hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::fletcher\+\_\+reeves\+\_\+method$<$ fp\+\_\+type $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method}\index{om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$}}
+
+
+Fletcher-\/\+Reeves method object.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+fletcher\+\_\+reeves.\+hpp$>$}
+
+
+
+Inheritance diagram for om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::fletcher\+\_\+reeves\+\_\+method$<$ fp\+\_\+type $>$\+:
+% FIG 0
+
+
+Collaboration diagram for om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::fletcher\+\_\+reeves\+\_\+method$<$ fp\+\_\+type $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method_a88c445d61012854f73833d1e67f1c44f}{fletcher\+\_\+reeves\+\_\+method}} (f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&line\+\_\+search\+\_\+minimiser, std\+::size\+\_\+t const \&max\+\_\+iters=100, fp\+\_\+type arg\+\_\+tol=1e-\/4, fp\+\_\+type grad\+\_\+tol=1e-\/4, fp\+\_\+type fun\+\_\+tol=1e-\/4)
+\begin{DoxyCompactList}\small\item\em Construct a new fletcher reeves method object. \end{DoxyCompactList}\item 
+std\+::tuple$<$ vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method_aa76c2a3eaf539df7a004683012b77357}{minimize}} (f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ objective, vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&init\+\_\+guess) const
+\begin{DoxyCompactList}\small\item\em Function method that minimises the objective function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::fletcher\+\_\+reeves\+\_\+method$<$ fp\+\_\+type $>$}
+
+Fletcher-\/\+Reeves method object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method_a88c445d61012854f73833d1e67f1c44f}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method_a88c445d61012854f73833d1e67f1c44f}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$}!fletcher\_reeves\_method@{fletcher\_reeves\_method}}
+\index{fletcher\_reeves\_method@{fletcher\_reeves\_method}!om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{fletcher\_reeves\_method()}{fletcher\_reeves\_method()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::fletcher\+\_\+reeves\+\_\+method}}$<$ fp\+\_\+type $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method}{fletcher\+\_\+reeves\+\_\+method}} (\begin{DoxyParamCaption}\item[{f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{line\+\_\+search\+\_\+minimiser,  }\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters = {\ttfamily 100},  }\item[{fp\+\_\+type}]{arg\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{grad\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{fun\+\_\+tol = {\ttfamily 1e-\/4} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new fletcher reeves method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+search\+\_\+minimiser} & line method to be used in finding the minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+{\em arg\+\_\+tol} & tolerance for stopping criteria \\
+\hline
+{\em grad\+\_\+tol} & tolerance for gradient \\
+\hline
+{\em fun\+\_\+tol} & tolerance for a value of objective function \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method_aa76c2a3eaf539df7a004683012b77357}\label{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method_aa76c2a3eaf539df7a004683012b77357}} 
+\index{om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$}!minimize@{minimize}}
+\index{minimize@{minimize}!om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_conjugate\_gradient::fletcher\_reeves\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type $>$ \\
+std\+::tuple$<$ om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__conjugate__gradient_1_1fletcher__reeves__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+conjugate\+\_\+gradient\+::fletcher\+\_\+reeves\+\_\+method}}$<$ fp\+\_\+type $>$\+::minimize (\begin{DoxyParamCaption}\item[{f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$}]{objective,  }\item[{vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{init\+\_\+guess }\end{DoxyParamCaption}) const}
+
+
+
+Function method that minimises the objective function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objective} & objective function \\
+\hline
+{\em init\+\_\+guess} & initial guess \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$vector\+\_\+t$<$fp\+\_\+type$>$, fp\+\_\+type, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/multi\+\_\+dim/conjugate\+\_\+gradient/om\+\_\+fletcher\+\_\+reeves.\+hpp\end{DoxyCompactItemize}

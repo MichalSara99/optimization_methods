@@ -1,0 +1,9 @@
+digraph "om_unconstrained_methods::om_conjugate_gradient::conjugate_gradient_base&lt; fp_type, typename &gt;"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="om_unconstrained_methods\l::om_conjugate_gradient\l::conjugate_gradient_base\l\< fp_type, typename \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Conjugate-gradient base class."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lsm_" ,fontname="Helvetica"];
+  Node2 [label="f_line_minimiser_t\l\< double \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

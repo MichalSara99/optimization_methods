@@ -1,0 +1,158 @@
+\hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::powell\+\_\+conjugate\+\_\+method$<$ fp\+\_\+type $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}\index{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}}
+
+
+Powell conjugate method object.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+powell\+\_\+conjugate.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a5ed0e50c87865faefddf8b2574c8c7ee}{powell\+\_\+conjugate\+\_\+method}} (f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&line\+\_\+search\+\_\+minimiser, std\+::size\+\_\+t const \&max\+\_\+iters=50, fp\+\_\+type convergence\+\_\+tol=10e-\/4)
+\begin{DoxyCompactList}\small\item\em Construct a new powell conjugate method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a1f0e505faafa1009cd9b57c21433d912}{powell\+\_\+conjugate\+\_\+method}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor a new powell conjugate method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}} \& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_aa614ab1d40db9d23b2e982f51e0a2d82}{operator=}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator of a powell conjugate method object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a86bbab21bb5f50758a4b47ef88a74267}{set\+\_\+max\+\_\+iterations}} (std\+::size\+\_\+t const \&iters)
+\begin{DoxyCompactList}\small\item\em Set the max iterations object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_aa115cbc56d4c6c74900bd284824ef26f}{set\+\_\+converge\+\_\+tolerance}} (double converge\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the converge tolerance object. \end{DoxyCompactList}\item 
+std\+::tuple$<$ vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a42eb3bb9a3ddddf43048afc6bf1c5412}{minimize}} (f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ objective, vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&init\+\_\+guess) const
+\begin{DoxyCompactList}\small\item\em Function method that minimises the objective function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::powell\+\_\+conjugate\+\_\+method$<$ fp\+\_\+type $>$}
+
+Powell conjugate method object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a5ed0e50c87865faefddf8b2574c8c7ee}\label{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a5ed0e50c87865faefddf8b2574c8c7ee}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}!powell\_conjugate\_method@{powell\_conjugate\_method}}
+\index{powell\_conjugate\_method@{powell\_conjugate\_method}!om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{powell\_conjugate\_method()}{powell\_conjugate\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::powell\+\_\+conjugate\+\_\+method}}$<$ fp\+\_\+type $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}} (\begin{DoxyParamCaption}\item[{f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{line\+\_\+search\+\_\+minimiser,  }\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters = {\ttfamily 50},  }\item[{fp\+\_\+type}]{convergence\+\_\+tol = {\ttfamily 10e-\/4} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new powell conjugate method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+search\+\_\+minimiser} & line method to be used in finding the minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+{\em convergence\+\_\+tol} & tolerance for convergance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a1f0e505faafa1009cd9b57c21433d912}\label{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a1f0e505faafa1009cd9b57c21433d912}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}!powell\_conjugate\_method@{powell\_conjugate\_method}}
+\index{powell\_conjugate\_method@{powell\_conjugate\_method}!om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{powell\_conjugate\_method()}{powell\_conjugate\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::powell\+\_\+conjugate\+\_\+method}}$<$ fp\+\_\+type $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}}$<$ fp\+\_\+type $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor a new powell conjugate method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & copy is the object which we want to make a copy of \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a42eb3bb9a3ddddf43048afc6bf1c5412}\label{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a42eb3bb9a3ddddf43048afc6bf1c5412}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}!minimize@{minimize}}
+\index{minimize@{minimize}!om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type $>$ \\
+std\+::tuple$<$ om\+\_\+zero\+\_\+order\+::vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::powell\+\_\+conjugate\+\_\+method}}$<$ fp\+\_\+type $>$\+::minimize (\begin{DoxyParamCaption}\item[{om\+\_\+zero\+\_\+order\+::f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$}]{objective,  }\item[{om\+\_\+zero\+\_\+order\+::vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{init\+\_\+guess }\end{DoxyParamCaption}) const}
+
+
+
+Function method that minimises the objective function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objective} & objective function \\
+\hline
+{\em init\+\_\+guess} & initial guess \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$vector\+\_\+t$<$fp\+\_\+type$>$, fp\+\_\+type, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_aa614ab1d40db9d23b2e982f51e0a2d82}\label{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_aa614ab1d40db9d23b2e982f51e0a2d82}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}}\& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::powell\+\_\+conjugate\+\_\+method}}$<$ fp\+\_\+type $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}}$<$ fp\+\_\+type $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator of a powell conjugate method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{powell\+\_\+conjugate\+\_\+method}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_aa115cbc56d4c6c74900bd284824ef26f}\label{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_aa115cbc56d4c6c74900bd284824ef26f}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}!set\_converge\_tolerance@{set\_converge\_tolerance}}
+\index{set\_converge\_tolerance@{set\_converge\_tolerance}!om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_converge\_tolerance()}{set\_converge\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::powell\+\_\+conjugate\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+converge\+\_\+tolerance (\begin{DoxyParamCaption}\item[{double}]{converge\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the converge tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em converge\+\_\+tol} & tolerance for convergance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a86bbab21bb5f50758a4b47ef88a74267}\label{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method_a86bbab21bb5f50758a4b47ef88a74267}} 
+\index{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}!set\_max\_iterations@{set\_max\_iterations}}
+\index{set\_max\_iterations@{set\_max\_iterations}!om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_zero\_order::powell\_conjugate\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_max\_iterations()}{set\_max\_iterations()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+zero\+\_\+order\+::powell\+\_\+conjugate\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+max\+\_\+iterations (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t const \&}]{iters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the max iterations object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iters} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/multi\+\_\+dim/zero\+\_\+order/om\+\_\+powell\+\_\+conjugate.\+hpp\end{DoxyCompactItemize}

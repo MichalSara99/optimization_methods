@@ -1,0 +1,198 @@
+\hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{}\doxysection{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method$<$ fp\+\_\+type $>$ Class Template Reference}
+\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+
+
+Steepest descent method object.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+steepest\+\_\+descent.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a1b7e1ea6bc9b56a764fb1c672199f644}{steepest\+\_\+descent\+\_\+method}} (f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&line\+\_\+search\+\_\+minimiser, std\+::size\+\_\+t const \&max\+\_\+iters=100, fp\+\_\+type arg\+\_\+tol=1e-\/4, fp\+\_\+type grad\+\_\+tol=1e-\/4, fp\+\_\+type fun\+\_\+tol=1e-\/4)
+\begin{DoxyCompactList}\small\item\em Construct a new steepest descent method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a2c7b98db5b336065accc49ecbcfb99d3}{steepest\+\_\+descent\+\_\+method}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor of a steepest descent method object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}} \& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_afb2006a63425770332c8a7dbf2a4ffc9}{operator=}} (\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}} const \&copy)
+\begin{DoxyCompactList}\small\item\em Assignment operator of a steepest descent method object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a0560340f121c990aabb346e188391d10}{set\+\_\+arg\+\_\+tolerance}} (fp\+\_\+type arg\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the stopping criteria tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_acb781a5bd37b944248175a5f54e49c1c}{set\+\_\+fun\+\_\+tolerance}} (fp\+\_\+type fun\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the fun tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_abb58ae20ad1881fa1ec5408297ff1815}{set\+\_\+grad\+\_\+tolerance}} (fp\+\_\+type grad\+\_\+tol)
+\begin{DoxyCompactList}\small\item\em Set the grad tolerance object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_ad70615fad630a6de1b76c76ae8f3fd8d}{set\+\_\+max\+\_\+iterations}} (std\+::size\+\_\+t const \&iters)
+\begin{DoxyCompactList}\small\item\em Set the max iterations object. \end{DoxyCompactList}\item 
+std\+::tuple$<$ vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_ab61eb9034536203c65236c24f008bafa}{minimize}} (f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ objective, vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&init\+\_\+guess) const
+\begin{DoxyCompactList}\small\item\em Function method that minimises the objective function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double$>$\newline
+class om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method$<$ fp\+\_\+type $>$}
+
+Steepest descent method object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a1b7e1ea6bc9b56a764fb1c672199f644}\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a1b7e1ea6bc9b56a764fb1c672199f644}} 
+\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}!steepest\_descent\_method@{steepest\_descent\_method}}
+\index{steepest\_descent\_method@{steepest\_descent\_method}!om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{steepest\_descent\_method()}{steepest\_descent\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}} (\begin{DoxyParamCaption}\item[{f\+\_\+line\+\_\+minimiser\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{line\+\_\+search\+\_\+minimiser,  }\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters = {\ttfamily 100},  }\item[{fp\+\_\+type}]{arg\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{grad\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{fun\+\_\+tol = {\ttfamily 1e-\/4} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new steepest descent method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+search\+\_\+minimiser} & line method to be used in finding the minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+{\em arg\+\_\+tol} & tolerance for stopping criteria \\
+\hline
+{\em grad\+\_\+tol} & tolerance for gradient \\
+\hline
+{\em fun\+\_\+tol} & tolerance for a value of objective function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a2c7b98db5b336065accc49ecbcfb99d3}\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a2c7b98db5b336065accc49ecbcfb99d3}} 
+\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}!steepest\_descent\_method@{steepest\_descent\_method}}
+\index{steepest\_descent\_method@{steepest\_descent\_method}!om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{steepest\_descent\_method()}{steepest\_descent\_method()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$\+::\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor of a steepest descent method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & copy is the object which we want to make a copy of \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_ab61eb9034536203c65236c24f008bafa}\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_ab61eb9034536203c65236c24f008bafa}} 
+\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}!minimize@{minimize}}
+\index{minimize@{minimize}!om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+std\+::tuple$<$ om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$\+::minimize (\begin{DoxyParamCaption}\item[{f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$}]{objective,  }\item[{vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{init\+\_\+guess }\end{DoxyParamCaption}) const}
+
+
+
+Function method that minimises the objective function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em objective} & objective function \\
+\hline
+{\em init\+\_\+guess} & initial guess \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$vector\+\_\+t$<$fp\+\_\+type$>$, fp\+\_\+type, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_afb2006a63425770332c8a7dbf2a4ffc9}\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_afb2006a63425770332c8a7dbf2a4ffc9}} 
+\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}}\& \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator of a steepest descent method object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{steepest\+\_\+descent\+\_\+method}}\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a0560340f121c990aabb346e188391d10}\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_a0560340f121c990aabb346e188391d10}} 
+\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}!set\_arg\_tolerance@{set\_arg\_tolerance}}
+\index{set\_arg\_tolerance@{set\_arg\_tolerance}!om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_arg\_tolerance()}{set\_arg\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+arg\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{arg\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the stopping criteria tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg\+\_\+tol} & tolerance for stopping criteria \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_acb781a5bd37b944248175a5f54e49c1c}\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_acb781a5bd37b944248175a5f54e49c1c}} 
+\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}!set\_fun\_tolerance@{set\_fun\_tolerance}}
+\index{set\_fun\_tolerance@{set\_fun\_tolerance}!om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_fun\_tolerance()}{set\_fun\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+fun\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{fun\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the fun tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fun\+\_\+tol} & tolerance for a value of function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_abb58ae20ad1881fa1ec5408297ff1815}\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_abb58ae20ad1881fa1ec5408297ff1815}} 
+\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}!set\_grad\_tolerance@{set\_grad\_tolerance}}
+\index{set\_grad\_tolerance@{set\_grad\_tolerance}!om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_grad\_tolerance()}{set\_grad\_tolerance()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+grad\+\_\+tolerance (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{grad\+\_\+tol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the grad tolerance object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grad\+\_\+tol} & tolerance for gradient \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_ad70615fad630a6de1b76c76ae8f3fd8d}\label{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method_ad70615fad630a6de1b76c76ae8f3fd8d}} 
+\index{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}!set\_max\_iterations@{set\_max\_iterations}}
+\index{set\_max\_iterations@{set\_max\_iterations}!om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$@{om\_unconstrained\_methods::om\_steepest\_descent::steepest\_descent\_method$<$ fp\_type $>$}}
+\doxysubsubsection{\texorpdfstring{set\_max\_iterations()}{set\_max\_iterations()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double$>$ \\
+void \mbox{\hyperlink{classom__unconstrained__methods_1_1om__steepest__descent_1_1steepest__descent__method}{om\+\_\+unconstrained\+\_\+methods\+::om\+\_\+steepest\+\_\+descent\+::steepest\+\_\+descent\+\_\+method}}$<$ fp\+\_\+type $>$\+::set\+\_\+max\+\_\+iterations (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t const \&}]{iters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the max iterations object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iters} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/unconstrained\+\_\+methods/multi\+\_\+dim/steepest\+\_\+descent/om\+\_\+steepest\+\_\+descent.\+hpp\end{DoxyCompactItemize}

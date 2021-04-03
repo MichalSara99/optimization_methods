@@ -5,7 +5,7 @@
 #endif
 
 #include "unconstrained_methods/multi_dim/quasi_newton/om_davidon_fletcher_powell.hpp"
-#include "unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp"
+#include "unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp"
 #include "unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp"
 #include "unconstrained_methods/one_dim/om_line_methods.hpp"
 #include "utilities/om_types.hpp"
@@ -16,6 +16,7 @@
 using namespace om_unconstrained_methods::om_line_methods;
 using namespace om_unconstrained_methods::om_quasi_newton;
 using namespace om_test_helpers;
+using namespace om_test_functions;
 
 BOOST_AUTO_TEST_SUITE(davidon_fletcher_powell)
 

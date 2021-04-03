@@ -3,7 +3,7 @@
 
 unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o: ../include/unconstrained_methods/multi_dim/quasi_newton/om_davidon_fletcher_powell.hpp
 unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o: ../include/unconstrained_methods/multi_dim/quasi_newton/om_quasi_newton_base.hpp
-unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_raos_collection.hpp
+unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp
 unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o: ../include/unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp
 unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o: ../include/unconstrained_methods/one_dim/om_brent.hpp
 unit_tests/CMakeFiles/davidon_fletcher_powell_test.dir/om_davidon_fletcher_powell_t.cpp.o: ../include/unconstrained_methods/one_dim/om_fibonacci.hpp

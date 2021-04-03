@@ -13,7 +13,11 @@ using om_types::f_vector_t;
 using om_types::vector_arg_t;
 using om_types::vector_t;
 using om_utilities::random_vectors_from_guess;
-
+/**
+ * @brief Nelder-Mead method object
+ *
+ * @tparam fp_type fp_type is a floating-point template parameter
+ */
 template <typename fp_type = double> class nelder_mead_method {
 private:
   fp_type reflection_rho_;
@@ -26,6 +30,16 @@ private:
   void check_rhos();
 
 public:
+  /**
+   * @brief Construct a new nelder mead method object
+   *
+   * @param max_iters maximum number of iterations
+   * @param convergence_tol tolerance for convergence
+   * @param reflection_rho reflection rho
+   * @param expansion_rho expansion rho
+   * @param contraction_rho contraction rho
+   * @param shrinkage_rho shrinkage rho
+   */
   nelder_mead_method(std::size_t const &max_iters = 80,
                      fp_type convergence_tol = 10e-4,
                      fp_type reflection_rho = 0.5, fp_type expansion_rho = 1.5,
@@ -39,13 +53,23 @@ public:
 
   virtual ~nelder_mead_method() {}
 
+  /**
+   * @brief Construct a new nelder mead method object
+   *
+   * @param copy copy is the object which we want to make a copy of
+   */
   nelder_mead_method(nelder_mead_method const &copy)
       : max_iters_{copy.max_iters_}, converge_tol_{copy.converge_tol_},
         reflection_rho_{copy.reflection_rho_},
         expansion_rho_{copy.expansion_rho_},
         contraction_rho_{copy.contraction_rho_}, shrinkage_rho_{
                                                      copy.shrinkage_rho_} {}
-
+  /**
+   * @brief Assignment operator of a nelder mead method object
+   *
+   * @param copy
+   * @return nelder_mead_method&
+   */
   nelder_mead_method &operator=(nelder_mead_method const &copy) {
     if (this != &copy) {
       max_iters_ = copy.max_iters_;
@@ -57,32 +81,67 @@ public:
     }
     return *this;
   }
-
+  /**
+   * @brief Set the max iterations object
+   *
+   * @param iters maximum number of iterations
+   */
   inline void set_max_iterations(std::size_t const &iters) {
     max_iters_ = iters;
   }
+  /**
+   * @brief Set the converge tolerance object
+   *
+   * @param converge_tol tolerance for convergance
+   */
   inline void set_converge_tolerance(fp_type converge_tol) {
     converge_tol_ = converge_tol;
   }
+  /**
+   * @brief Set the reflection rho object
+   *
+   * @param value value of reflection rho
+   */
   inline void set_reflection_rho(fp_type value) {
     assert((value > static_cast<fp_type>(0.0)));
     reflection_rho_ = value;
   }
+  /**
+   * @brief Set the expansion rho object
+   *
+   * @param value value of expansion rho
+   */
   inline void set_expansion_rho(fp_type value) {
     assert((value > static_cast<fp_type>(1.0)));
     expansion_rho_ = value;
   }
+  /**
+   * @brief Set the contraction rho object
+   *
+   * @param value value of contraction rho
+   */
   inline void set_contraction_rho(fp_type value) {
     assert(((value >= static_cast<fp_type>(0.0)) &&
             (value <= static_cast<fp_type>(0.5))));
     contraction_rho_ = value;
   }
+  /**
+   * @brief Set the shrinkage rho object
+   *
+   * @param value value of shrinkage rho
+   */
   inline void set_shrinkage_rho(fp_type value) {
     assert(((value >= static_cast<fp_type>(0.0)) &&
             (value <= static_cast<fp_type>(1.0))));
     shrinkage_rho_ = value;
   }
-
+  /**
+   * @brief Function method that minimises the objective function
+   *
+   * @param objective objective function
+   * @param init_guess initial guess
+   * @return std::tuple<vector_t<fp_type>, fp_type, std::size_t>
+   */
   std::tuple<vector_t<fp_type>, fp_type, std::size_t>
   minimize(f_vector_t<fp_type> objective,
            vector_arg_t<fp_type> const &init_guess) const;

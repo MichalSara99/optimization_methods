@@ -23,3 +23,5 @@ build/.cmake/*
 build/.cmake/**
 build/*
 build/**
+build/*/**
+Doxyfile
