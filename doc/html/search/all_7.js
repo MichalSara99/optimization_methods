@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['nelder_5fmead_5fmethod_11',['nelder_mead_method',['../classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method.html',1,'om_unconstrained_methods::om_zero_order::nelder_mead_method&lt; fp_type &gt;'],['../classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method.html#a2663559975d1e4a184c14473a25fb654',1,'om_unconstrained_methods::om_zero_order::nelder_mead_method::nelder_mead_method(std::size_t const &amp;max_iters=80, fp_type convergence_tol=10e-4, fp_type reflection_rho=0.5, fp_type expansion_rho=1.5, fp_type contraction_rho=0.25, fp_type shrinkage_rho=0.5)'],['../classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method.html#a87c4a9892b4c0b7203a0e80c9ad76f30',1,'om_unconstrained_methods::om_zero_order::nelder_mead_method::nelder_mead_method(nelder_mead_method const &amp;copy)']]]
+  ['lerp_38',['lerp',['../namespaceom__utilities.html#ac2a890d0af6517a92864e0a6e7c4d6bd',1,'om_utilities']]],
+  ['low_39',['low',['../classom__utilities_1_1range.html#a6ca0c55239793079f59836bdd62eb431',1,'om_utilities::range']]],
+  ['low_5fhigh_40',['low_high',['../classom__utilities_1_1range.html#acc91c2aaff206f2b19d2e2dc0a245ceb',1,'om_utilities::range']]]
 ];

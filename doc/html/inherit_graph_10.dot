@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="om_unconstrained_methods\l::om_zero_order::nelder\l_mead_method\< fp_type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classom__unconstrained__methods_1_1om__zero__order_1_1nelder__mead__method.html",tooltip="Nelder-Mead method object."];
+  Node0 [label="om_common::min_arg\l\< 3, fp_type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structom__common_1_1min__arg_3_013_00_01fp__type_01_4.html",tooltip=" "];
 }

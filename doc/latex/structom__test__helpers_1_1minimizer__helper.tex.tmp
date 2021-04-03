@@ -1,30 +1,52 @@
-\hypertarget{structom__test__helpers_1_1minimizer__helper}{}\doxysection{om\+\_\+test\+\_\+helpers\+::minimizer\+\_\+helper$<$ T $>$ Struct Template Reference}
-\label{structom__test__helpers_1_1minimizer__helper}\index{om\_test\_helpers::minimizer\_helper$<$ T $>$@{om\_test\_helpers::minimizer\_helper$<$ T $>$}}
+\hypertarget{structom__test__helpers_1_1minimizer__helper}{}\doxysection{om\+\_\+test\+\_\+helpers\+::minimizer\+\_\+helper$<$ fp\+\_\+type $>$ Struct Template Reference}
+\label{structom__test__helpers_1_1minimizer__helper}\index{om\_test\_helpers::minimizer\_helper$<$ fp\_type $>$@{om\_test\_helpers::minimizer\_helper$<$ fp\_type $>$}}
 
 
-Collaboration diagram for om\+\_\+test\+\_\+helpers\+::minimizer\+\_\+helper$<$ T $>$\+:
+Helper for optimisation methods.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+test\+\_\+helpers.\+hpp$>$}
+
+
+
+Collaboration diagram for om\+\_\+test\+\_\+helpers\+::minimizer\+\_\+helper$<$ fp\+\_\+type $>$\+:
 % FIG 0
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_a4344c7eecae945685b8190d73b6772c9}\label{structom__test__helpers_1_1minimizer__helper_a4344c7eecae945685b8190d73b6772c9}} 
-{\bfseries minimizer\+\_\+helper} (std\+::string const \&name, f\+\_\+vector\+\_\+t$<$ T $>$ objective, vector\+\_\+arg\+\_\+t$<$ T $>$ const \&guess, vector\+\_\+arg\+\_\+t$<$ T $>$ const \&minimizer)
+\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_a297032669fcadad269b0201472d994b4}\label{structom__test__helpers_1_1minimizer__helper_a297032669fcadad269b0201472d994b4}} 
+{\bfseries minimizer\+\_\+helper} (std\+::string const \&name, f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ objective, vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&guess, vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&minimizer)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_af576917b705549f2f223e4cea8ad2dd3}\label{structom__test__helpers_1_1minimizer__helper_af576917b705549f2f223e4cea8ad2dd3}} 
+\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_a763174f564ba2e92e526f05eab6d84ed}\label{structom__test__helpers_1_1minimizer__helper_a763174f564ba2e92e526f05eab6d84ed}} 
 std\+::string {\bfseries name}
 \item 
-\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_ab74a53f47dbde401e18162a6961d494f}\label{structom__test__helpers_1_1minimizer__helper_ab74a53f47dbde401e18162a6961d494f}} 
-f\+\_\+vector\+\_\+t$<$ T $>$ {\bfseries objective}
+\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_a55fdd77e3e20612b9e7172dbfe28dbc5}\label{structom__test__helpers_1_1minimizer__helper_a55fdd77e3e20612b9e7172dbfe28dbc5}} 
+f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ {\bfseries objective}
 \item 
-\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_a4b4b583d0fb4d6622efcf1cd75271785}\label{structom__test__helpers_1_1minimizer__helper_a4b4b583d0fb4d6622efcf1cd75271785}} 
-vector\+\_\+arg\+\_\+t$<$ T $>$ {\bfseries guess}
+\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_a68edfdc8688ba20ee3a0248eb7f1ea05}\label{structom__test__helpers_1_1minimizer__helper_a68edfdc8688ba20ee3a0248eb7f1ea05}} 
+vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ {\bfseries guess}
 \item 
-\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_a2323b654e9abebb8cc1c145509050b65}\label{structom__test__helpers_1_1minimizer__helper_a2323b654e9abebb8cc1c145509050b65}} 
-vector\+\_\+arg\+\_\+t$<$ T $>$ {\bfseries minimizer}
+\mbox{\Hypertarget{structom__test__helpers_1_1minimizer__helper_aa1625ed405d2e2fee14a9483144aed00}\label{structom__test__helpers_1_1minimizer__helper_aa1625ed405d2e2fee14a9483144aed00}} 
+vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ {\bfseries minimizer}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double$>$\newline
+struct om\+\_\+test\+\_\+helpers\+::minimizer\+\_\+helper$<$ fp\+\_\+type $>$}
+
+Helper for optimisation methods. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+\end{DoxyTemplParams}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

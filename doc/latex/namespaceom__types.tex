@@ -1,0 +1,160 @@
+\hypertarget{namespaceom__types}{}\doxysection{om\+\_\+types Namespace Reference}
+\label{namespaceom__types}\index{om\_types@{om\_types}}
+
+
+Contains some types used throughout the whole library.  
+
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_ad2264fefd6d5e1bbe9b304ca2a53971a}{sptr\+\_\+t}} = std\+::shared\+\_\+ptr$<$ T $>$
+\begin{DoxyCompactList}\small\item\em Alias for shared\+\_\+ptr$<$\+T$>$ \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_aa7185fcb88b479238495bffce82a180c}{vector\+\_\+arg\+\_\+t}} = Eigen\+::\+Matrix$<$ T, Eigen\+::\+Dynamic, 1 $>$
+\begin{DoxyCompactList}\small\item\em Alias for 1D matrix = vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_a430dac657dd37f85164c323757288ee1}{vector\+\_\+t}} = Eigen\+::\+Matrix$<$ T, Eigen\+::\+Dynamic, 1 $>$
+\begin{DoxyCompactList}\small\item\em Alias for 1D matrix = vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_a0b04834c88277f0fe8b19321c7294304}{f\+\_\+scalar\+\_\+t}} = std\+::function$<$ T(T)$>$
+\begin{DoxyCompactList}\small\item\em One dimensional scalar function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_a4a5d9adea8bd02839528852a76a0a74d}{f\+\_\+vector\+\_\+t}} = std\+::function$<$ T(\mbox{\hyperlink{namespaceom__types_aa7185fcb88b479238495bffce82a180c}{vector\+\_\+arg\+\_\+t}}$<$ T $>$)$>$
+\begin{DoxyCompactList}\small\item\em One dimensional vector function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_acaded85e9a2b4978b2b85cb4996917b2}{matrix\+\_\+t}} = Eigen\+::\+Matrix$<$ T, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$
+\begin{DoxyCompactList}\small\item\em Alias for Eigen matrix. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename fp\+\_\+type $>$ }\\using \mbox{\hyperlink{namespaceom__types_a6ace48e4db0b231e2af6d19557bc3ed9}{f\+\_\+line\+\_\+minimiser\+\_\+t}} = std\+::function$<$ std\+::tuple$<$ fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t $>$(\mbox{\hyperlink{namespaceom__types_a0b04834c88277f0fe8b19321c7294304}{f\+\_\+scalar\+\_\+t}}$<$ fp\+\_\+type $>$ \&\&)$>$
+\begin{DoxyCompactList}\small\item\em Line method functor type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceom__types_ac9084f296d138fca83e46119aa60197b}\label{namespaceom__types_ac9084f296d138fca83e46119aa60197b}} 
+{\footnotesize template$<$typename T $>$ }\\using {\bfseries constraints\+\_\+t} = std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{namespaceom__types_a4a5d9adea8bd02839528852a76a0a74d}{f\+\_\+vector\+\_\+t}}$<$ T $>$, constraint\+\_\+t $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceom__types_abaa2dddc38787709ad97cdff97e30d3a}\label{namespaceom__types_abaa2dddc38787709ad97cdff97e30d3a}} 
+enum {\bfseries one\+\_\+dim\+\_\+line\+\_\+search\+\_\+method} \{ {\bfseries Golden\+Section}, 
+{\bfseries Powell}
+ \}
+\item 
+\mbox{\Hypertarget{namespaceom__types_a2dfb2a3054a2dc197eb4bebb86f1fded}\label{namespaceom__types_a2dfb2a3054a2dc197eb4bebb86f1fded}} 
+enum {\bfseries constraint\+\_\+t} \{ {\bfseries Equality}, 
+{\bfseries Less\+Then\+Zero}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains some types used throughout the whole library. 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceom__types_a6ace48e4db0b231e2af6d19557bc3ed9}\label{namespaceom__types_a6ace48e4db0b231e2af6d19557bc3ed9}} 
+\index{om\_types@{om\_types}!f\_line\_minimiser\_t@{f\_line\_minimiser\_t}}
+\index{f\_line\_minimiser\_t@{f\_line\_minimiser\_t}!om\_types@{om\_types}}
+\doxysubsubsection{\texorpdfstring{f\_line\_minimiser\_t}{f\_line\_minimiser\_t}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type $>$ \\
+using \mbox{\hyperlink{namespaceom__types_a6ace48e4db0b231e2af6d19557bc3ed9}{om\+\_\+types\+::f\+\_\+line\+\_\+minimiser\+\_\+t}} = typedef std\+::function$<$std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$( \mbox{\hyperlink{namespaceom__types_a0b04834c88277f0fe8b19321c7294304}{f\+\_\+scalar\+\_\+t}}$<$fp\+\_\+type$>$ \&\&)$>$}
+
+
+
+Line method functor type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{namespaceom__types_a0b04834c88277f0fe8b19321c7294304}\label{namespaceom__types_a0b04834c88277f0fe8b19321c7294304}} 
+\index{om\_types@{om\_types}!f\_scalar\_t@{f\_scalar\_t}}
+\index{f\_scalar\_t@{f\_scalar\_t}!om\_types@{om\_types}}
+\doxysubsubsection{\texorpdfstring{f\_scalar\_t}{f\_scalar\_t}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{namespaceom__types_a0b04834c88277f0fe8b19321c7294304}{om\+\_\+types\+::f\+\_\+scalar\+\_\+t}} = typedef std\+::function$<$T(T)$>$}
+
+
+
+One dimensional scalar function. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{namespaceom__types_a4a5d9adea8bd02839528852a76a0a74d}\label{namespaceom__types_a4a5d9adea8bd02839528852a76a0a74d}} 
+\index{om\_types@{om\_types}!f\_vector\_t@{f\_vector\_t}}
+\index{f\_vector\_t@{f\_vector\_t}!om\_types@{om\_types}}
+\doxysubsubsection{\texorpdfstring{f\_vector\_t}{f\_vector\_t}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{namespaceom__types_a4a5d9adea8bd02839528852a76a0a74d}{om\+\_\+types\+::f\+\_\+vector\+\_\+t}} = typedef std\+::function$<$T(\mbox{\hyperlink{namespaceom__types_aa7185fcb88b479238495bffce82a180c}{vector\+\_\+arg\+\_\+t}}$<$T$>$)$>$}
+
+
+
+One dimensional vector function. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{namespaceom__types_acaded85e9a2b4978b2b85cb4996917b2}\label{namespaceom__types_acaded85e9a2b4978b2b85cb4996917b2}} 
+\index{om\_types@{om\_types}!matrix\_t@{matrix\_t}}
+\index{matrix\_t@{matrix\_t}!om\_types@{om\_types}}
+\doxysubsubsection{\texorpdfstring{matrix\_t}{matrix\_t}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{namespaceom__types_acaded85e9a2b4978b2b85cb4996917b2}{om\+\_\+types\+::matrix\+\_\+t}} = typedef Eigen\+::\+Matrix$<$T, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic$>$}
+
+
+
+Alias for Eigen matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{namespaceom__types_ad2264fefd6d5e1bbe9b304ca2a53971a}\label{namespaceom__types_ad2264fefd6d5e1bbe9b304ca2a53971a}} 
+\index{om\_types@{om\_types}!sptr\_t@{sptr\_t}}
+\index{sptr\_t@{sptr\_t}!om\_types@{om\_types}}
+\doxysubsubsection{\texorpdfstring{sptr\_t}{sptr\_t}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{namespaceom__types_ad2264fefd6d5e1bbe9b304ca2a53971a}{om\+\_\+types\+::sptr\+\_\+t}} = typedef std\+::shared\+\_\+ptr$<$T$>$}
+
+
+
+Alias for shared\+\_\+ptr$<$\+T$>$ 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{namespaceom__types_aa7185fcb88b479238495bffce82a180c}\label{namespaceom__types_aa7185fcb88b479238495bffce82a180c}} 
+\index{om\_types@{om\_types}!vector\_arg\_t@{vector\_arg\_t}}
+\index{vector\_arg\_t@{vector\_arg\_t}!om\_types@{om\_types}}
+\doxysubsubsection{\texorpdfstring{vector\_arg\_t}{vector\_arg\_t}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{namespaceom__types_aa7185fcb88b479238495bffce82a180c}{om\+\_\+types\+::vector\+\_\+arg\+\_\+t}} = typedef Eigen\+::\+Matrix$<$T, Eigen\+::\+Dynamic, 1$>$}
+
+
+
+Alias for 1D matrix = vector. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{namespaceom__types_a430dac657dd37f85164c323757288ee1}\label{namespaceom__types_a430dac657dd37f85164c323757288ee1}} 
+\index{om\_types@{om\_types}!vector\_t@{vector\_t}}
+\index{vector\_t@{vector\_t}!om\_types@{om\_types}}
+\doxysubsubsection{\texorpdfstring{vector\_t}{vector\_t}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{namespaceom__types_a430dac657dd37f85164c323757288ee1}{om\+\_\+types\+::vector\+\_\+t}} = typedef Eigen\+::\+Matrix$<$T, Eigen\+::\+Dynamic, 1$>$}
+
+
+
+Alias for 1D matrix = vector. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}

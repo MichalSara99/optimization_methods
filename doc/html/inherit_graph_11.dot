@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="om_unconstrained_methods\l::om_zero_order::powell\l_conjugate_method\< fp_type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classom__unconstrained__methods_1_1om__zero__order_1_1powell__conjugate__method.html",tooltip="Powell conjugate method object."];
+  Node0 [label="om_common::min_arg\l\< count, fp_type, typename,\l type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structom__common_1_1min__arg.html",tooltip="min_arg functor retuns argument as which a function takes minimum value"];
 }

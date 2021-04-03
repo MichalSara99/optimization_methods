@@ -3,15 +3,21 @@
 
 #include "om_types.hpp"
 #include <type_traits>
-
+/**
+ * @brief Contains some commonly used measures
+ *
+ */
 namespace om_common {
 
 using om_types::f_scalar_t;
 
-// ==========================================================================
-//================================= furtestFrom =============================
-// ==========================================================================
-
+/**
+ * @brief furthest_from functor
+ *
+ * @tparam count number of points to measure the distance from
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @details currently count = 2, count = 3 is supported
+ */
 template <std::size_t count, typename fp_type = double,
           typename = typename std::enable_if<count >= 2 && count <= 3>::type>
 struct furthest_from {};
@@ -42,9 +48,13 @@ public:
   }
 };
 
-// ==========================================================================
-//================================= closest_to ==============================
-// ==========================================================================
+/**
+ * @brief closest_to functor
+ *
+ * @tparam count number of points
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @details count = 2,count = 3 is currently supported
+ */
 
 template <std::size_t count, typename fp_type = double,
           typename = typename std::enable_if<count >= 2 && count <= 3>::type>
@@ -76,10 +86,14 @@ public:
   }
 };
 
-// ==========================================================================
-// ================================= min_arg ================================
-// ==========================================================================
-
+/**
+ * @brief min_arg functor retuns argument as which a function takes minimum
+ * value
+ *
+ * @tparam count number of arguments
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @details count = 2,count = 3 currently supported
+ */
 template <std::size_t count, typename fp_type = double,
           typename = typename std::enable_if<count >= 2 && count <= 3>::type>
 struct min_arg {};
@@ -108,10 +122,14 @@ public:
   }
 };
 
-// ==========================================================================
-// ================================= max_arg ================================
-// ==========================================================================
-
+/**
+ * @brief max_arg functor returns argument at which a function takes maximum
+ * value
+ *
+ * @tparam count number of arguments
+ * @tparam fp_type fp_type is a floating-point template argument
+ * @details count = 2,count = 3 currently supported
+ */
 template <std::size_t count, typename fp_type = double,
           typename = typename std::enable_if<count >= 2 && count <= 3>::type>
 struct max_arg {};

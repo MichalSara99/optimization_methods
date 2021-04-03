@@ -4,6 +4,10 @@
 #include "om_differentiation_traits.hpp"
 #include "om_types.hpp"
 
+/**
+ * @brief Contains some numerical differentiation functors
+ *
+ */
 namespace om_differentiation {
 
 // loding types:
@@ -14,10 +18,13 @@ using om_types::f_vector_t;
 using om_types::vector_arg_t;
 using om_types::vector_t;
 
-// =========================================================================
-// ========================= Divided Difference ============================
-// =========================================================================
-
+/**
+ * @brief Divided difference functor
+ *
+ * @tparam order order of difference
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @details order = 0, order = 1, order = 2, order = 3 currently supported
+ */
 template <std::size_t order, typename fp_type = double,
           typename = typename std::enable_if<order >= 0 && order <= 3>::type>
 struct divided_difference {};
@@ -48,10 +55,15 @@ template <typename fp_type> struct divided_difference<2, fp_type> {
   }
 };
 
-// =========================================================================
-// ============================ Forward Difference =========================
-// =========================================================================
-
+/**
+ * @brief forward difference functor
+ *
+ * @tparam order order of difference
+ * @tparam fp_type
+ * @tparam std::enable_if<
+ * std::is_floating_point<fp_type>::value>::type
+ * @details order = 0,order = 1 currently supported
+ */
 template <std::size_t order, typename fp_type,
           typename = typename std::enable_if<
               std::is_floating_point<fp_type>::value>::type>
@@ -86,10 +98,15 @@ template <typename fp_type> struct forward_difference<1, fp_type> {
   }
 };
 
-// =========================================================================
-// =========================== Central Difference ==========================
-// =========================================================================
-
+/**
+ * @brief central difference functor
+ *
+ * @tparam order order of difference
+ * @tparam fp_type fp_type is a floating-point template parameter
+ * @tparam std::enable_if<
+ * std::is_floating_point<fp_type>::value>::type
+ * @details order = 0,order = 1 currently supported
+ */
 template <std::size_t order, typename fp_type,
           typename = typename std::enable_if<
               std::is_floating_point<fp_type>::value>::type>

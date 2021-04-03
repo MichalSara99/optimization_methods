@@ -1,0 +1,141 @@
+\hypertarget{namespaceom__utilities}{}\doxysection{om\+\_\+utilities Namespace Reference}
+\label{namespaceom__utilities}\index{om\_utilities@{om\_utilities}}
+
+
+Contains some commonly used utilities.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structom__utilities_1_1cartesian__basis__vectors}{cartesian\+\_\+basis\+\_\+vectors}}
+\begin{DoxyCompactList}\small\item\em Cartesian basis vectors functor. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structom__utilities_1_1random__vectors__from__guess}{random\+\_\+vectors\+\_\+from\+\_\+guess}}
+\begin{DoxyCompactList}\small\item\em Random vectors from guess functor. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classom__utilities_1_1range}{range}}
+\begin{DoxyCompactList}\small\item\em Represents a one dimensional range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{namespaceom__utilities_a1a219526eb63fd6ed84a71dae12fb605}{fib}} (std\+::size\+\_\+t n)
+\begin{DoxyCompactList}\small\item\em fib function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename fp\+\_\+type $>$ }\\fp\+\_\+type \mbox{\hyperlink{namespaceom__utilities_a4cd7c6d43dd3ad6421bc4c720517fdf3}{iqerp}} (fp\+\_\+type x0, fp\+\_\+type x1, fp\+\_\+type x2, fp\+\_\+type y0, fp\+\_\+type y1, fp\+\_\+type y2)
+\begin{DoxyCompactList}\small\item\em Inverse quadratic interpolation among points (x0,y0),(x1,y1),(x2,y2) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename fp\+\_\+type $>$ }\\fp\+\_\+type \mbox{\hyperlink{namespaceom__utilities_ac2a890d0af6517a92864e0a6e7c4d6bd}{lerp}} (fp\+\_\+type x0, fp\+\_\+type x1, fp\+\_\+type y0, fp\+\_\+type y1)
+\begin{DoxyCompactList}\small\item\em Linear interpolation between points (x0,y0) and (x1,y1) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename fp\+\_\+type $>$ }\\fp\+\_\+type \mbox{\hyperlink{namespaceom__utilities_ad143913c9df7810564ab65483c562601}{sign}} (fp\+\_\+type x)
+\begin{DoxyCompactList}\small\item\em Signum function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains some commonly used utilities. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceom__utilities_a1a219526eb63fd6ed84a71dae12fb605}\label{namespaceom__utilities_a1a219526eb63fd6ed84a71dae12fb605}} 
+\index{om\_utilities@{om\_utilities}!fib@{fib}}
+\index{fib@{fib}!om\_utilities@{om\_utilities}}
+\doxysubsubsection{\texorpdfstring{fib()}{fib()}}
+{\footnotesize\ttfamily double om\+\_\+utilities\+::fib (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+fib function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of values from Fibonacci sequence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceom__utilities_a4cd7c6d43dd3ad6421bc4c720517fdf3}\label{namespaceom__utilities_a4cd7c6d43dd3ad6421bc4c720517fdf3}} 
+\index{om\_utilities@{om\_utilities}!iqerp@{iqerp}}
+\index{iqerp@{iqerp}!om\_utilities@{om\_utilities}}
+\doxysubsubsection{\texorpdfstring{iqerp()}{iqerp()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type $>$ \\
+fp\+\_\+type om\+\_\+utilities\+::iqerp (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{x0,  }\item[{fp\+\_\+type}]{x1,  }\item[{fp\+\_\+type}]{x2,  }\item[{fp\+\_\+type}]{y0,  }\item[{fp\+\_\+type}]{y1,  }\item[{fp\+\_\+type}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Inverse quadratic interpolation among points (x0,y0),(x1,y1),(x2,y2) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & first value \\
+\hline
+{\em x1} & second value \\
+\hline
+{\em x2} & third value \\
+\hline
+{\em y0} & first function value \\
+\hline
+{\em y1} & second function value \\
+\hline
+{\em y2} & third function value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fp\+\_\+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceom__utilities_ac2a890d0af6517a92864e0a6e7c4d6bd}\label{namespaceom__utilities_ac2a890d0af6517a92864e0a6e7c4d6bd}} 
+\index{om\_utilities@{om\_utilities}!lerp@{lerp}}
+\index{lerp@{lerp}!om\_utilities@{om\_utilities}}
+\doxysubsubsection{\texorpdfstring{lerp()}{lerp()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type $>$ \\
+fp\+\_\+type om\+\_\+utilities\+::lerp (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{x0,  }\item[{fp\+\_\+type}]{x1,  }\item[{fp\+\_\+type}]{y0,  }\item[{fp\+\_\+type}]{y1 }\end{DoxyParamCaption})}
+
+
+
+Linear interpolation between points (x0,y0) and (x1,y1) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em x0} & first value \\
+\hline
+{\em x1} & second value \\
+\hline
+{\em y0} & first function value \\
+\hline
+{\em y1} & second function value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fp\+\_\+type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceom__utilities_ad143913c9df7810564ab65483c562601}\label{namespaceom__utilities_ad143913c9df7810564ab65483c562601}} 
+\index{om\_utilities@{om\_utilities}!sign@{sign}}
+\index{sign@{sign}!om\_utilities@{om\_utilities}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type $>$ \\
+fp\+\_\+type om\+\_\+utilities\+::sign (\begin{DoxyParamCaption}\item[{fp\+\_\+type}]{x }\end{DoxyParamCaption})}
+
+
+
+Signum function. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fp\+\_\+type 
+\end{DoxyReturn}

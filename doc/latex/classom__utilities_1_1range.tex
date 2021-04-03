@@ -1,0 +1,215 @@
+\hypertarget{classom__utilities_1_1range}{}\doxysection{om\+\_\+utilities\+::range$<$ fp\+\_\+type, typename $>$ Class Template Reference}
+\label{classom__utilities_1_1range}\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+
+
+Represents a one dimensional range.  
+
+
+
+
+{\ttfamily \#include $<$om\+\_\+utilities.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classom__utilities_1_1range_a621876d0845b7cf3b905ab64f66cbaf3}{range}} (fp\+\_\+type const \&\mbox{\hyperlink{classom__utilities_1_1range_a6ca0c55239793079f59836bdd62eb431}{low}}, fp\+\_\+type const \&\mbox{\hyperlink{classom__utilities_1_1range_a97e51d17933626b1686357f44952e0d1}{high}})
+\begin{DoxyCompactList}\small\item\em Construct a new range object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__utilities_1_1range_a9f0aa57608e62b96bafb203f56832949}{range}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new range object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__utilities_1_1range_ae874d622f7024a6f48aa5f7bc5cd5996}{range}} (\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ const \&copy)
+\begin{DoxyCompactList}\small\item\em Construct a new range object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ \& \mbox{\hyperlink{classom__utilities_1_1range_a0c6f255e06828a66ddc06db0f87102da}{operator=}} (\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ const \&copy)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator of a range object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__utilities_1_1range_a76db0c8dbc28b8869b5899c4042cc069}{range}} (\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ \&\&other)
+\begin{DoxyCompactList}\small\item\em Move constructor of a range object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ \& \mbox{\hyperlink{classom__utilities_1_1range_a191c1e7a5d09f3b1a383fdfd46f8ffdd}{operator=}} (\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ \&\&other)
+\begin{DoxyCompactList}\small\item\em Move assignment of a range object. \end{DoxyCompactList}\item 
+const fp\+\_\+type \& \mbox{\hyperlink{classom__utilities_1_1range_a6ca0c55239793079f59836bdd62eb431}{low}} () const
+\begin{DoxyCompactList}\small\item\em Returns low end of the range. \end{DoxyCompactList}\item 
+const fp\+\_\+type \& \mbox{\hyperlink{classom__utilities_1_1range_a97e51d17933626b1686357f44952e0d1}{high}} () const
+\begin{DoxyCompactList}\small\item\em Returns high end of the range. \end{DoxyCompactList}\item 
+std\+::pair$<$ fp\+\_\+type, fp\+\_\+type $>$ \mbox{\hyperlink{classom__utilities_1_1range_acc91c2aaff206f2b19d2e2dc0a245ceb}{low\+\_\+high}} () const
+\begin{DoxyCompactList}\small\item\em Returns a pair of low high end of the range. \end{DoxyCompactList}\item 
+fp\+\_\+type \mbox{\hyperlink{classom__utilities_1_1range_a3be39151f72dd5e925dceee98f661892}{spread}} () const
+\begin{DoxyCompactList}\small\item\em Returns a spread between high and low end of the range. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename fp\+\_\+type = double, typename = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$\newline
+class om\+\_\+utilities\+::range$<$ fp\+\_\+type, typename $>$}
+
+Represents a one dimensional range. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+{\em std\+::enable\+\_\+if$<$} & std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classom__utilities_1_1range_a621876d0845b7cf3b905ab64f66cbaf3}\label{classom__utilities_1_1range_a621876d0845b7cf3b905ab64f66cbaf3}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!range@{range}}
+\index{range@{range}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__utilities_1_1range}{range}} (\begin{DoxyParamCaption}\item[{fp\+\_\+type const \&}]{low,  }\item[{fp\+\_\+type const \&}]{high }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new range object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em low} & low value of a range \\
+\hline
+{\em high} & high value of a range \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__utilities_1_1range_a9f0aa57608e62b96bafb203f56832949}\label{classom__utilities_1_1range_a9f0aa57608e62b96bafb203f56832949}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!range@{range}}
+\index{range@{range}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__utilities_1_1range}{range}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new range object. 
+
+\mbox{\Hypertarget{classom__utilities_1_1range_ae874d622f7024a6f48aa5f7bc5cd5996}\label{classom__utilities_1_1range_ae874d622f7024a6f48aa5f7bc5cd5996}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!range@{range}}
+\index{range@{range}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__utilities_1_1range}{range}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new range object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & copy is the object which we want to make a copy of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classom__utilities_1_1range_a76db0c8dbc28b8869b5899c4042cc069}\label{classom__utilities_1_1range_a76db0c8dbc28b8869b5899c4042cc069}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!range@{range}}
+\index{range@{range}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{range()}{range()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::\mbox{\hyperlink{classom__utilities_1_1range}{range}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move constructor of a range object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classom__utilities_1_1range_a97e51d17933626b1686357f44952e0d1}\label{classom__utilities_1_1range_a97e51d17933626b1686357f44952e0d1}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!high@{high}}
+\index{high@{high}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{high()}{high()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+const fp\+\_\+type\& \mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::high (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns high end of the range. 
+
+\begin{DoxyReturn}{Returns}
+fp\+\_\+type const\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__utilities_1_1range_a6ca0c55239793079f59836bdd62eb431}\label{classom__utilities_1_1range_a6ca0c55239793079f59836bdd62eb431}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!low@{low}}
+\index{low@{low}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{low()}{low()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+const fp\+\_\+type\& \mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::low (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns low end of the range. 
+
+\begin{DoxyReturn}{Returns}
+fp\+\_\+type const\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__utilities_1_1range_acc91c2aaff206f2b19d2e2dc0a245ceb}\label{classom__utilities_1_1range_acc91c2aaff206f2b19d2e2dc0a245ceb}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!low\_high@{low\_high}}
+\index{low\_high@{low\_high}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{low\_high()}{low\_high()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+std\+::pair$<$fp\+\_\+type, fp\+\_\+type$>$ \mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::low\+\_\+high (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a pair of low high end of the range. 
+
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$fp\+\_\+type, fp\+\_\+type$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__utilities_1_1range_a191c1e7a5d09f3b1a383fdfd46f8ffdd}\label{classom__utilities_1_1range_a191c1e7a5d09f3b1a383fdfd46f8ffdd}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$fp\+\_\+type$>$\& \mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move assignment of a range object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+range$<$fp\+\_\+type$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__utilities_1_1range_a0c6f255e06828a66ddc06db0f87102da}\label{classom__utilities_1_1range_a0c6f255e06828a66ddc06db0f87102da}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$fp\+\_\+type$>$\& \mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ const \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy assignment operator of a range object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em copy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+range$<$fp\+\_\+type$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classom__utilities_1_1range_a3be39151f72dd5e925dceee98f661892}\label{classom__utilities_1_1range_a3be39151f72dd5e925dceee98f661892}} 
+\index{om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}!spread@{spread}}
+\index{spread@{spread}!om\_utilities::range$<$ fp\_type, typename $>$@{om\_utilities::range$<$ fp\_type, typename $>$}}
+\doxysubsubsection{\texorpdfstring{spread()}{spread()}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, typename  = typename std\+::enable\+\_\+if$<$              std\+::is\+\_\+floating\+\_\+point$<$fp\+\_\+type$>$\+::value$>$\+::type$>$ \\
+fp\+\_\+type \mbox{\hyperlink{classom__utilities_1_1range}{om\+\_\+utilities\+::range}}$<$ fp\+\_\+type, typename $>$\+::spread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a spread between high and low end of the range. 
+
+\begin{DoxyReturn}{Returns}
+fp\+\_\+type 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/utilities/om\+\_\+utilities.\+hpp\end{DoxyCompactItemize}

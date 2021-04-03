@@ -4,9 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="om_unconstrained_methods\l::om_quasi_newton::quasi\l_newton_base\< double \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base.html",tooltip=" "];
-  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="om_unconstrained_methods\l::om_quasi_newton::broyden\l_fletcher_goldfarb_shanno\l_method\< fp_type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classom__unconstrained__methods_1_1om__quasi__newton_1_1broyden__fletcher__goldfarb__shanno__method.html",tooltip="Broyden-Fletcher-Goldfarb-Shanno method object."];
-  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="om_unconstrained_methods\l::om_quasi_newton::davidon\l_fletcher_powell_method\< fp_type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__powell__method.html",tooltip="Davidon-Fletcher-Powell method object."];
+  Node0 [label="om_common::max_arg\l\< 3, fp_type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structom__common_1_1max__arg_3_013_00_01fp__type_01_4.html",tooltip=" "];
 }

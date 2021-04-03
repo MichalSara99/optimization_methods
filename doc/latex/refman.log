@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.3)  3 APR 2021 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.3)  3 APR 2021 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -850,6 +850,9 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 169.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 169.
+ [1]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 169.
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
@@ -857,38 +860,35 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 16
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 169.
- [1]
-Underfull \hbox (badness 1163) in paragraph at lines 169--169
- [][] [][]\T1/phv/m/n/10 5.5 om[]_[]unconstrained[]_[]methods[]::om[]_[]line[]_
-[]methods[]::fibonacci[]_[]method$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 fp[]_[]typ
-e, type-name $\OML/cmm/m/it/10 >$ \T1/phv/m/n/10 Class 
+) [2]
+Underfull \hbox (badness 2600) in paragraph at lines 169--169
+ [][] [][]\T1/phv/m/n/10 6.11 om[]_[]unconstrained[]_[]methods[]::om[]_[]conjug
+ate[]_[]gradient[]::conjugate[]_[]gradient[]_[]base$\OML/cmm/m/it/10 <$ \T1/phv
+/m/n/10 fp[]_[]type, type- 
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 169--169
- [][] [][]\T1/phv/m/n/10 5.6 om[]_[]unconstrained[]_[]methods[]::om[]_[]conjuga
-te[]_[]gradient[]::fletcher[]_[]reeves[]_[]method$\OML/cmm/m/it/10 <$ \T1/phv/m
-/n/10 fp[]_[]type $\OML/cmm/m/it/10 >$ \T1/phv/m/n/10 Class 
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+ [][] [][]\T1/phv/m/n/10 6.12 om[]_[]unconstrained[]_[]methods[]::om[]_[]quasi[
+]_[]newton[]::davidon[]_[]fletcher[]_[]powell[]_[]method$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 fp[]_[]type $\OML/cmm/m/it/10 >$ 
  []
 
-
-Underfull \hbox (badness 2189) in paragraph at lines 169--169
- [][] [][]\T1/phv/m/n/10 5.7 om[]_[]unconstrained[]_[]methods[]::om[]_[]line[]_
-[]methods[]::golden[]_[]section[]_[]method$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 f
-p[]_[]type, type-name $\OML/cmm/m/it/10 >$ 
+[3]
+Underfull \hbox (badness 812) in paragraph at lines 169--169
+ [][] [][]\T1/phv/m/n/10 6.26 om[]_[]unconstrained[]_[]methods[]::om[]_[]line[]
+_[]methods[]::golden[]_[]section[]_[]method$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 
+fp[]_[]type, type-name $\OML/cmm/m/it/10 >$ 
  []
 
-[2]
+[4]
 Underfull \hbox (badness 2818) in paragraph at lines 169--169
- [][] [][]\T1/phv/m/n/10 5.11 om[]_[]unconstrained[]_[]methods[]::om[]_[]conjug
+ [][] [][]\T1/phv/m/n/10 6.36 om[]_[]unconstrained[]_[]methods[]::om[]_[]conjug
 ate[]_[]gradient[]::polak[]_[]ribiere[]_[]method$\OML/cmm/m/it/10 <$ \T1/phv/m/
 n/10 fp[]_[]type $\OML/cmm/m/it/10 >$ \T1/phv/m/n/10 Class 
  []
 
-[3] [4]
+[5] [6]
 Package hyperref Info: Option `pageanchor' set `true' on input line 171.
 
 Chapter 1.
@@ -904,25 +904,27 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 174.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 22.39185pt on input line 174.
-(./namespaces.tex
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
-) [1
+(./todo.tex) [1
 
 
 ] [2
 
 ]
 Chapter 2.
-(./hierarchy.tex) [3] [4
+(./namespaces.tex
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+) [3] [4
 
 ]
 Chapter 3.
-(./annotated.tex) [5] [6
-
-]
+(./hierarchy.tex [5]) [6]
 Chapter 4.
-(./namespaceom__test__functions.tex
+(./annotated.tex [7
+
+]) [8]
+Chapter 5.
+(./namespaceom__common.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 8.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
@@ -939,32 +941,111 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 12.
+)
+(./namespaceom__differentiation.tex [9
+
+])
+(./namespaceom__differentiation__traits.tex)
+(./namespaceom__test__functions.tex
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
 (Font)              Font shape `TS1/phv/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 12.
- [7]
+ [10]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 56.
-
-Underfull \hbox (badness 10000) detected at line 74
-[][][]
- []
-
-[8]
-Underfull \hbox (badness 10000) detected at line 100
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 49.
+ [11]
+Underfull \hbox (badness 10000) detected at line 67
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 126
+Underfull \hbox (badness 10000) detected at line 86
 [][][]
  []
 
-) [9] [10
+[12]
+Underfull \hbox (badness 10000) detected at line 112
+[][][]
+ []
 
-]
-Chapter 5.
+
+Underfull \hbox (badness 10000) detected at line 142
+[][][]
+ []
+
+[13]
+Underfull \hbox (badness 10000) detected at line 168
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 196
+[][][]
+ []
+
+[14]
+Underfull \hbox (badness 10000) detected at line 222
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 248
+[][][]
+ []
+
+[15]
+Underfull \hbox (badness 10000) detected at line 274
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 300
+[][][]
+ []
+
+[16]) (./namespaceom__test__helpers.tex) (./namespaceom__types.tex [17]
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+\T1/pcr/m/n/8 using [] = typedef std[]::function$\OML/cmm/m/it/8 <$\T1/pcr/m/n/
+8 std[]::tuple$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 fp[]_[]type, fp[]_[]type, std[]
+ []
+
+[18]
+Underfull \vbox (badness 2073) has occurred while \output is active []
+
+ [19])
+(./namespaceom__unconstrained__methods.tex)
+(./namespaceom__unconstrained__methods_1_1om__conjugate__gradient.tex)
+(./namespaceom__unconstrained__methods_1_1om__line__methods.tex [20])
+(./namespaceom__unconstrained__methods_1_1om__quasi__newton.tex)
+(./namespaceom__unconstrained__methods_1_1om__steepest__descent.tex [21])
+(./namespaceom__unconstrained__methods_1_1om__zero__order.tex)
+(./namespaceom__utilities.tex [22]
+Underfull \hbox (badness 10000) detected at line 51
+[][][]
+ []
+
+[23] [24]
+Underfull \hbox (badness 10000) detected at line 85
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 115
+[][][]
+ []
+
+[25]
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+) [26]
+Chapter 6.
 (./classom__unconstrained__methods_1_1om__line__methods_1_1brent__method.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -988,7 +1069,9 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 Overfull \vbox (21.37001pt too high) has occurred while \output is active []
 
 
-[11]
+[27
+
+]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 50.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
@@ -1020,7 +1103,7 @@ Overfull \hbox (82.98984pt too wide) in paragraph at lines 90--92
 type, std[]::size[]_[]t, std[]::size[]_[]t$\OML/cmm/m/it/8 >$ []$<$
  []
 
-[12]
+[28]
 Underfull \hbox (badness 10000) detected at line 102
 [][][]
  []
@@ -1074,12 +1157,12 @@ Make it at least 22.16548pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[13]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 48--50
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type
  []
 
-[14]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 75--77
 \T1/pcr/m/n/8 std[]::tuple$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 om[]_[]unconstraine
 d[]_[]methods[]::om[]_[]quasi[]_[]newton[]::vector[]_[]t$\OML/cmm/m/it/8 <$ \T1
@@ -1095,6 +1178,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
+
+) (./structom__utilities_1_1cartesian__basis__vectors.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[31]) (./structom__differentiation_1_1central__difference.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 16--16
+[][]\T1/phv/bc/n/10 template$\OML/cmm/m/it/10 <$\T1/phv/bc/n/10 std[]::size[]_[
+]t or-der, type-name fp[]_[]type, type-name = type-name std[]::enable[]_[]if$\O
+ML/cmm/m/it/10 <$ \T1/phv/bc/n/10 std[]::is[]_[]floating[]_[]point$\OML/cmm/m/i
+t/10 <$\T1/phv/bc/n/10 fp[]_[]type$\OML/cmm/m/it/10 >$[]
+ []
+
+)
+(./structom__differentiation_1_1central__difference_3_010_00_01fp__type_01_4.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+)
+(./structom__differentiation_1_1central__difference_3_011_00_01fp__type_01_4.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[32]) (./structom__differentiation__traits_1_1central__difference__trait.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./structom__common_1_1closest__to.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[33]) (./structom__common_1_1closest__to_3_012_00_01fp__type_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./structom__common_1_1closest__to_3_013_00_01fp__type_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
 
 )
 (./classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gra
@@ -1115,7 +1346,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[15]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 73--75
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1127,7 +1358,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--75
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type, typename
  []
 
-[16]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 97--99
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1151,7 +1382,7 @@ Overfull \hbox (16.96739pt too wide) in paragraph at lines 116--118
 []\T1/pcr/m/n/8 & []$\OML/cmm/m/it/8 <$
  []
 
-
+[36]
 Underfull \hbox (badness 10000) detected at line 128
 [][][]
  []
@@ -1163,7 +1394,7 @@ ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
 8 std[]::is[]_[]floating[]_[]
  []
 
-[17]
+
 Underfull \hbox (badness 10000) in paragraph at lines 151--153
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1177,17 +1408,14 @@ ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
 8 std[]::is[]_[]floating[]_[]
  []
 
-
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 183--185
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
 8 std[]::is[]_[]floating[]_[]
  []
 
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
- [18])
+)
 (./classom__unconstrained__methods_1_1om__quasi__newton_1_1davidon__fletcher__p
 owell__method.tex
 
@@ -1206,7 +1434,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[19]
+[38]
 Overfull \hbox (105.17865pt too wide) in paragraph at lines 48--50
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/
 n/8 ::[]
@@ -1224,14 +1452,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 \T1/pcr/m/n/8 ::size[]_[]t $\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 fp[]_[]type
  []
 
-
-Overfull \vbox (18.80682pt too high) has occurred while \output is active []
-
-
-[20]
+[39]
 Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
+
+) (./structom__differentiation_1_1divided__difference.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+)
+(./structom__differentiation_1_1divided__difference_3_010_00_01fp__type_01_4.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[40])
+(./structom__differentiation_1_1divided__difference_3_011_00_01fp__type_01_4.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+)
+(./structom__differentiation_1_1divided__difference_3_012_00_01fp__type_01_4.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
 
 )
 (./classom__unconstrained__methods_1_1om__line__methods_1_1fibonacci__method.te
@@ -1252,10 +1550,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 51--53
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1269,6 +1564,10 @@ Overfull \hbox (18.7786pt too wide) in paragraph at lines 51--53
  []
 
 
+Overfull \vbox (13.83444pt too high) has occurred while \output is active []
+
+
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 71--73
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1294,7 +1593,7 @@ Overfull \hbox (102.18985pt too wide) in paragraph at lines 90--92
 type, std[]::size[]_[]t, std[]::size[]_[]t$\OML/cmm/m/it/8 >$ []$<$
  []
 
-[22]
+
 Underfull \hbox (badness 10000) detected at line 102
 [][][]
  []
@@ -1306,7 +1605,7 @@ ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
 8 std[]::is[]_[]floating[]_[]
  []
 
-
+[43]
 Underfull \hbox (badness 10000) detected at line 121
 [][][]
  []
@@ -1330,13 +1629,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[23]
+[44]
 Overfull \hbox (57.17862pt too wide) in paragraph at lines 48--50
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/
 n/8 ::[]
  []
 
-[24]
+
 Underfull \hbox (badness 10000) in paragraph at lines 75--77
 \T1/pcr/m/n/8 std[]::tuple$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 om[]_[]unconstraine
 d[]_[]methods[]::om[]_[]conjugate[]_[]gradient[]::vector[]_[]t$\OML/cmm/m/it/8 
@@ -1350,9 +1649,144 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
  []
 
 
+Overfull \vbox (18.80682pt too high) has occurred while \output is active []
+
+
+[45]
 Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
+
+) (./structom__differentiation_1_1forward__difference.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 16--16
+[][]\T1/phv/bc/n/10 template$\OML/cmm/m/it/10 <$\T1/phv/bc/n/10 std[]::size[]_[
+]t or-der, type-name fp[]_[]type, type-name = type-name std[]::enable[]_[]if$\O
+ML/cmm/m/it/10 <$ \T1/phv/bc/n/10 std[]::is[]_[]floating[]_[]point$\OML/cmm/m/i
+t/10 <$\T1/phv/bc/n/10 fp[]_[]type$\OML/cmm/m/it/10 >$[]
+ []
+
+)
+(./structom__differentiation_1_1forward__difference_3_010_00_01fp__type_01_4.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+)
+(./structom__differentiation_1_1forward__difference_3_011_00_01fp__type_01_4.te
+x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[46]) (./structom__differentiation__traits_1_1forward__difference__trait.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./structom__common_1_1furthest__from.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[47]) (./structom__common_1_1furthest__from_3_012_00_01fp__type_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./structom__common_1_1furthest__from_3_013_00_01fp__type_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
 
 )
 (./classom__unconstrained__methods_1_1om__line__methods_1_1golden__section__met
@@ -1373,7 +1807,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[25]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 51--53
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1386,7 +1820,7 @@ Overfull \hbox (66.77863pt too wide) in paragraph at lines 51--53
 \T1/pcr/m/n/8 ::[]
  []
 
-
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 71--73
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1399,7 +1833,7 @@ Overfull \hbox (66.77863pt too wide) in paragraph at lines 71--73
 \T1/pcr/m/n/8 ::[]
  []
 
-[26]
+
 Underfull \hbox (badness 10000) in paragraph at lines 90--92
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1412,7 +1846,7 @@ Overfull \hbox (126.18987pt too wide) in paragraph at lines 90--92
 type, std[]::size[]_[]t, std[]::size[]_[]t$\OML/cmm/m/it/8 >$ []$<$
  []
 
-
+[50]
 Underfull \hbox (badness 10000) detected at line 102
 [][][]
  []
@@ -1453,13 +1887,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[27]
+[51]
 Overfull \hbox (66.77863pt too wide) in paragraph at lines 48--50
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/
 n/8 ::[]
  []
 
-[28]
+
 Underfull \hbox (badness 10000) in paragraph at lines 75--77
 \T1/pcr/m/n/8 std[]::tuple$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 om[]_[]unconstraine
 d[]_[]methods[]::om[]_[]conjugate[]_[]gradient[]::vector[]_[]t$\OML/cmm/m/it/8 
@@ -1471,10 +1905,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 \T1/pcr/m/n/8 std[]::size[]_[]t $\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 fp[]
  []
 
-
+[52]
 Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
+
+) (./structom__common_1_1max__arg.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./structom__common_1_1max__arg_3_012_00_01fp__type_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[53]) (./structom__common_1_1max__arg_3_013_00_01fp__type_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./structom__common_1_1min__arg.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[54]) (./structom__common_1_1min__arg_3_012_00_01fp__type_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+) (./structom__common_1_1min__arg_3_013_00_01fp__type_01_4.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
 
 ) (./structom__test__helpers_1_1minimizer__helper.tex
 
@@ -1512,14 +2048,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[29] [30]
+[55] [56]
 Overfull \hbox (182.6123pt too wide) in paragraph at lines 100--102
 \T1/pcr/m/n/8 std[]::tuple$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 om[]_[]zero[]_[]ord
 er[]::vector[]_[]t$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/
 8 >$\T1/pcr/m/n/8 , fp[]_[]type, std[]::size[]_[]t $\OML/cmm/m/it/8 >$ []$<$
  []
 
-[31]
+[57]
 Underfull \hbox (badness 10000) detected at line 114
 [][][]
  []
@@ -1547,7 +2083,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 156--158
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]converge[]_[]
  []
 
-[32]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 172--174
 \T1/pcr/m/n/8 void []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]expansion[]_[]rho
@@ -1559,7 +2095,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--206
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]reflection[]_[]
  []
 
-[33]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
 Underfull \hbox (badness 10000) in paragraph at lines 220--222
 \T1/pcr/m/n/8 void []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]shrinkage[]_[]rho
@@ -1591,7 +2130,7 @@ Underfull \hbox (badness 1158) in paragraph at lines 23--24
 ]_[]minimiser, std[]::size[]_[]t const
  []
 
-[34] [35]
+[60]
 Overfull \hbox (37.9786pt too wide) in paragraph at lines 48--50
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/
 n/8 ::[]
@@ -1614,7 +2153,7 @@ type
 Overfull \vbox (18.80682pt too high) has occurred while \output is active []
 
 
-[36]
+[61]
 Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
@@ -1641,7 +2180,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
+ [62]
 Overfull \hbox (28.3786pt too wide) in paragraph at lines 47--49
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/
 n/8 ::[]
@@ -1660,7 +2199,7 @@ er[]::vector[]_[]t$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/
 8 >$\T1/pcr/m/n/8 , fp[]_[]type, std[]::size[]_[]t $\OML/cmm/m/it/8 >$ []$<$
  []
 
-[38]
+[63]
 Underfull \hbox (badness 10000) detected at line 100
 [][][]
  []
@@ -1681,7 +2220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--144
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]max[]_[]
  []
 
-[39])
+[64])
 (./classom__unconstrained__methods_1_1om__line__methods_1_1powell__method.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1699,7 +2238,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[40]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 53--55
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1716,7 +2255,7 @@ ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41]
+ [66]
 Underfull \hbox (badness 10000) in paragraph at lines 97--99
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1754,7 +2293,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--137
 ML/cmm/m/it/8 >$[]
  []
 
-[42]
+[67]
 Underfull \hbox (badness 10000) detected at line 147
 [][][]
  []
@@ -1778,7 +2317,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[43]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 73--75
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1807,7 +2346,7 @@ Overfull \hbox (28.3786pt too wide) in paragraph at lines 97--99
 
 Underfull \vbox (badness 2875) has occurred while \output is active []
 
- [44]
+ [69]
 Underfull \hbox (badness 10000) in paragraph at lines 116--118
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1850,7 +2389,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]
  []
 
-[45]
+[70]
 Underfull \hbox (badness 10000) in paragraph at lines 167--169
 \T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
 ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
@@ -1874,6 +2413,147 @@ ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
 Underfull \hbox (badness 10000) in paragraph at lines 183--185
 \T1/pcr/m/n/8 void []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type, typename $\
 OML/cmm/m/it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]
+ []
+
+) (./structom__utilities_1_1random__vectors__from__guess.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[71]) (./classom__utilities_1_1range.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[72]
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+[73] [74]
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 128
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 142
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+\T1/pcr/m/n/8 std[]::pair$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 fp[]_[]type, fp[]_[]t
+ype$\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 fp[]_[]type, typename $\OML/cmm/m/it
+/8 >$[]\T1/pcr/m/n/8 ::low[]_[]high ( ) const
+ []
+
+[75]
+Underfull \hbox (badness 10000) detected at line 156
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 175
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+[76]
+Underfull \hbox (badness 10000) detected at line 194
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
+\T1/pcr/m/n/8 template$\OML/cmm/m/it/8 <$\T1/pcr/m/n/8 typename fp[]_[]type = d
+ouble, typename = typename std[]::enable[]_[]if$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/
+8 std[]::is[]_[]floating[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 208
+[][][]
  []
 
 )
@@ -1895,19 +2575,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[46]
+[77] [78]
 Overfull \hbox (57.17862pt too wide) in paragraph at lines 51--53
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/
 n/8 ::[]
  []
 
-[47]
+
 Overfull \hbox (57.17862pt too wide) in paragraph at lines 75--77
 []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/it/8 >$[]\T1/pcr/m/
 n/8 ::[]
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79]
 Underfull \hbox (badness 10000) in paragraph at lines 94--96
 \T1/pcr/m/n/8 std[]::tuple$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 om[]_[]unconstraine
 d[]_[]methods[]::om[]_[]steepest[]_[]descent[]::vector[]_[]t$\OML/cmm/m/it/8 <$
@@ -1925,7 +2608,7 @@ Underfull \hbox (badness 10000) detected at line 108
 [][][]
  []
 
-[48]
+
 Underfull \hbox (badness 10000) detected at line 127
 [][][]
  []
@@ -1936,7 +2619,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]
  []
 
-
+[80]
 Underfull \hbox (badness 10000) in paragraph at lines 150--152
 \T1/pcr/m/n/8 void []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]
@@ -1948,447 +2631,506 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--168
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]
  []
 
-[49]
+
 Underfull \hbox (badness 10000) in paragraph at lines 182--184
 \T1/pcr/m/n/8 void []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 fp[]_[]type $\OML/cmm/m/
 it/8 >$[]\T1/pcr/m/n/8 ::set[]_[]
  []
 
-) [50] (./refman.ind
-Overfull \hbox (55.1799pt too wide) in paragraph at lines 4--6
+[81]) [82] (./refman.ind
+Overfull \hbox (55.1799pt too wide) in paragraph at lines 6--8
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::brent_method$\OML
 /cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (175.03093pt too wide) in paragraph at lines 7--9
+Overfull \hbox (175.03093pt too wide) in paragraph at lines 9--11
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::broyden_fletcher_
 goldfarb_shanno_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (123.37157pt too wide) in paragraph at lines 13--15
+Overfull \hbox (123.37157pt too wide) in paragraph at lines 15--17
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::conjugate_g
 radient_base$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (132.6328pt too wide) in paragraph at lines 19--21
+Overfull \hbox (132.6328pt too wide) in paragraph at lines 23--25
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::davidon_fletcher_
 powell_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (70.18285pt too wide) in paragraph at lines 25--27
+Overfull \hbox (70.18285pt too wide) in paragraph at lines 37--39
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::fibonacci_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (118.53885pt too wide) in paragraph at lines 28--30
+Overfull \hbox (118.53885pt too wide) in paragraph at lines 42--44
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::fletcher_re
 eves_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (95.20226pt too wide) in paragraph at lines 34--36
+Overfull \hbox (95.20226pt too wide) in paragraph at lines 50--52
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::golden_section_me
 thod$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (122.27362pt too wide) in paragraph at lines 40--42
+Overfull \hbox (122.27362pt too wide) in paragraph at lines 56--58
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::hestenes_st
 iefel_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (118.53885pt too wide) in paragraph at lines 46--48
+Overfull \hbox (118.53885pt too wide) in paragraph at lines 83--85
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::fletcher_re
 eves_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (122.27362pt too wide) in paragraph at lines 48--50
+Overfull \hbox (122.27362pt too wide) in paragraph at lines 85--87
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::hestenes_st
 iefel_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (109.16077pt too wide) in paragraph at lines 50--52
+Overfull \hbox (109.16077pt too wide) in paragraph at lines 87--89
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::polak_ribie
 re_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (175.03093pt too wide) in paragraph at lines 52--54
+Overfull \hbox (175.03093pt too wide) in paragraph at lines 89--91
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::broyden_fletcher_
 goldfarb_shanno_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (132.6328pt too wide) in paragraph at lines 54--56
+Overfull \hbox (132.6328pt too wide) in paragraph at lines 91--93
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::davidon_fletcher_
 powell_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (122.22876pt too wide) in paragraph at lines 56--58
+Overfull \hbox (122.22876pt too wide) in paragraph at lines 93--95
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_desc
 ent_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 58--60
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 95--97
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (94.10435pt too wide) in paragraph at lines 60--62
+Overfull \hbox (94.10435pt too wide) in paragraph at lines 97--99
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::powell_conjugate_me
 thod$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 66--68
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 103--105
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (103.37157pt too wide) in paragraph at lines 77--79
+Underfull \hbox (badness 1067) in paragraph at lines 113--115
+[]\T1/phv/m/n/10 om_common::closest_to$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 count
+, fp_type, type-name,
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 121--123
+[]\T1/phv/m/n/10 om_common::max_arg$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 count, f
+p_type, type-name,
+ []
+
+[83
+
+
+
+]
+Underfull \hbox (badness 1092) in paragraph at lines 132--134
+[]\T1/phv/m/n/10 om_differentiation::central_difference$\OML/cmm/m/it/10 <$ \T1
+/phv/m/n/10 or-der, fp_type,
+ []
+
+
+Underfull \hbox (badness 849) in paragraph at lines 142--144
+[]\T1/phv/m/n/10 om_differentiation::forward_difference$\OML/cmm/m/it/10 <$ \T1
+/phv/m/n/10 0, fp_type $\OML/cmm/m/it/10 >$\T1/phv/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 849) in paragraph at lines 144--146
+[]\T1/phv/m/n/10 om_differentiation::forward_difference$\OML/cmm/m/it/10 <$ \T1
+/phv/m/n/10 1, fp_type $\OML/cmm/m/it/10 >$\T1/phv/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+[]\T1/phv/m/n/10 om_differentiation_traits::central_difference_trait$\OML/cmm/m
+/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+[]\T1/phv/m/n/10 om_differentiation_traits::forward_difference_trait$\OML/cmm/m
+/it/10 <$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
+[]\T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient,
+ []
+
+
+Overfull \hbox (103.37157pt too wide) in paragraph at lines 179--181
 []\T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::conjugate_gra
 dient_base$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (98.53885pt too wide) in paragraph at lines 85--87
+Overfull \hbox (98.53885pt too wide) in paragraph at lines 187--189
 []\T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::fletcher_reev
 es_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (102.27362pt too wide) in paragraph at lines 89--91
+Overfull \hbox (102.27362pt too wide) in paragraph at lines 191--193
 []\T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::hestenes_stie
 fel_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (89.16077pt too wide) in paragraph at lines 93--95
+Overfull \hbox (89.16077pt too wide) in paragraph at lines 195--197
 []\T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::polak_ribiere
 _method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (35.1799pt too wide) in paragraph at lines 97--99
+Overfull \hbox (35.1799pt too wide) in paragraph at lines 200--202
 []\T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::brent_method$\OML/c
 mm/m/it/10 <$
  []
 
 
-Overfull \hbox (50.18285pt too wide) in paragraph at lines 102--104
+Overfull \hbox (50.18285pt too wide) in paragraph at lines 205--207
 []\T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::fibonacci_method$\O
 ML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (75.20226pt too wide) in paragraph at lines 107--109
+Overfull \hbox (75.20226pt too wide) in paragraph at lines 210--212
 []\T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::golden_section_meth
 od$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (39.95pt too wide) in paragraph at lines 112--114
+Overfull \hbox (39.95pt too wide) in paragraph at lines 215--217
 []\T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::powell_method$\OML/
 cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (155.03093pt too wide) in paragraph at lines 117--119
+Overfull \hbox (155.03093pt too wide) in paragraph at lines 221--223
 []\T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::broyden_fletcher_go
 ldfarb_shanno_method$\OML/cmm/m/it/10 <$
  []
 
-[51
 
-
-
-]
-Overfull \hbox (112.6328pt too wide) in paragraph at lines 122--124
+Overfull \hbox (112.6328pt too wide) in paragraph at lines 226--228
 []\T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::davidon_fletcher_po
 well_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (61.34267pt too wide) in paragraph at lines 126--128
+Overfull \hbox (61.34267pt too wide) in paragraph at lines 230--232
 []\T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::quasi_newton_base$\
 OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (102.22876pt too wide) in paragraph at lines 134--136
+Overfull \hbox (102.22876pt too wide) in paragraph at lines 240--242
 []\T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_descen
 t_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (57.3196pt too wide) in paragraph at lines 143--145
+Overfull \hbox (57.3196pt too wide) in paragraph at lines 250--252
 []\T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$\O
 ML/cmm/m/it/10 <$
  []
 
-
-Overfull \hbox (74.10435pt too wide) in paragraph at lines 154--156
+[84]
+Overfull \hbox (74.10435pt too wide) in paragraph at lines 261--263
 []\T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::powell_conjugate_meth
 od$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (55.1799pt too wide) in paragraph at lines 162--164
+Underfull \hbox (badness 3758) in paragraph at lines 273--275
+[]\T1/phv/m/n/10 om_utilities::cartesian_basis_vectors$\OML/cmm/m/it/10 <$ \T1/
+phv/m/n/10 fp_type, type-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
+[]\T1/phv/m/n/10 om_utilities::random_vectors_from_guess$\OML/cmm/m/it/10 <$ \T
+1/phv/m/n/10 fp_type,
+ []
+
+
+Overfull \hbox (55.1799pt too wide) in paragraph at lines 286--288
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::brent_method$\OML
 /cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (70.18285pt too wide) in paragraph at lines 164--166
+Overfull \hbox (70.18285pt too wide) in paragraph at lines 288--290
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::fibonacci_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (95.20226pt too wide) in paragraph at lines 166--168
+Overfull \hbox (95.20226pt too wide) in paragraph at lines 290--292
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::golden_section_me
 thod$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (59.95pt too wide) in paragraph at lines 168--170
+Overfull \hbox (59.95pt too wide) in paragraph at lines 292--294
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::powell_method$\OM
 L/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (123.37157pt too wide) in paragraph at lines 171--173
+Overfull \hbox (123.37157pt too wide) in paragraph at lines 295--297
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::conjugate_g
 radient_base$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (55.1799pt too wide) in paragraph at lines 173--175
+Overfull \hbox (55.1799pt too wide) in paragraph at lines 297--299
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::brent_method$\OML
 /cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (70.18285pt too wide) in paragraph at lines 175--177
+Overfull \hbox (70.18285pt too wide) in paragraph at lines 299--301
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::fibonacci_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (95.20226pt too wide) in paragraph at lines 177--179
+Overfull \hbox (95.20226pt too wide) in paragraph at lines 301--303
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::golden_section_me
 thod$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (59.95pt too wide) in paragraph at lines 179--181
+Overfull \hbox (59.95pt too wide) in paragraph at lines 303--305
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::powell_method$\OM
 L/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (81.34267pt too wide) in paragraph at lines 181--183
+Overfull \hbox (81.34267pt too wide) in paragraph at lines 305--307
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::quasi_newton_base
 $\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (122.22876pt too wide) in paragraph at lines 183--185
+Overfull \hbox (122.22876pt too wide) in paragraph at lines 307--309
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_desc
 ent_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 185--187
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 309--311
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (94.10435pt too wide) in paragraph at lines 187--189
+Overfull \hbox (94.10435pt too wide) in paragraph at lines 311--313
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::powell_conjugate_me
 thod$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (109.16077pt too wide) in paragraph at lines 195--197
+Overfull \hbox (109.16077pt too wide) in paragraph at lines 321--323
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::polak_ribie
 re_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (94.10435pt too wide) in paragraph at lines 198--200
+Overfull \hbox (94.10435pt too wide) in paragraph at lines 326--328
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::powell_conjugate_me
 thod$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (59.95pt too wide) in paragraph at lines 203--205
+Overfull \hbox (59.95pt too wide) in paragraph at lines 331--333
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_line_methods::powell_method$\OM
 L/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (81.34267pt too wide) in paragraph at lines 211--213
+Overfull \hbox (81.34267pt too wide) in paragraph at lines 339--341
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::quasi_newton_base
 $\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (123.37157pt too wide) in paragraph at lines 222--224
+Overfull \hbox (123.37157pt too wide) in paragraph at lines 353--355
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::conjugate_g
 radient_base$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (81.34267pt too wide) in paragraph at lines 224--226
+Overfull \hbox (81.34267pt too wide) in paragraph at lines 355--357
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::quasi_newton_base
 $\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (122.22876pt too wide) in paragraph at lines 226--228
+Overfull \hbox (122.22876pt too wide) in paragraph at lines 357--359
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_desc
 ent_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 229--231
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 360--362
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 232--234
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 363--365
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (94.10435pt too wide) in paragraph at lines 234--236
+Overfull \hbox (94.10435pt too wide) in paragraph at lines 365--367
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::powell_conjugate_me
 thod$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 237--239
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 368--370
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (123.37157pt too wide) in paragraph at lines 240--242
+Overfull \hbox (123.37157pt too wide) in paragraph at lines 371--373
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::conjugate_g
 radient_base$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (81.34267pt too wide) in paragraph at lines 242--244
+Overfull \hbox (81.34267pt too wide) in paragraph at lines 373--375
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::quasi_newton_base
 $\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (122.22876pt too wide) in paragraph at lines 244--246
+Overfull \hbox (122.22876pt too wide) in paragraph at lines 375--377
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_desc
 ent_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (123.37157pt too wide) in paragraph at lines 247--249
-[]| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::conjugate_g
-radient_base$\OML/cmm/m/it/10 <$
- []
-
-[52]
-Overfull \hbox (81.34267pt too wide) in paragraph at lines 249--251
-[]| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::quasi_newton_base
-$\OML/cmm/m/it/10 <$
- []
-
-
-Overfull \hbox (122.22876pt too wide) in paragraph at lines 251--253
-[]| \T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_desc
-ent_method$\OML/cmm/m/it/10 <$
- []
-
-
-Overfull \hbox (123.37157pt too wide) in paragraph at lines 254--256
+Overfull \hbox (123.37157pt too wide) in paragraph at lines 378--380
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::conjugate_g
 radient_base$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (81.34267pt too wide) in paragraph at lines 256--258
+Overfull \hbox (81.34267pt too wide) in paragraph at lines 380--382
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::quasi_newton_base
 $\OML/cmm/m/it/10 <$
  []
 
-
-Overfull \hbox (122.22876pt too wide) in paragraph at lines 258--260
+[85]
+Overfull \hbox (122.22876pt too wide) in paragraph at lines 382--384
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_desc
 ent_method$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 260--262
+Overfull \hbox (123.37157pt too wide) in paragraph at lines 385--387
+[]| \T1/phv/m/n/10 om_unconstrained_methods::om_conjugate_gradient::conjugate_g
+radient_base$\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (81.34267pt too wide) in paragraph at lines 387--389
+[]| \T1/phv/m/n/10 om_unconstrained_methods::om_quasi_newton::quasi_newton_base
+$\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (122.22876pt too wide) in paragraph at lines 389--391
+[]| \T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_desc
+ent_method$\OML/cmm/m/it/10 <$
+ []
+
+
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 391--393
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (94.10435pt too wide) in paragraph at lines 262--264
+Overfull \hbox (94.10435pt too wide) in paragraph at lines 393--395
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::powell_conjugate_me
 thod$\OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 265--267
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 396--398
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (77.3196pt too wide) in paragraph at lines 268--270
+Overfull \hbox (77.3196pt too wide) in paragraph at lines 399--401
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_zero_order::nelder_mead_method$
 \OML/cmm/m/it/10 <$
  []
 
 
-Overfull \hbox (122.22876pt too wide) in paragraph at lines 271--273
+Overfull \hbox (122.22876pt too wide) in paragraph at lines 409--411
 []| \T1/phv/m/n/10 om_unconstrained_methods::om_steepest_descent::steepest_desc
 ent_method$\OML/cmm/m/it/10 <$
  []
 
-[53
+[86
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 4EF1789559962B12DF928885972D01EC;37820.
+(rerunfilecheck)             Checksum: C018B319D30DB1B3A6B91B89B2EA6319;66865.
  ) 
 Here is how much of TeX's memory you used:
- 17263 strings out of 483183
- 271092 string characters out of 5966293
- 576274 words of memory out of 5000000
- 31495 multiletter control sequences out of 15000+600000
- 596808 words of font info for 105 fonts, out of 8000000 for 9000
+ 17924 strings out of 483183
+ 292757 string characters out of 5966293
+ 629734 words of memory out of 5000000
+ 31767 multiletter control sequences out of 15000+600000
+ 598572 words of font info for 112 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,16n,96p,1483b,627s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -2396,17 +3138,19 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
-ier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (59 pages, 237120 bytes).
+ublic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrb8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uh
+vro8a.pfb>
+Output written on refman.pdf (94 pages, 336842 bytes).
 PDF statistics:
- 1759 PDF objects out of 2073 (max. 8388607)
- 1669 compressed objects within 17 object streams
- 427 named destinations out of 1000 (max. 500000)
- 1113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3007 PDF objects out of 3580 (max. 8388607)
+ 2866 compressed objects within 29 object streams
+ 731 named destinations out of 1000 (max. 500000)
+ 1881 words of extra memory for PDF output out of 10000 (max. 10000000)
 

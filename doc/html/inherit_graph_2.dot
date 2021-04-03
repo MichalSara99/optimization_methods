@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="om_unconstrained_methods\l::om_conjugate_gradient\l::conjugate_gradient_base\l\< fp_type, typename \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classom__unconstrained__methods_1_1om__conjugate__gradient_1_1conjugate__gradient__base.html",tooltip="Conjugate-gradient base class."];
+  Node0 [label="om_common::closest\l_to\< count, fp_type,\l typename, type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structom__common_1_1closest__to.html",tooltip="closest_to functor"];
 }

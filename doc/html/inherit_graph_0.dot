@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="om_test_helpers::minimizer\l_helper\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structom__test__helpers_1_1minimizer__helper.html",tooltip=" "];
+  Node0 [label="om_common::closest\l_to\< 2, fp_type \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structom__common_1_1closest__to_3_012_00_01fp__type_01_4.html",tooltip=" "];
 }

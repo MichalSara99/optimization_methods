@@ -78,28 +78,31 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;utilities/om_types.hpp&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>om_test_helpers {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> om_types::f_vector_t;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using</span> om_types::vector_arg_t;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using</span> om_types::vector_t;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structom__test__helpers_1_1minimizer__helper.html">   14</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = <span class="keywordtype">double</span>&gt; <span class="keyword">struct </span><a class="code" href="structom__test__helpers_1_1minimizer__helper.html">minimizer_helper</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  std::string name;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  f_vector_t&lt;T&gt; objective;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  vector_arg_t&lt;T&gt; guess;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  vector_arg_t&lt;T&gt; minimizer;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="structom__test__helpers_1_1minimizer__helper.html">minimizer_helper</a>(std::string <span class="keyword">const</span> &amp;name, f_vector_t&lt;T&gt; objective,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                   vector_arg_t&lt;T&gt; <span class="keyword">const</span> &amp;guess,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                   vector_arg_t&lt;T&gt; <span class="keyword">const</span> &amp;minimizer)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      : objective(objective), guess(guess), name(name), minimizer(minimizer) {}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace om_test_helpers</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif /// OM_TEST_HELPERS</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespaceom__test__helpers.html">   13</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceom__test__helpers.html">om_test_helpers</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceom__types.html#a4a5d9adea8bd02839528852a76a0a74d">om_types::f_vector_t</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceom__types.html#aa7185fcb88b479238495bffce82a180c">om_types::vector_arg_t</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using</span> <a class="code" href="namespaceom__types.html#a430dac657dd37f85164c323757288ee1">om_types::vector_t</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structom__test__helpers_1_1minimizer__helper.html">   23</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> fp_type = <span class="keywordtype">double</span>&gt; <span class="keyword">struct </span><a class="code" href="structom__test__helpers_1_1minimizer__helper.html">minimizer_helper</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  std::string name;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  f_vector_t&lt;fp_type&gt; objective;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  vector_arg_t&lt;fp_type&gt; guess;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  vector_arg_t&lt;fp_type&gt; minimizer;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="structom__test__helpers_1_1minimizer__helper.html">minimizer_helper</a>(std::string <span class="keyword">const</span> &amp;name, f_vector_t&lt;fp_type&gt; objective,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                   vector_arg_t&lt;fp_type&gt; <span class="keyword">const</span> &amp;guess,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                   vector_arg_t&lt;fp_type&gt; <span class="keyword">const</span> &amp;minimizer)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      : objective(objective), guess(guess), name(name), minimizer(minimizer) {}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace om_test_helpers</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif /// OM_TEST_HELPERS</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructom__test__helpers_1_1minimizer__helper_html"><div class="ttname"><a href="structom__test__helpers_1_1minimizer__helper.html">om_test_helpers::minimizer_helper</a></div><div class="ttdef"><b>Definition:</b> om_test_helpers.hpp:14</div></div>
+<div class="ttc" id="anamespaceom__types_html_a430dac657dd37f85164c323757288ee1"><div class="ttname"><a href="namespaceom__types.html#a430dac657dd37f85164c323757288ee1">om_types::vector_t</a></div><div class="ttdeci">Eigen::Matrix&lt; T, Eigen::Dynamic, 1 &gt; vector_t</div><div class="ttdoc">Alias for 1D matrix = vector.</div><div class="ttdef"><b>Definition:</b> om_types.hpp:37</div></div>
+<div class="ttc" id="anamespaceom__test__helpers_html"><div class="ttname"><a href="namespaceom__test__helpers.html">om_test_helpers</a></div><div class="ttdoc">Contains test helpers.</div><div class="ttdef"><b>Definition:</b> om_test_helpers.hpp:13</div></div>
+<div class="ttc" id="anamespaceom__types_html_a4a5d9adea8bd02839528852a76a0a74d"><div class="ttname"><a href="namespaceom__types.html#a4a5d9adea8bd02839528852a76a0a74d">om_types::f_vector_t</a></div><div class="ttdeci">std::function&lt; T(vector_arg_t&lt; T &gt;)&gt; f_vector_t</div><div class="ttdoc">One dimensional vector function.</div><div class="ttdef"><b>Definition:</b> om_types.hpp:49</div></div>
+<div class="ttc" id="anamespaceom__types_html_aa7185fcb88b479238495bffce82a180c"><div class="ttname"><a href="namespaceom__types.html#aa7185fcb88b479238495bffce82a180c">om_types::vector_arg_t</a></div><div class="ttdeci">Eigen::Matrix&lt; T, Eigen::Dynamic, 1 &gt; vector_arg_t</div><div class="ttdoc">Alias for 1D matrix = vector.</div><div class="ttdef"><b>Definition:</b> om_types.hpp:31</div></div>
+<div class="ttc" id="astructom__test__helpers_1_1minimizer__helper_html"><div class="ttname"><a href="structom__test__helpers_1_1minimizer__helper.html">om_test_helpers::minimizer_helper</a></div><div class="ttdoc">Helper for optimisation methods.</div><div class="ttdef"><b>Definition:</b> om_test_helpers.hpp:23</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

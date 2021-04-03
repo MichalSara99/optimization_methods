@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Optimization Methods: om_test_helpers::minimizer_helper&lt; T &gt; Struct Template Reference</title>
+<title>Optimization Methods: om_test_helpers::minimizer_helper&lt; fp_type &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>om_test_helpers</b></li><li class="navelem"><a class="el" href="structom__test__helpers_1_1minimizer__helper.html">minimizer_helper</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceom__test__helpers.html">om_test_helpers</a></li><li class="navelem"><a class="el" href="structom__test__helpers_1_1minimizer__helper.html">minimizer_helper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -72,37 +72,53 @@ $(function() {
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structom__test__helpers_1_1minimizer__helper-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">om_test_helpers::minimizer_helper&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">om_test_helpers::minimizer_helper&lt; fp_type &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Helper for optimisation methods.  
+ <a href="structom__test__helpers_1_1minimizer__helper.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="om__test__helpers_8hpp_source.html">om_test_helpers.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for om_test_helpers::minimizer_helper&lt; T &gt;:</div>
+Collaboration diagram for om_test_helpers::minimizer_helper&lt; fp_type &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="structom__test__helpers_1_1minimizer__helper__coll__graph.png" border="0" usemap="#om__test__helpers_1_1minimizer__helper_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="structom__test__helpers_1_1minimizer__helper__coll__graph.png" border="0" usemap="#om__test__helpers_1_1minimizer__helper_3_01fp__type_01_4_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4344c7eecae945685b8190d73b6772c9"><td class="memItemLeft" align="right" valign="top"><a id="a4344c7eecae945685b8190d73b6772c9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>minimizer_helper</b> (std::string const &amp;name, f_vector_t&lt; T &gt; objective, vector_arg_t&lt; T &gt; const &amp;guess, vector_arg_t&lt; T &gt; const &amp;minimizer)</td></tr>
-<tr class="separator:a4344c7eecae945685b8190d73b6772c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297032669fcadad269b0201472d994b4"><td class="memItemLeft" align="right" valign="top"><a id="a297032669fcadad269b0201472d994b4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>minimizer_helper</b> (std::string const &amp;name, f_vector_t&lt; fp_type &gt; objective, vector_arg_t&lt; fp_type &gt; const &amp;guess, vector_arg_t&lt; fp_type &gt; const &amp;minimizer)</td></tr>
+<tr class="separator:a297032669fcadad269b0201472d994b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af576917b705549f2f223e4cea8ad2dd3"><td class="memItemLeft" align="right" valign="top"><a id="af576917b705549f2f223e4cea8ad2dd3"></a>
+<tr class="memitem:a763174f564ba2e92e526f05eab6d84ed"><td class="memItemLeft" align="right" valign="top"><a id="a763174f564ba2e92e526f05eab6d84ed"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="separator:af576917b705549f2f223e4cea8ad2dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab74a53f47dbde401e18162a6961d494f"><td class="memItemLeft" align="right" valign="top"><a id="ab74a53f47dbde401e18162a6961d494f"></a>
-f_vector_t&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objective</b></td></tr>
-<tr class="separator:ab74a53f47dbde401e18162a6961d494f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b4b583d0fb4d6622efcf1cd75271785"><td class="memItemLeft" align="right" valign="top"><a id="a4b4b583d0fb4d6622efcf1cd75271785"></a>
-vector_arg_t&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>guess</b></td></tr>
-<tr class="separator:a4b4b583d0fb4d6622efcf1cd75271785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2323b654e9abebb8cc1c145509050b65"><td class="memItemLeft" align="right" valign="top"><a id="a2323b654e9abebb8cc1c145509050b65"></a>
-vector_arg_t&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>minimizer</b></td></tr>
-<tr class="separator:a2323b654e9abebb8cc1c145509050b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a763174f564ba2e92e526f05eab6d84ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fdd77e3e20612b9e7172dbfe28dbc5"><td class="memItemLeft" align="right" valign="top"><a id="a55fdd77e3e20612b9e7172dbfe28dbc5"></a>
+f_vector_t&lt; fp_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objective</b></td></tr>
+<tr class="separator:a55fdd77e3e20612b9e7172dbfe28dbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68edfdc8688ba20ee3a0248eb7f1ea05"><td class="memItemLeft" align="right" valign="top"><a id="a68edfdc8688ba20ee3a0248eb7f1ea05"></a>
+vector_arg_t&lt; fp_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>guess</b></td></tr>
+<tr class="separator:a68edfdc8688ba20ee3a0248eb7f1ea05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1625ed405d2e2fee14a9483144aed00"><td class="memItemLeft" align="right" valign="top"><a id="aa1625ed405d2e2fee14a9483144aed00"></a>
+vector_arg_t&lt; fp_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>minimizer</b></td></tr>
+<tr class="separator:aa1625ed405d2e2fee14a9483144aed00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename fp_type = double&gt;<br />
+struct om_test_helpers::minimizer_helper&lt; fp_type &gt;</h3>
+
+<p>Helper for optimisation methods. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">fp_type</td><td>fp_type is a floating-point template parameter </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/unconstrained_methods/multi_dim/test_functions/<a class="el" href="om__test__helpers_8hpp_source.html">om_test_helpers.hpp</a></li>
 </ul>
 </div><!-- contents -->
