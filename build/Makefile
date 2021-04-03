@@ -534,6 +534,19 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
+# Target rules for targets named unconstrained_methods_test
+
+# Build rule for target.
+unconstrained_methods_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unconstrained_methods_test
+.PHONY : unconstrained_methods_test
+
+# fast build rule for target.
+unconstrained_methods_test/fast:
+	$(MAKE) -f unit_tests/CMakeFiles/unconstrained_methods_test.dir/build.make unit_tests/CMakeFiles/unconstrained_methods_test.dir/build
+.PHONY : unconstrained_methods_test/fast
+
+#=============================================================================
 # Target rules for targets named powell_conjugate_test
 
 # Build rule for target.
@@ -773,6 +786,7 @@ help:
 	@echo "... optimization_methods"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
+	@echo "... unconstrained_methods_test"
 	@echo "... powell_conjugate_test"
 	@echo "... golden_section_test"
 	@echo "... fibonacci_test"

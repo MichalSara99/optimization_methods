@@ -103,6 +103,7 @@ clean: unit_tests/clean
 # Directory level rules for directory unit_tests
 
 # Recursive "all" directory target.
+unit_tests/all: unit_tests/CMakeFiles/unconstrained_methods_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/powell_conjugate_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/golden_section_test.dir/all
 unit_tests/all: unit_tests/CMakeFiles/fibonacci_test.dir/all
@@ -125,6 +126,7 @@ unit_tests/preinstall:
 .PHONY : unit_tests/preinstall
 
 # Recursive "clean" directory target.
+unit_tests/clean: unit_tests/CMakeFiles/unconstrained_methods_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/powell_conjugate_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/golden_section_test.dir/clean
 unit_tests/clean: unit_tests/CMakeFiles/fibonacci_test.dir/clean
@@ -952,6 +954,33 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
+# Target rules for target unit_tests/CMakeFiles/unconstrained_methods_test.dir
+
+# All Build rule for target.
+unit_tests/CMakeFiles/unconstrained_methods_test.dir/all: CMakeFiles/optimization_methods.dir/all
+	$(MAKE) -f unit_tests/CMakeFiles/unconstrained_methods_test.dir/build.make unit_tests/CMakeFiles/unconstrained_methods_test.dir/depend
+	$(MAKE) -f unit_tests/CMakeFiles/unconstrained_methods_test.dir/build.make unit_tests/CMakeFiles/unconstrained_methods_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=29,30 "Built target unconstrained_methods_test"
+.PHONY : unit_tests/CMakeFiles/unconstrained_methods_test.dir/all
+
+# Build rule for subdir invocation for target.
+unit_tests/CMakeFiles/unconstrained_methods_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/unconstrained_methods_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles 0
+.PHONY : unit_tests/CMakeFiles/unconstrained_methods_test.dir/rule
+
+# Convenience name for target.
+unconstrained_methods_test: unit_tests/CMakeFiles/unconstrained_methods_test.dir/rule
+
+.PHONY : unconstrained_methods_test
+
+# clean rule for target.
+unit_tests/CMakeFiles/unconstrained_methods_test.dir/clean:
+	$(MAKE) -f unit_tests/CMakeFiles/unconstrained_methods_test.dir/build.make unit_tests/CMakeFiles/unconstrained_methods_test.dir/clean
+.PHONY : unit_tests/CMakeFiles/unconstrained_methods_test.dir/clean
+
+#=============================================================================
 # Target rules for target unit_tests/CMakeFiles/powell_conjugate_test.dir
 
 # All Build rule for target.
@@ -1174,7 +1203,7 @@ unit_tests/CMakeFiles/steepest_descent_test.dir/clean:
 unit_tests/CMakeFiles/utilities_test.dir/all: CMakeFiles/optimization_methods.dir/all
 	$(MAKE) -f unit_tests/CMakeFiles/utilities_test.dir/build.make unit_tests/CMakeFiles/utilities_test.dir/depend
 	$(MAKE) -f unit_tests/CMakeFiles/utilities_test.dir/build.make unit_tests/CMakeFiles/utilities_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=29,30 "Built target utilities_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xsarm06/Development/cpp_projects/optimization_methods_x64/build/CMakeFiles --progress-num=31,32 "Built target utilities_test"
 .PHONY : unit_tests/CMakeFiles/utilities_test.dir/all
 
 # Build rule for subdir invocation for target.

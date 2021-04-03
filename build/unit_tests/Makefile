@@ -144,6 +144,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+unit_tests/CMakeFiles/unconstrained_methods_test.dir/rule:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/unconstrained_methods_test.dir/rule
+.PHONY : unit_tests/CMakeFiles/unconstrained_methods_test.dir/rule
+
+# Convenience name for target.
+unconstrained_methods_test: unit_tests/CMakeFiles/unconstrained_methods_test.dir/rule
+
+.PHONY : unconstrained_methods_test
+
+# fast build rule for target.
+unconstrained_methods_test/fast:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/unconstrained_methods_test.dir/build.make unit_tests/CMakeFiles/unconstrained_methods_test.dir/build
+.PHONY : unconstrained_methods_test/fast
+
+# Convenience name for target.
 unit_tests/CMakeFiles/powell_conjugate_test.dir/rule:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f CMakeFiles/Makefile2 unit_tests/CMakeFiles/powell_conjugate_test.dir/rule
 .PHONY : unit_tests/CMakeFiles/powell_conjugate_test.dir/rule
@@ -662,6 +677,33 @@ om_steepest_descent_t.cpp.s:
 	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/steepest_descent_test.dir/build.make unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.s
 .PHONY : om_steepest_descent_t.cpp.s
 
+om_unconstrained_methods_t.o: om_unconstrained_methods_t.cpp.o
+
+.PHONY : om_unconstrained_methods_t.o
+
+# target to build an object file
+om_unconstrained_methods_t.cpp.o:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/unconstrained_methods_test.dir/build.make unit_tests/CMakeFiles/unconstrained_methods_test.dir/om_unconstrained_methods_t.cpp.o
+.PHONY : om_unconstrained_methods_t.cpp.o
+
+om_unconstrained_methods_t.i: om_unconstrained_methods_t.cpp.i
+
+.PHONY : om_unconstrained_methods_t.i
+
+# target to preprocess a source file
+om_unconstrained_methods_t.cpp.i:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/unconstrained_methods_test.dir/build.make unit_tests/CMakeFiles/unconstrained_methods_test.dir/om_unconstrained_methods_t.cpp.i
+.PHONY : om_unconstrained_methods_t.cpp.i
+
+om_unconstrained_methods_t.s: om_unconstrained_methods_t.cpp.s
+
+.PHONY : om_unconstrained_methods_t.s
+
+# target to generate assembly for a file
+om_unconstrained_methods_t.cpp.s:
+	cd /home/xsarm06/Development/cpp_projects/optimization_methods_x64/build && $(MAKE) -f unit_tests/CMakeFiles/unconstrained_methods_test.dir/build.make unit_tests/CMakeFiles/unconstrained_methods_test.dir/om_unconstrained_methods_t.cpp.s
+.PHONY : om_unconstrained_methods_t.cpp.s
+
 om_utilities_t.o: om_utilities_t.cpp.o
 
 .PHONY : om_utilities_t.o
@@ -698,6 +740,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... unconstrained_methods_test"
 	@echo "... powell_conjugate_test"
 	@echo "... package"
 	@echo "... golden_section_test"
@@ -749,6 +792,9 @@ help:
 	@echo "... om_steepest_descent_t.o"
 	@echo "... om_steepest_descent_t.i"
 	@echo "... om_steepest_descent_t.s"
+	@echo "... om_unconstrained_methods_t.o"
+	@echo "... om_unconstrained_methods_t.i"
+	@echo "... om_unconstrained_methods_t.s"
 	@echo "... om_utilities_t.o"
 	@echo "... om_utilities_t.i"
 	@echo "... om_utilities_t.s"
