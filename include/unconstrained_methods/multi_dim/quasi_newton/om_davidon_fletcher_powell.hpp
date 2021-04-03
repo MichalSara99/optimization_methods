@@ -12,9 +12,9 @@ namespace om_quasi_newton {
 
 using om_differentiation::central_difference;
 using om_types::f_vector_t;
+using om_types::matrix_t;
 using om_types::vector_arg_t;
 using om_types::vector_t;
-using om_types::matrix_t;
 
 template <typename fp_type = double>
 class davidon_fletcher_powell_method : public quasi_newton_base<fp_type> {
@@ -58,7 +58,7 @@ om_unconstrained_methods::om_quasi_newton::
 
   // Start of Algorithm:
   grad_prev = central_difference<1, fp_type>()(objective, x_prev);
-  u = (-1.0) * G * grad_prev;
+  u = static_cast<fp_type>(-1.0) * G * grad_prev;
   while (iters < this->max_iters_) {
 
     auto F_lambda = [&](fp_type const &lambda) {
@@ -77,12 +77,13 @@ om_unconstrained_methods::om_quasi_newton::
       y = grad - grad_prev;
       // rank 1-update:
       A = (v * v.transpose()) / (v.transpose() * y);
-      B = (-1.0) * (G * y * (G * y).transpose()) / (y.transpose() * G * y);
+      B = static_cast<fp_type>(-1.0) * (G * y * (G * y).transpose()) /
+          (y.transpose() * G * y);
       // update:
       G += (A + B);
       grad_prev = grad;
       x_prev = x;
-      u = (-1.0) * G * grad_prev;
+      u = static_cast<fp_type>(-1.0) * G * grad_prev;
       iters++;
     }
   }

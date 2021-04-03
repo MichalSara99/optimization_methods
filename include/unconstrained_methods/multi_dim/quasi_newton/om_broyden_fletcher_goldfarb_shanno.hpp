@@ -60,7 +60,7 @@ om_unconstrained_methods::om_quasi_newton::
 
   // Start of Algorithm:
   grad_prev = central_difference<1, fp_type>()(objective, x_prev);
-  u = (-1.0) * G * grad_prev;
+  u = static_cast<fp_type>(-1.0) * G * grad_prev;
 
   while (iters < this->max_iters_) {
 
@@ -79,15 +79,16 @@ om_unconstrained_methods::om_quasi_newton::
       v = (std::get<0>(optim_lambda)) * u;
       y = grad - grad_prev;
       // rank 2-update:
-      A = (1.0 + (y.dot(G * y) / v.dot(y))) *
+      A = (static_cast<fp_type>(1.0) + (y.dot(G * y) / v.dot(y))) *
           ((v * v.transpose()) / (v.transpose() * y));
-      B = (-1.0) * ((v * y.transpose() * G + G * y * v.transpose()) /
-                    (v.transpose() * y));
+      B = static_cast<fp_type>(-1.0) *
+          ((v * y.transpose() * G + G * y * v.transpose()) /
+           (v.transpose() * y));
       // update:
       G += (A + B);
       grad_prev = grad;
       x_prev = x;
-      u = (-1.0) * G * grad_prev;
+      u = static_cast<fp_type>(-1.0) * G * grad_prev;
       iters++;
     }
   }
