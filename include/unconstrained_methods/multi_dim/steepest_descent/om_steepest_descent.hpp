@@ -80,7 +80,7 @@ om_unconstrained_methods::om_steepest_descent::steepest_descent_method<
   std::size_t iters{0};
 
   grad_prev = central_difference<1, fp_type>()(objective, x_prev);
-  u = grad_prev / (-1.0 * grad_prev.norm());
+  u = grad_prev / (static_cast<fp_type>(-1.0) * grad_prev.norm());
 
   while (iters < max_iters_) {
 
@@ -96,7 +96,7 @@ om_unconstrained_methods::om_steepest_descent::steepest_descent_method<
     } else {
       grad_prev = grad;
       x_prev = x;
-      u = grad_prev / (-1.0 * grad_prev.norm());
+      u = grad_prev / (static_cast<fp_type>(-1.0) * grad_prev.norm());
       iters++;
     }
   }

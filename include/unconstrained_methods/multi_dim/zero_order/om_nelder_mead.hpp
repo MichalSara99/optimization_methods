@@ -65,19 +65,21 @@ public:
     converge_tol_ = converge_tol;
   }
   inline void set_reflection_rho(fp_type value) {
-    assert((value > 0.0));
+    assert((value > static_cast<fp_type>(0.0)));
     reflection_rho_ = value;
   }
   inline void set_expansion_rho(fp_type value) {
-    assert((value > 1.0));
+    assert((value > static_cast<fp_type>(1.0)));
     expansion_rho_ = value;
   }
   inline void set_contraction_rho(fp_type value) {
-    assert(((value >= 0.0) && (value <= 0.5)));
+    assert(((value >= static_cast<fp_type>(0.0)) &&
+            (value <= static_cast<fp_type>(0.5))));
     contraction_rho_ = value;
   }
   inline void set_shrinkage_rho(fp_type value) {
-    assert(((value >= 0.0) && (value <= 1.0)));
+    assert(((value >= static_cast<fp_type>(0.0)) &&
+            (value <= static_cast<fp_type>(1.0))));
     shrinkage_rho_ = value;
   }
 
@@ -90,14 +92,16 @@ public:
 
 template <typename fp_type>
 void om_zero_order::nelder_mead_method<fp_type>::check_rhos() {
-  assert((this->reflection_rho_ > 0.0));
-  assert((this->expansion_rho_ > 1.0));
-  assert(((this->contraction_rho_ >= 0.0) && (this->contraction_rho_ <= 0.5)));
-  assert(((this->shrinkage_rho_ >= 0.0) && (this->shrinkage_rho_ <= 1.0)));
+  assert((this->reflection_rho_ > static_cast<fp_type>(0.0)));
+  assert((this->expansion_rho_ > static_cast<fp_type>(1.0)));
+  assert(((this->contraction_rho_ >= static_cast<fp_type>(0.0)) &&
+          (this->contraction_rho_ <= static_cast<fp_type>(0.5))));
+  assert(((this->shrinkage_rho_ >= static_cast<fp_type>(0.0)) &&
+          (this->shrinkage_rho_ <= static_cast<fp_type>(1.0))));
 }
 
 template <typename fp_type>
-std::tuple<vector_t<fp_type>, fp_type, std::size_t>
+std::tuple<om_zero_order::vector_t<fp_type>, fp_type, std::size_t>
 om_zero_order::nelder_mead_method<fp_type>::minimize(
     f_vector_t<fp_type> objective,
     vector_arg_t<fp_type> const &init_guess) const {
@@ -125,7 +129,7 @@ om_zero_order::nelder_mead_method<fp_type>::minimize(
     // 2.STEP: Centroid:
     vector_arg_t<fp_type> centroid = vector_arg_t<fp_type>::Zero(N);
     for (auto t = 0; t < init_simplex.size() - 1; ++t) {
-      centroid += ((1.0 / N) * init_simplex[t]);
+      centroid += ((static_cast<fp_type>(1.0) / N) * init_simplex[t]);
     }
     // 3.STEP: Reflection:
     vector_arg_t<fp_type> reflection = vector_arg_t<fp_type>::Zero(N);
