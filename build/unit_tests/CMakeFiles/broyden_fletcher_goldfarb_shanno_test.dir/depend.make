@@ -13,6 +13,7 @@ unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletc
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/utilities/om_common.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/utilities/om_differentiation.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/utilities/om_differentiation_traits.hpp
+unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/utilities/om_macros.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/utilities/om_types.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../include/utilities/om_utilities.hpp
 unit_tests/CMakeFiles/broyden_fletcher_goldfarb_shanno_test.dir/om_broyden_fletcher_goldfarb_shanno_t.cpp.o: ../unit_tests/om_broyden_fletcher_goldfarb_shanno_t.cpp

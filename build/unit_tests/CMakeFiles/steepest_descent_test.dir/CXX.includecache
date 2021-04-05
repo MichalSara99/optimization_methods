@@ -17,6 +17,8 @@ utilities/om_types.hpp
 ../include/unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp
 om_test_helpers.hpp
 ../include/unconstrained_methods/multi_dim/test_functions/om_test_helpers.hpp
+utilities/om_macros.hpp
+../include/unconstrained_methods/multi_dim/test_functions/utilities/om_macros.hpp
 utilities/om_types.hpp
 ../include/unconstrained_methods/multi_dim/test_functions/utilities/om_types.hpp
 cmath
@@ -95,6 +97,8 @@ om_types.hpp
 ../include/utilities/om_types.hpp
 
 ../include/utilities/om_differentiation_traits.hpp
+
+../include/utilities/om_macros.hpp
 
 ../include/utilities/om_types.hpp
 Eigen/Core

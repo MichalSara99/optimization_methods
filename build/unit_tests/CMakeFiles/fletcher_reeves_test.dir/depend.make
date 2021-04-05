@@ -13,6 +13,7 @@ unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o: ../in
 unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o: ../include/utilities/om_common.hpp
 unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o: ../include/utilities/om_differentiation.hpp
 unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o: ../include/utilities/om_differentiation_traits.hpp
+unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o: ../include/utilities/om_macros.hpp
 unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o: ../include/utilities/om_types.hpp
 unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o: ../include/utilities/om_utilities.hpp
 unit_tests/CMakeFiles/fletcher_reeves_test.dir/om_fletcher_reeves_t.cpp.o: ../unit_tests/om_fletcher_reeves_t.cpp

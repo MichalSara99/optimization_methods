@@ -30,7 +30,15 @@ template <typename T> using sptr_t = std::shared_ptr<T>;
  */
 template <typename T> using vector_arg_t = Eigen::Matrix<T, Eigen::Dynamic, 1>;
 /**
- * @brief Alias for 1D matrix = vector
+ * @brief Alias for const dimension 1D matrix = vector<dimension>
+ *
+ * @tparam dimension
+ * @tparam T
+ */
+template <std::size_t dimension, typename T>
+using vector_const_t = Eigen::Matrix<T, dimension, 1>;
+/**
+ * @brief Alias for dynamic 1D matrix = vector
  *
  * @tparam T
  */

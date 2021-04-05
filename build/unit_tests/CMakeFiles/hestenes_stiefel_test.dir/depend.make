@@ -13,6 +13,7 @@ unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/utilities/om_common.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/utilities/om_differentiation.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/utilities/om_differentiation_traits.hpp
+unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/utilities/om_macros.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/utilities/om_types.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../include/utilities/om_utilities.hpp
 unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o: ../unit_tests/om_hestenes_stiefel_t.cpp

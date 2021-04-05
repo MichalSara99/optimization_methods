@@ -18,8 +18,94 @@ Contains some well-\/known methods for unconstrained optimisation.
 \begin{DoxyCompactList}\small\item\em Contains steepest-\/descent method. \end{DoxyCompactList}\item 
  \mbox{\hyperlink{namespaceom__unconstrained__methods_1_1om__zero__order}{om\+\_\+zero\+\_\+order}}
 \begin{DoxyCompactList}\small\item\em Contains zero-\/order methods. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename fp\+\_\+type  = double, template$<$ typename, typename $>$ typename line\+\_\+search\+\_\+method = om\+\_\+line\+\_\+methods\+::brent\+\_\+method$>$ }\\std\+::tuple$<$ fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t $>$ \mbox{\hyperlink{namespaceom__unconstrained__methods_adf3b1cb4817d0093a50ee9c5526a1775}{minimize}} (f\+\_\+scalar\+\_\+t$<$ fp\+\_\+type $>$ \&\&objective, \mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ const \&\mbox{\hyperlink{classom__utilities_1_1range}{range}}, fp\+\_\+type tolerance, std\+::size\+\_\+t const \&max\+\_\+iters)
+\begin{DoxyCompactList}\small\item\em Minimize scalar objective function of one variable. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename fp\+\_\+type  = double, template$<$ typename $>$ typename method = om\+\_\+quasi\+\_\+newton\+::broyden\+\_\+fletcher\+\_\+goldfarb\+\_\+shanno\+\_\+method, template$<$ typename, typename $>$ typename line\+\_\+search\+\_\+method = om\+\_\+line\+\_\+methods\+::golden\+\_\+section\+\_\+method, typename  = typename std\+::enable\+\_\+if$<$              is\+\_\+zero\+\_\+order\+\_\+method$<$method$<$fp\+\_\+type$>$$>$\+::value$>$\+::type$>$ }\\std\+::tuple$<$ vector\+\_\+t$<$ fp\+\_\+type $>$, fp\+\_\+type, std\+::size\+\_\+t $>$ \mbox{\hyperlink{namespaceom__unconstrained__methods_ab9c24dfdc5e6a4127733958707007074}{minimize}} (f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ \&\&objective, vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&init\+\_\+guess, std\+::size\+\_\+t const \&max\+\_\+iters, fp\+\_\+type arg\+\_\+tol=1e-\/4, fp\+\_\+type grad\+\_\+tol=1e-\/4, fp\+\_\+type fun\+\_\+tol=1e-\/4, \mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ const \&line\+\_\+search\+\_\+range=\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$(-\/1.\+0, 1.\+0))
+\begin{DoxyCompactList}\small\item\em Minimize scalar objective function of more then one variable (excluded zero-\/order methods) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Contains some well-\/known methods for unconstrained optimisation. 
 
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceom__unconstrained__methods_adf3b1cb4817d0093a50ee9c5526a1775}\label{namespaceom__unconstrained__methods_adf3b1cb4817d0093a50ee9c5526a1775}} 
+\index{om\_unconstrained\_methods@{om\_unconstrained\_methods}!minimize@{minimize}}
+\index{minimize@{minimize}!om\_unconstrained\_methods@{om\_unconstrained\_methods}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, template$<$ typename, typename $>$ typename line\+\_\+search\+\_\+method = om\+\_\+line\+\_\+methods\+::brent\+\_\+method$>$ \\
+std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ om\+\_\+unconstrained\+\_\+methods\+::minimize (\begin{DoxyParamCaption}\item[{f\+\_\+scalar\+\_\+t$<$ fp\+\_\+type $>$ \&\&}]{objective,  }\item[{\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ const \&}]{range,  }\item[{fp\+\_\+type}]{tolerance,  }\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters }\end{DoxyParamCaption})}
+
+
+
+Minimize scalar objective function of one variable. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+{\em line\+\_\+search\+\_\+method} & is any of the one\+\_\+dim methods \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em objective} & objective function of f\+\_\+scalar\+\_\+t type \\
+\hline
+{\em range} & range where to look for minimum \\
+\hline
+{\em tolerance} & tolerance of minimiser \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$fp\+\_\+type, fp\+\_\+type, std\+::size\+\_\+t, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceom__unconstrained__methods_ab9c24dfdc5e6a4127733958707007074}\label{namespaceom__unconstrained__methods_ab9c24dfdc5e6a4127733958707007074}} 
+\index{om\_unconstrained\_methods@{om\_unconstrained\_methods}!minimize@{minimize}}
+\index{minimize@{minimize}!om\_unconstrained\_methods@{om\_unconstrained\_methods}}
+\doxysubsubsection{\texorpdfstring{minimize()}{minimize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename fp\+\_\+type  = double, template$<$ typename $>$ typename method = om\+\_\+quasi\+\_\+newton\+::broyden\+\_\+fletcher\+\_\+goldfarb\+\_\+shanno\+\_\+method, template$<$ typename, typename $>$ typename line\+\_\+search\+\_\+method = om\+\_\+line\+\_\+methods\+::golden\+\_\+section\+\_\+method, typename  = typename std\+::enable\+\_\+if$<$              is\+\_\+zero\+\_\+order\+\_\+method$<$method$<$fp\+\_\+type$>$$>$\+::value$>$\+::type$>$ \\
+std\+::tuple$<$vector\+\_\+t$<$fp\+\_\+type$>$, fp\+\_\+type, std\+::size\+\_\+t$>$ om\+\_\+unconstrained\+\_\+methods\+::minimize (\begin{DoxyParamCaption}\item[{f\+\_\+vector\+\_\+t$<$ fp\+\_\+type $>$ \&\&}]{objective,  }\item[{vector\+\_\+arg\+\_\+t$<$ fp\+\_\+type $>$ const \&}]{init\+\_\+guess,  }\item[{std\+::size\+\_\+t const \&}]{max\+\_\+iters,  }\item[{fp\+\_\+type}]{arg\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{grad\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{fp\+\_\+type}]{fun\+\_\+tol = {\ttfamily 1e-\/4},  }\item[{\mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$ fp\+\_\+type $>$ const \&}]{line\+\_\+search\+\_\+range = {\ttfamily \mbox{\hyperlink{classom__utilities_1_1range}{range}}$<$fp\+\_\+type$>$(-\/1.0,~1.0)} }\end{DoxyParamCaption})}
+
+
+
+Minimize scalar objective function of more then one variable (excluded zero-\/order methods) 
+
+Zero-\/order methods (Nelder-\/\+Mead and Powell conjugate) are not allowed here (this is taken care of via std\+::enable\+\_\+if and is\+\_\+zero\+\_\+order\+\_\+method trait)
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em fp\+\_\+type} & fp\+\_\+type is a floating-\/point template parameter \\
+\hline
+{\em method} & optimisation method \\
+\hline
+{\em line\+\_\+search\+\_\+method} & line search method \\
+\hline
+{\em std\+::enable\+\_\+if$<$} & is\+\_\+zero\+\_\+order\+\_\+method$<$method$<$fp\+\_\+type$>$$>$\+::value$>$\+::type \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em objective} & objective function \\
+\hline
+{\em init\+\_\+guess} & initial guess \\
+\hline
+{\em max\+\_\+iters} & maximum number of iterations \\
+\hline
+{\em arg\+\_\+tol} & tolerance for a stopping criteria \\
+\hline
+{\em grad\+\_\+tol} & tolerance for gradient \\
+\hline
+{\em fun\+\_\+tol} & tolerance for a vlaue of function \\
+\hline
+{\em line\+\_\+search\+\_\+range} & range for line search method \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$vector\+\_\+t$<$fp\+\_\+type$>$, fp\+\_\+type, std\+::size\+\_\+t$>$ 
+\end{DoxyReturn}

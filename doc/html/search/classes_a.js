@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['random_5fvectors_5ffrom_5fguess_138',['random_vectors_from_guess',['../structom__utilities_1_1random__vectors__from__guess.html',1,'om_utilities']]],
-  ['range_139',['range',['../classom__utilities_1_1range.html',1,'om_utilities']]],
-  ['range_3c_20double_20_3e_140',['range&lt; double &gt;',['../classom__utilities_1_1range.html',1,'om_utilities']]]
+  ['quasi_5fnewton_5fbase_144',['quasi_newton_base',['../classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base.html',1,'om_unconstrained_methods::om_quasi_newton']]],
+  ['quasi_5fnewton_5fbase_3c_20double_20_3e_145',['quasi_newton_base&lt; double &gt;',['../classom__unconstrained__methods_1_1om__quasi__newton_1_1quasi__newton__base.html',1,'om_unconstrained_methods::om_quasi_newton']]]
 ];

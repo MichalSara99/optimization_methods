@@ -84,9 +84,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa7185fcb88b479238495bffce82a180c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceom__types.html#aa7185fcb88b479238495bffce82a180c">vector_arg_t</a> = Eigen::Matrix&lt; T, Eigen::Dynamic, 1 &gt;</td></tr>
 <tr class="memdesc:aa7185fcb88b479238495bffce82a180c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for 1D matrix = vector.  <a href="namespaceom__types.html#aa7185fcb88b479238495bffce82a180c">More...</a><br /></td></tr>
 <tr class="separator:aa7185fcb88b479238495bffce82a180c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8ad5be68b3dbbf8c4c48f50f98f9cd"><td class="memTemplParams" colspan="2">template&lt;std::size_t dimension, typename T &gt; </td></tr>
+<tr class="memitem:aec8ad5be68b3dbbf8c4c48f50f98f9cd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceom__types.html#aec8ad5be68b3dbbf8c4c48f50f98f9cd">vector_const_t</a> = Eigen::Matrix&lt; T, dimension, 1 &gt;</td></tr>
+<tr class="memdesc:aec8ad5be68b3dbbf8c4c48f50f98f9cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for const dimension 1D matrix = vector&lt;dimension&gt;  <a href="namespaceom__types.html#aec8ad5be68b3dbbf8c4c48f50f98f9cd">More...</a><br /></td></tr>
+<tr class="separator:aec8ad5be68b3dbbf8c4c48f50f98f9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a430dac657dd37f85164c323757288ee1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a430dac657dd37f85164c323757288ee1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceom__types.html#a430dac657dd37f85164c323757288ee1">vector_t</a> = Eigen::Matrix&lt; T, Eigen::Dynamic, 1 &gt;</td></tr>
-<tr class="memdesc:a430dac657dd37f85164c323757288ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for 1D matrix = vector.  <a href="namespaceom__types.html#a430dac657dd37f85164c323757288ee1">More...</a><br /></td></tr>
+<tr class="memdesc:a430dac657dd37f85164c323757288ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias for dynamic 1D matrix = vector.  <a href="namespaceom__types.html#a430dac657dd37f85164c323757288ee1">More...</a><br /></td></tr>
 <tr class="separator:a430dac657dd37f85164c323757288ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b04834c88277f0fe8b19321c7294304"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0b04834c88277f0fe8b19321c7294304"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceom__types.html#a0b04834c88277f0fe8b19321c7294304">f_scalar_t</a> = std::function&lt; T(T)&gt;</td></tr>
@@ -267,6 +271,31 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aec8ad5be68b3dbbf8c4c48f50f98f9cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec8ad5be68b3dbbf8c4c48f50f98f9cd">&#9670;&nbsp;</a></span>vector_const_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t dimension, typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceom__types.html#aec8ad5be68b3dbbf8c4c48f50f98f9cd">om_types::vector_const_t</a> = typedef Eigen::Matrix&lt;T, dimension, 1&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alias for const dimension 1D matrix = vector&lt;dimension&gt; </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dimension</td><td></td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a430dac657dd37f85164c323757288ee1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a430dac657dd37f85164c323757288ee1">&#9670;&nbsp;</a></span>vector_t</h2>
 
@@ -281,7 +310,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Alias for 1D matrix = vector. </p>
+<p>Alias for dynamic 1D matrix = vector. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td></td></tr>

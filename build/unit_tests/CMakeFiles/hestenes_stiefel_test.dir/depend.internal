@@ -14,6 +14,7 @@ unit_tests/CMakeFiles/hestenes_stiefel_test.dir/om_hestenes_stiefel_t.cpp.o
  ../include/utilities/om_common.hpp
  ../include/utilities/om_differentiation.hpp
  ../include/utilities/om_differentiation_traits.hpp
+ ../include/utilities/om_macros.hpp
  ../include/utilities/om_types.hpp
  ../include/utilities/om_utilities.hpp
  /home/xsarm06/Development/cpp_projects/optimization_methods_x64/unit_tests/om_hestenes_stiefel_t.cpp

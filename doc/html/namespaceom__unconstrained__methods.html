@@ -64,7 +64,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">om_unconstrained_methods Namespace Reference</div>  </div>
 </div><!--header-->
@@ -90,10 +91,168 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceom__unconstrained__methods_1_1om__zero__order"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceom__unconstrained__methods_1_1om__zero__order.html">om_zero_order</a></td></tr>
 <tr class="memdesc:namespaceom__unconstrained__methods_1_1om__zero__order"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains zero-order methods. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:adf3b1cb4817d0093a50ee9c5526a1775"><td class="memTemplParams" colspan="2">template&lt;typename fp_type  = double, template&lt; typename, typename &gt; typename line_search_method = om_line_methods::brent_method&gt; </td></tr>
+<tr class="memitem:adf3b1cb4817d0093a50ee9c5526a1775"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; fp_type, fp_type, std::size_t, std::size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceom__unconstrained__methods.html#adf3b1cb4817d0093a50ee9c5526a1775">minimize</a> (f_scalar_t&lt; fp_type &gt; &amp;&amp;objective, <a class="el" href="classom__utilities_1_1range.html">range</a>&lt; fp_type &gt; const &amp;<a class="el" href="classom__utilities_1_1range.html">range</a>, fp_type tolerance, std::size_t const &amp;max_iters)</td></tr>
+<tr class="memdesc:adf3b1cb4817d0093a50ee9c5526a1775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimize scalar objective function of one variable.  <a href="namespaceom__unconstrained__methods.html#adf3b1cb4817d0093a50ee9c5526a1775">More...</a><br /></td></tr>
+<tr class="separator:adf3b1cb4817d0093a50ee9c5526a1775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c24dfdc5e6a4127733958707007074"><td class="memTemplParams" colspan="2">template&lt;typename fp_type  = double, template&lt; typename &gt; typename method = om_quasi_newton::broyden_fletcher_goldfarb_shanno_method, template&lt; typename, typename &gt; typename line_search_method = om_line_methods::golden_section_method, typename  = typename std::enable_if&lt;              is_zero_order_method&lt;method&lt;fp_type&gt;&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:ab9c24dfdc5e6a4127733958707007074"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; vector_t&lt; fp_type &gt;, fp_type, std::size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceom__unconstrained__methods.html#ab9c24dfdc5e6a4127733958707007074">minimize</a> (f_vector_t&lt; fp_type &gt; &amp;&amp;objective, vector_arg_t&lt; fp_type &gt; const &amp;init_guess, std::size_t const &amp;max_iters, fp_type arg_tol=1e-4, fp_type grad_tol=1e-4, fp_type fun_tol=1e-4, <a class="el" href="classom__utilities_1_1range.html">range</a>&lt; fp_type &gt; const &amp;line_search_range=<a class="el" href="classom__utilities_1_1range.html">range</a>&lt; fp_type &gt;(-1.0, 1.0))</td></tr>
+<tr class="memdesc:ab9c24dfdc5e6a4127733958707007074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimize scalar objective function of more then one variable (excluded zero-order methods)  <a href="namespaceom__unconstrained__methods.html#ab9c24dfdc5e6a4127733958707007074">More...</a><br /></td></tr>
+<tr class="separator:ab9c24dfdc5e6a4127733958707007074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains some well-known methods for unconstrained optimisation. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="adf3b1cb4817d0093a50ee9c5526a1775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3b1cb4817d0093a50ee9c5526a1775">&#9670;&nbsp;</a></span>minimize() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename fp_type  = double, template&lt; typename, typename &gt; typename line_search_method = om_line_methods::brent_method&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;fp_type, fp_type, std::size_t, std::size_t&gt; om_unconstrained_methods::minimize </td>
+          <td>(</td>
+          <td class="paramtype">f_scalar_t&lt; fp_type &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>objective</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classom__utilities_1_1range.html">range</a>&lt; fp_type &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>range</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fp_type&#160;</td>
+          <td class="paramname"><em>tolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t const &amp;&#160;</td>
+          <td class="paramname"><em>max_iters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimize scalar objective function of one variable. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">fp_type</td><td>fp_type is a floating-point template parameter </td></tr>
+    <tr><td class="paramname">line_search_method</td><td>is any of the one_dim methods </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objective</td><td>objective function of f_scalar_t type </td></tr>
+    <tr><td class="paramname">range</td><td>range where to look for minimum </td></tr>
+    <tr><td class="paramname">tolerance</td><td>tolerance of minimiser </td></tr>
+    <tr><td class="paramname">max_iters</td><td>maximum number of iterations </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple&lt;fp_type, fp_type, std::size_t, std::size_t&gt; </dd></dl>
+
+</div>
+</div>
+<a id="ab9c24dfdc5e6a4127733958707007074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c24dfdc5e6a4127733958707007074">&#9670;&nbsp;</a></span>minimize() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename fp_type  = double, template&lt; typename &gt; typename method = om_quasi_newton::broyden_fletcher_goldfarb_shanno_method, template&lt; typename, typename &gt; typename line_search_method = om_line_methods::golden_section_method, typename  = typename std::enable_if&lt;              is_zero_order_method&lt;method&lt;fp_type&gt;&gt;::value&gt;::type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt;vector_t&lt;fp_type&gt;, fp_type, std::size_t&gt; om_unconstrained_methods::minimize </td>
+          <td>(</td>
+          <td class="paramtype">f_vector_t&lt; fp_type &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>objective</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector_arg_t&lt; fp_type &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>init_guess</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t const &amp;&#160;</td>
+          <td class="paramname"><em>max_iters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fp_type&#160;</td>
+          <td class="paramname"><em>arg_tol</em> = <code>1e-4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fp_type&#160;</td>
+          <td class="paramname"><em>grad_tol</em> = <code>1e-4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fp_type&#160;</td>
+          <td class="paramname"><em>fun_tol</em> = <code>1e-4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classom__utilities_1_1range.html">range</a>&lt; fp_type &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>line_search_range</em> = <code><a class="el" href="classom__utilities_1_1range.html">range</a>&lt;fp_type&gt;(-1.0,&#160;1.0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minimize scalar objective function of more then one variable (excluded zero-order methods) </p>
+<p>Zero-order methods (Nelder-Mead and Powell conjugate) are not allowed here (this is taken care of via std::enable_if and is_zero_order_method trait)</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">fp_type</td><td>fp_type is a floating-point template parameter </td></tr>
+    <tr><td class="paramname">method</td><td>optimisation method </td></tr>
+    <tr><td class="paramname">line_search_method</td><td>line search method </td></tr>
+    <tr><td class="paramname">std::enable_if&lt;</td><td>is_zero_order_method&lt;method&lt;fp_type&gt;&gt;::value&gt;::type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objective</td><td>objective function </td></tr>
+    <tr><td class="paramname">init_guess</td><td>initial guess </td></tr>
+    <tr><td class="paramname">max_iters</td><td>maximum number of iterations </td></tr>
+    <tr><td class="paramname">arg_tol</td><td>tolerance for a stopping criteria </td></tr>
+    <tr><td class="paramname">grad_tol</td><td>tolerance for gradient </td></tr>
+    <tr><td class="paramname">fun_tol</td><td>tolerance for a vlaue of function </td></tr>
+    <tr><td class="paramname">line_search_range</td><td>range for line search method </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple&lt;vector_t&lt;fp_type&gt;, fp_type, std::size_t&gt; </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

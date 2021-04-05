@@ -13,6 +13,7 @@ unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o: ../includ
 unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o: ../include/utilities/om_common.hpp
 unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o: ../include/utilities/om_differentiation.hpp
 unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o: ../include/utilities/om_differentiation_traits.hpp
+unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o: ../include/utilities/om_macros.hpp
 unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o: ../include/utilities/om_types.hpp
 unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o: ../include/utilities/om_utilities.hpp
 unit_tests/CMakeFiles/polak_ribiere_test.dir/om_polak_ribiere_t.cpp.o: ../unit_tests/om_polak_ribiere_t.cpp

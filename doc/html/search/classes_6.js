@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['max_5farg_125',['max_arg',['../structom__common_1_1max__arg.html',1,'om_common']]],
-  ['max_5farg_3c_202_2c_20fp_5ftype_20_3e_126',['max_arg&lt; 2, fp_type &gt;',['../structom__common_1_1max__arg_3_012_00_01fp__type_01_4.html',1,'om_common']]],
-  ['max_5farg_3c_203_2c_20fp_5ftype_20_3e_127',['max_arg&lt; 3, fp_type &gt;',['../structom__common_1_1max__arg_3_013_00_01fp__type_01_4.html',1,'om_common']]],
-  ['min_5farg_128',['min_arg',['../structom__common_1_1min__arg.html',1,'om_common']]],
-  ['min_5farg_3c_202_2c_20fp_5ftype_20_3e_129',['min_arg&lt; 2, fp_type &gt;',['../structom__common_1_1min__arg_3_012_00_01fp__type_01_4.html',1,'om_common']]],
-  ['min_5farg_3c_203_2c_20fp_5ftype_20_3e_130',['min_arg&lt; 3, fp_type &gt;',['../structom__common_1_1min__arg_3_013_00_01fp__type_01_4.html',1,'om_common']]],
-  ['minimizer_5fhelper_131',['minimizer_helper',['../structom__test__helpers_1_1minimizer__helper.html',1,'om_test_helpers']]]
+  ['is_5fzero_5forder_5fmethod_130',['is_zero_order_method',['../structom__unconstrained__methods__traits_1_1is__zero__order__method.html',1,'om_unconstrained_methods_traits']]],
+  ['is_5fzero_5forder_5fmethod_3c_20om_5funconstrained_5fmethods_3a_3aom_5fzero_5forder_3a_3anelder_5fmead_5fmethod_3c_3e_20_3e_131',['is_zero_order_method&lt; om_unconstrained_methods::om_zero_order::nelder_mead_method&lt;&gt; &gt;',['../structom__unconstrained__methods__traits_1_1is__zero__order__method_3_01om__unconstrained__metho28b36ce25946fc56467ab973001bcb2d.html',1,'om_unconstrained_methods_traits']]],
+  ['is_5fzero_5forder_5fmethod_3c_20om_5funconstrained_5fmethods_3a_3aom_5fzero_5forder_3a_3apowell_5fconjugate_5fmethod_3c_3e_20_3e_132',['is_zero_order_method&lt; om_unconstrained_methods::om_zero_order::powell_conjugate_method&lt;&gt; &gt;',['../structom__unconstrained__methods__traits_1_1is__zero__order__method_3_01om__unconstrained__metho283d68c241cc3938b85ee6b3a8a60faa.html',1,'om_unconstrained_methods_traits']]]
 ];

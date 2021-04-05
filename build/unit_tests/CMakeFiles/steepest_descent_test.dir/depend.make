@@ -12,6 +12,7 @@ unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o: ../
 unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o: ../include/utilities/om_common.hpp
 unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o: ../include/utilities/om_differentiation.hpp
 unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o: ../include/utilities/om_differentiation_traits.hpp
+unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o: ../include/utilities/om_macros.hpp
 unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o: ../include/utilities/om_types.hpp
 unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o: ../include/utilities/om_utilities.hpp
 unit_tests/CMakeFiles/steepest_descent_test.dir/om_steepest_descent_t.cpp.o: ../unit_tests/om_steepest_descent_t.cpp

@@ -69,7 +69,7 @@ om_unconstrained_methods::om_quasi_newton::
   matrix_t<fp_type> A;
   matrix_t<fp_type> B;
   matrix_t<fp_type> G =
-      Eigen::MatrixXd::Identity(init_guess.rows(), init_guess.rows());
+      matrix_t<fp_type>::Identity(init_guess.rows(), init_guess.rows());
   vector_t<fp_type> grad_prev;
   vector_t<fp_type> grad;
   vector_t<fp_type> u;

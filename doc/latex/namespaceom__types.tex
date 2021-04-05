@@ -12,8 +12,10 @@ Contains some types used throughout the whole library.
 \begin{DoxyCompactList}\small\item\em Alias for shared\+\_\+ptr$<$\+T$>$ \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_aa7185fcb88b479238495bffce82a180c}{vector\+\_\+arg\+\_\+t}} = Eigen\+::\+Matrix$<$ T, Eigen\+::\+Dynamic, 1 $>$
 \begin{DoxyCompactList}\small\item\em Alias for 1D matrix = vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$std\+::size\+\_\+t dimension, typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_aec8ad5be68b3dbbf8c4c48f50f98f9cd}{vector\+\_\+const\+\_\+t}} = Eigen\+::\+Matrix$<$ T, dimension, 1 $>$
+\begin{DoxyCompactList}\small\item\em Alias for const dimension 1D matrix = vector$<$dimension$>$ \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_a430dac657dd37f85164c323757288ee1}{vector\+\_\+t}} = Eigen\+::\+Matrix$<$ T, Eigen\+::\+Dynamic, 1 $>$
-\begin{DoxyCompactList}\small\item\em Alias for 1D matrix = vector. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Alias for dynamic 1D matrix = vector. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_a0b04834c88277f0fe8b19321c7294304}{f\+\_\+scalar\+\_\+t}} = std\+::function$<$ T(T)$>$
 \begin{DoxyCompactList}\small\item\em One dimensional scalar function. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{namespaceom__types_a4a5d9adea8bd02839528852a76a0a74d}{f\+\_\+vector\+\_\+t}} = std\+::function$<$ T(\mbox{\hyperlink{namespaceom__types_aa7185fcb88b479238495bffce82a180c}{vector\+\_\+arg\+\_\+t}}$<$ T $>$)$>$
@@ -142,6 +144,24 @@ Alias for 1D matrix = vector.
 {\em T} & \\
 \hline
 \end{DoxyTemplParams}
+\mbox{\Hypertarget{namespaceom__types_aec8ad5be68b3dbbf8c4c48f50f98f9cd}\label{namespaceom__types_aec8ad5be68b3dbbf8c4c48f50f98f9cd}} 
+\index{om\_types@{om\_types}!vector\_const\_t@{vector\_const\_t}}
+\index{vector\_const\_t@{vector\_const\_t}!om\_types@{om\_types}}
+\doxysubsubsection{\texorpdfstring{vector\_const\_t}{vector\_const\_t}}
+{\footnotesize\ttfamily template$<$std\+::size\+\_\+t dimension, typename T $>$ \\
+using \mbox{\hyperlink{namespaceom__types_aec8ad5be68b3dbbf8c4c48f50f98f9cd}{om\+\_\+types\+::vector\+\_\+const\+\_\+t}} = typedef Eigen\+::\+Matrix$<$T, dimension, 1$>$}
+
+
+
+Alias for const dimension 1D matrix = vector$<$dimension$>$ 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em dimension} & \\
+\hline
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
 \mbox{\Hypertarget{namespaceom__types_a430dac657dd37f85164c323757288ee1}\label{namespaceom__types_a430dac657dd37f85164c323757288ee1}} 
 \index{om\_types@{om\_types}!vector\_t@{vector\_t}}
 \index{vector\_t@{vector\_t}!om\_types@{om\_types}}
@@ -151,7 +171,7 @@ using \mbox{\hyperlink{namespaceom__types_a430dac657dd37f85164c323757288ee1}{om\
 
 
 
-Alias for 1D matrix = vector. 
+Alias for dynamic 1D matrix = vector. 
 
 
 \begin{DoxyTemplParams}{Template Parameters}

@@ -4,6 +4,7 @@
 #include <iostream>
 #endif
 
+#include "unconstrained_methods/multi_dim/test_functions/om_test_functions.hpp"
 #include "unconstrained_methods/om_unconstrained_methods.hpp"
 #include "utilities/om_types.hpp"
 #include "utilities/om_utilities.hpp"
@@ -14,6 +15,8 @@
 using om_types::f_scalar_t;
 using om_unconstrained_methods::minimize;
 using om_utilities::range;
+using namespace om_test_helpers;
+using namespace om_test_functions;
 
 BOOST_AUTO_TEST_SUITE(minimize_one_dimensional)
 
@@ -91,6 +94,74 @@ BOOST_AUTO_TEST_CASE(brent_default_1) {
             << "iterations: " << std::get<3>(g_min) << "\n";
 
 #endif
+}
+
+BOOST_AUTO_TEST_SUITE_END()
+
+BOOST_AUTO_TEST_SUITE(minimize_multi_dimensional)
+
+BOOST_AUTO_TEST_CASE(broyden_fletcher_goldfarb_shanno_with_gs_default) {
+
+  auto helper = create_rao_test_collection<double>();
+
+#define _DEBUG_
+
+#ifdef _DEBUG_
+  std::cout << "\n\n";
+  std::cout << "Running Rao tests.... \n";
+#endif
+  std::size_t multi_max_iters = 10000;
+  double tol = 5.0e-3;
+
+  for (auto const &h : helper) {
+    auto result = minimize((f_vector_t<double>)h->objective, h->guess,
+                           multi_max_iters, 1.0e-7, 1.0e-7, 1.0e-7);
+    const auto &expected_min = h->minimizer;
+    const auto &found_min = std::get<0>(result);
+    BOOST_CHECK_LE((expected_min - found_min).norm(), tol);
+    BOOST_CHECK_LT(std::get<2>(result), multi_max_iters);
+
+#ifdef _DEBUG_
+    std::cout << "FUNCTION NAME: " << h->name << "\n";
+    std::cout << "EXPECTED MINIMISER: \n" << h->minimizer << "\n";
+    std::cout << "FOUND MINIMISER: \n" << std::get<0>(result) << "\n";
+    std::cout << "FUN VALUE: " << std::get<1>(result) << "\n";
+    std::cout << "ITERATIONS: " << std::get<2>(result) << "\n";
+    std::cout << "---------------------------------------------------\n";
+#endif
+  }
+}
+
+BOOST_AUTO_TEST_CASE(broyden_fletcher_goldfarb_shanno_with_gs_float) {
+
+  auto helper = create_rao_test_collection<float>();
+
+#define _DEBUG_
+
+#ifdef _DEBUG_
+  std::cout << "\n\n";
+  std::cout << "Running Rao tests.... \n";
+#endif
+  std::size_t multi_max_iters = 10000;
+  float tol = 5.0e-1;
+
+  for (auto const &h : helper) {
+    auto result = minimize<float>((f_vector_t<float>)h->objective, h->guess,
+                                  multi_max_iters, 1.0e-4, 1.0e-4, 1.0e-4);
+    const auto &expected_min = h->minimizer;
+    const auto &found_min = std::get<0>(result);
+    BOOST_CHECK_LE((expected_min - found_min).norm(), tol);
+    BOOST_CHECK_LT(std::get<2>(result), multi_max_iters);
+
+#ifdef _DEBUG_
+    std::cout << "FUNCTION NAME: " << h->name << "\n";
+    std::cout << "EXPECTED MINIMISER: \n" << h->minimizer << "\n";
+    std::cout << "FOUND MINIMISER: \n" << std::get<0>(result) << "\n";
+    std::cout << "FUN VALUE: " << std::get<1>(result) << "\n";
+    std::cout << "ITERATIONS: " << std::get<2>(result) << "\n";
+    std::cout << "---------------------------------------------------\n";
+#endif
+  }
 }
 
 BOOST_AUTO_TEST_SUITE_END()
