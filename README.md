@@ -12,7 +12,8 @@ Tested on Linux (Ubuntu) using GCC 9.3.0.
 * Conjugate Gradient Methods (Fletcher-Powell, Polak-Ribiere, Hestenes-Stiefel)
 * Quasi-Newton Methods (Davidon-Fletcher-Powell, Broyden-Fletcher-Goldfarb-Shanno)
 * Zero-Order Methods (Nelder-Mead, Powell's Conjugate Method)
-## TODO
+## Todo
 * Test on Win OS
 ## Usage
-Just include any *.hpp file inside include folder. See unit_tests folder
+Just include include/unconstrained_methods/om_unconstrained_methods.hpp in your project and use minimize() method. See unit_tests folder for detailed usage.
+Detailed description very soon..
