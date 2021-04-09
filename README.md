@@ -10,8 +10,5 @@ by Jan A.Snyman.
 * Conjugate Gradient Methods (Fletcher-Powell, Polak-Ribiere, Hestenes-Stiefel)
 * Quasi-Newton Methods (Davidon-Fletcher-Powell, Broyden-Fletcher-Goldfarb-Shanno)
 * Zero-Order Methods (Nelder-Mead, Powell's Conjugate Method)
-### Constrained optimization
-* SUMT (Sequential Unconstrained Minimization Technique)
 ## Usage
-TBE very soon... One can learn how to use the optimization methods from header files ending with _t. These files are testing files.
-
+See uni_tests folder
