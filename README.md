@@ -13,6 +13,6 @@ Tested on Linux (Ubuntu) using GCC 9.3.0.
 * Quasi-Newton Methods (Davidon-Fletcher-Powell, Broyden-Fletcher-Goldfarb-Shanno)
 * Zero-Order Methods (Nelder-Mead, Powell's Conjugate Method)
 ## TODO
-* Test on Windows
+* Test on Win OS
 ## Usage
-See uni_tests folder
+Just include any *.hpp file inside include folder. See unit_tests folder
