@@ -75,11 +75,12 @@ template <typename fp_type>
 fp_type powell_function(vector_arg_t<fp_type> const &args) {
   return ((args(0) + static_cast<fp_type>(10.0) * args(1)) *
               (args(0) + static_cast<fp_type>(10.0) * args(1)) +
-          5.0 * (args(2) - args(3)) * (args(2) - args(3)) +
-          std::pow((args(1) - static_cast<fp_type>(2.0) * args(2)),
-                   static_cast<fp_type>(4.0)) +
-          std::pow(static_cast<fp_type>(10.0) * (args(0) - args(3)),
-                   static_cast<fp_type>(4.0)));
+          static_cast<fp_type>(5.0) * (args(2) - args(3)) *
+              (args(2) - args(3)) +
+          std::pow<fp_type>((args(1) - static_cast<fp_type>(2.0) * args(2)),
+                            static_cast<fp_type>(4.0)) +
+          std::pow<fp_type>(static_cast<fp_type>(10.0) * (args(0) - args(3)),
+                            static_cast<fp_type>(4.0)));
 }
 
 /**

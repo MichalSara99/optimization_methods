@@ -13,7 +13,7 @@ namespace om_differentiation_traits {
  * @tparam fp_type fp_type is a floating-point template parameter
  */
 template <typename fp_type> struct forward_difference_trait {
-  static constexpr fp_type step_size = 10e-6;
+  static constexpr fp_type step_size = static_cast<fp_type>(10e-6);
 };
 /**
  * @brief central difference trait
@@ -21,7 +21,7 @@ template <typename fp_type> struct forward_difference_trait {
  * @tparam fp_type fp_type is a floating-point template parameter
  */
 template <typename fp_type> struct central_difference_trait {
-  static constexpr fp_type step_size = 10e-7;
+  static constexpr fp_type step_size = static_cast<fp_type>(10e-7);
 };
 
 } // namespace om_differentiation_traits
