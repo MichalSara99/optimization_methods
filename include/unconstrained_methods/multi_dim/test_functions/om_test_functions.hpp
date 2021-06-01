@@ -22,7 +22,8 @@ namespace om_test_functions {
  *
  * @tparam fp_type fp_type is a floating-point template parameter
  */
-template <typename fp_type> constexpr fp_type pi{3.14159265359};
+template <typename fp_type>
+constexpr fp_type pi{static_cast<fp_type>(3.14159265359)};
 
 /**
  * @brief Rosenbrock's parabolic valley test function
